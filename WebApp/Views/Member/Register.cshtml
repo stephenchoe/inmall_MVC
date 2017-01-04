@@ -1,0 +1,398 @@
+﻿@using Web.Core.Recaptcha
+@using System.Configuration
+
+@model WebApp.Models.RegisterViewModel
+
+@{
+    //Recaptcha
+
+    string siteKey = ConfigurationManager.AppSettings["Recaptcha2SiteKey"];
+    string recaptcha2InputName = ConfigurationManager.AppSettings["Recaptcha2VarName"];
+    string recaptchaErrMsgId = "recaptchaErrMsg";
+}
+
+@{
+    string formId = "apply-form";
+    var htmlAttributes = new { id = formId };
+
+    string emailErrorMsgId = "emailErrorMsg";
+    string passwordErrorMsgId = "passwordErrorMsg";
+
+    var statusResult = Model.ResultStatus;
+
+    string genderInputName = Html.NameFor(m => m.Gender).ToString();
+
+}
+
+@section linkScripts{
+    @Scripts.Render("~/Scripts/Member/register.js")
+    @Scripts.Render("~/Scripts/validation.js")
+}
+
+<div class="product-intro-section">
+
+    <script type="text/javascript">
+
+    @if (statusResult != null)
+    {
+
+            string callBack="";
+            if(!String.IsNullOrEmpty(statusResult.CallBack))
+            {
+                callBack = CompleteCallBack(statusResult.CallBack);
+            }
+            if(callBack!="")
+            {
+                <text>
+        $(document).ready(function () {
+
+            @Html.Raw(callBack)
+
+        })
+        </text>
+            }
+
+            string statusType = GetStatusTypeText(statusResult);
+            string title = statusResult.Title;
+            string msg = statusResult.StatusText;
+
+
+            if (statusType == "error")
+            {
+                <text>
+
+        registerFailedTitleSetter('@title');
+        registerFailedMsgSetter('@msg');
+        </text>
+
+            }
+
+
+
+        var registerResult = Model.ResultStatus.RegisterResult;
+
+        if(registerResult != WebApp.Models.RegisterResult.Success)
+        {
+                <text>
+        registerError();
+        </text>
+        }
+
+
+    }
+
+
+    </script>
+
+
+
+
+    <h2 class="page-title">加入會員</h2>
+
+
+    <div class="shopping-cart-blk member-apply-blk">
+
+        @using (Html.BeginForm("Register", "Member", FormMethod.Post, htmlAttributes))
+        {
+            @Html.AntiForgeryToken()
+            <input type="hidden" name="FacebookID" value="">
+            <div class="checkout-form-blk">
+                <div class="form-row flex">
+                    @Html.LabelFor(u => u.Email, new { @class = "flex-label require" })
+                    @Html.TextBoxFor(u => u.Email, new { @class = "flex-ipt", placeholder = "請輸入您的電子信箱" })
+                    @Html.ValidationMessageFor(m => m.Email, null, new { @class = "err", id = emailErrorMsgId })
+
+                </div>
+                <div class="form-row flex">
+                    @Html.LabelFor(u => u.Password, new { @class = "flex-label require" })
+                    @Html.PasswordFor(u => u.Password, new { @class = "flex-ipt", placeholder = "請輸入您的密碼" })
+                    @Html.ValidationMessageFor(m => m.Password, null, new { @class = "err", id = passwordErrorMsgId })
+                </div>
+                <div class="form-row flex">
+                    @Html.LabelFor(u => u.ConfirmPassword, new { @class = "flex-label require" })
+                    @Html.PasswordFor(u => u.ConfirmPassword, new { @class = "flex-ipt", placeholder = "請輸入確認您的密碼" })
+                    @Html.ValidationMessageFor(m => m.ConfirmPassword, null, new { @class = "err" })
+                </div>
+                <div class="form-row flex">
+                    <label class="flex-label require">會員姓名：</label>
+
+                    <div class="flex-ipt-blk">
+                        @Html.LabelFor(u => u.LastName, new { @class = "one" })
+                        @Html.TextBoxFor(u => u.LastName, new { @class = "two ipt err-fix" })
+                        @Html.ValidationMessageFor(m => m.LastName, null, new { @class = "err" })
+                    </div>
+                    <div class="flex-ipt-blk">
+                        @Html.LabelFor(u => u.FirstName, new { @class = "one" })
+                        @Html.TextBoxFor(u => u.FirstName, new { @class = "two ipt err-fix" })
+                        @Html.ValidationMessageFor(m => m.FirstName, null, new { @class = "err" })
+                    </div>
+
+                </div>
+                <div class="form-row flex">
+                    <label class="flex-label require"><span class="letter-2x">稱</span>謂：</label>
+                    <div class="flex-ipt-blk">
+                        <span class="two">
+
+                            <input class="hide" type="radio" name="@genderInputName" id="male" value="true" checked="">
+                            <label for="male" class="btn-radio">先生</label>
+                        </span>
+                        <span class="two">
+
+                            <input class="hide" type="radio" name="@genderInputName" id="female" value="false">
+                            <label for="female" class="btn-radio">小姐</label>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-row flex">
+                    @Html.LabelFor(u => u.DOB, new { @class = "flex-label require" })
+
+                    @Html.EditorFor(u => u.DOB, "DatePicker")
+                    @Html.ValidationMessageFor(m => m.DOB, null, new { @class = "err" })
+                </div>
+                <div class="form-row flex">
+                    @Html.LabelFor(u => u.PhoneNumber, new { @class = "flex-label require" })
+
+                    @Html.TextBoxFor(u => u.PhoneNumber, new { @class = "flex-ipt", type = "tel", placeholder = "請輸入您的電話" })
+                    @Html.ValidationMessageFor(m => m.PhoneNumber, null, new { @class = "err" })
+                </div>
+            </div>
+            <div class="checkout-form-blk">
+                <h3 class="title require">居住地址</h3>
+                <div class="form-row" id="twzipcode">
+                    <span class="form-col">
+                        <label class="fast-buy-select-label">縣市</label>
+                        <span class="fast-buy-select-wrapper">
+
+                            <div data-role="county" data-style="fast-buy-select">
+                                @Html.DropDownListFor(u => u.CityId, Model.CityOptions, new { @class = "fast-buy-select" })
+                            </div>
+                        </span>
+                    </span>
+                    <span class="form-col">
+                        <label class="fast-buy-select-label">鄉鎮市區</label>
+                        <span class="fast-buy-select-wrapper">
+
+                            <div data-role="district" data-name="township" data-style="fast-buy-select">
+                                @Html.DropDownListFor(u => u.DistrictId, Model.DistrictOptions, new { @class = "fast-buy-select" })
+                            </div>
+
+                        </span>
+                    </span>
+                </div>
+                <div class="form-row">
+                    <span class="form-col full">
+
+                        @Html.TextBoxFor(u => u.StreetAddress, new { @class = "ipt", type = "tel", placeholder = "請輸入村里、街道、門牌等詳細地址" })
+                        @Html.ValidationMessageFor(m => m.StreetAddress, null, new { @class = "err" })
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="checkout-form-blk">
+                <div class="form-row flex">
+
+                    <div class="flex-ipt-blk container">
+                        @Html.Recaptcha2(siteKey)
+                        @Html.ValidationMessage(recaptcha2InputName, "", new { @id = recaptchaErrMsgId, @class = "err" })
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="shopping-go-on-blk">
+
+                    <button class="btn-orange" type="button" id="btnSubmit">送出</button>
+                </div>
+            </div>
+        }  @*//end form*@
+
+    </div>
+
+    @section scripts{
+
+
+        <script type="text/javascript">
+
+            $(document).ready(function () {
+
+                $('#btnSubmit').click(function (e) {
+                    e.preventDefault;
+
+                    var form = $("#@formId");
+                    if (!form.valid()) {
+                        return false;
+                    }
+                    Loading('@formId');
+
+                    var isValid = canSubmit();
+                    $.when(isValid).then(function (data) {
+                        if (data) {
+                            form.submit();
+                        } else {
+                            StopLoading('@formId');
+                        }
+                    });
+                });
+
+                function canSubmit() {
+                    var def = $.Deferred();
+
+                    var validEmail = emailValid();
+                    var validCaptcha = captchaValid();
+                    var validPassword = passwordValid();
+
+                    $.when(validEmail, validCaptcha, validPassword)
+                       .then(function (email, captcha, password) {
+
+                           if (email && captcha && password) {
+                               def.resolve(true);
+                           } else {
+                               def.resolve(false);
+                           }
+                       });
+
+                    return def.promise();
+
+
+                }
+
+                function emailValid() {
+                    var def = $.Deferred();
+                    var email = $('#@Html.IdFor(m=>m.Email)').val();
+                    var spanEmailErrMsg = $('#@emailErrorMsgId');
+                    $.ajax({
+                        type: "POST",
+                        cache: false,
+                        url: '/Member/CheckUserName',
+                        data: { 'email': email },
+                        success: function (result) {
+                            if (result.toLowerCase() == 'true') {
+                                spanEmailErrMsg.text('');
+                                def.resolve(true);
+                            } else {
+                                spanEmailErrMsg.text('這個Email已經註冊過了(您是否忘記密碼?)');
+                                def.resolve(false);
+                            }
+                        },
+                        error: function () {
+                            spanEmailErrMsg.text('');
+                            def.reject(true);
+                        }
+                    });
+
+                    return def.promise();
+
+                }
+
+                function captchaValid() {
+                    var def = $.Deferred();
+                    var recaptchaResponse = $('#@recaptcha2InputName').val();
+                    var spanCaptchaErrMsg = $('#@recaptchaErrMsgId');
+                    if (recaptchaResponse) {
+                        $.ajax({
+                            type: "POST",
+                            cache: false,
+                            url: '/Captcha/CaptchaValidAsync',
+                            data: { '@recaptcha2InputName': recaptchaResponse },
+                            success: function (result) {
+                                if (result.toLowerCase() == 'true') {
+                                    spanCaptchaErrMsg.text('');
+                                    def.resolve(true);
+                                } else {
+                                    spanCaptchaErrMsg.text('您尚未通過圖形驗證');
+                                    def.resolve(false);
+                                }
+                            },
+                            error: function () {
+                                spanCaptchaErrMsg.text('您尚未通過圖形驗證');
+                                def.resolve(false);
+                            }
+                        });
+                    } else {
+                        spanCaptchaErrMsg.text('您尚未通過圖形驗證');
+                        def.resolve(false);
+                    }
+
+                    return def.promise();
+                }
+
+                function passwordValid() {
+                    var def = $.Deferred();
+                    var validPassword = false;
+                    var inputPassword = $('#@Html.IdFor(m=>m.Password)');
+                    validPassword = atLeastOneUppercaseLetter(inputPassword.val());
+                    var spanPasswordErrMsg = $('#@passwordErrorMsgId');
+                    if (!validPassword) {
+                        spanPasswordErrMsg.text('密碼至少要有一個大寫英文字母');
+                        def.resolve(false);
+                    } else {
+                        spanPasswordErrMsg.text('');
+                        def.resolve(true);
+                    }
+                    return def.promise();
+                }
+
+
+                SetValidatorErrorStyle('@formId');
+
+
+                var genderString = "@Model.Gender.ToString().ToLower()";
+                if (genderString == "true") {
+                    setGender(true);
+                } else {
+                    setGender(false);
+                }
+
+
+
+                $('#@Html.IdFor(u=>u.CityId)').change(function () {
+                    var cid = $(this).val();
+                    loadDistricts(cid);
+
+                });
+
+                function loadDistricts(cid) {
+
+                    $.ajax({
+                        type: "GET",
+                        cache: true,
+                        url: 'GetDistrictOptions' + '?cid=' + cid,
+                        dataType: 'html',
+                        async: true,
+                        success: function (data) {
+                            $('#@Html.IdFor(u=>u.DistrictId)').html(data);
+                        }
+                    });
+
+                }
+
+                $('input[name="@genderInputName"]').click(function () {
+                    var gender = $(this).val();
+
+                    if (gender == 'true') {
+                        setGender(true);
+                    } else {
+                        setGender(false);
+                    }
+                });
+
+                function setGender(gender) {
+                    if (gender) {
+                        $("input[name=@Html.NameFor(u=>u.Gender)][value='true']").prop('checked', true);
+                    } else {
+                        $("input[name=@Html.NameFor(u=>u.Gender)][value='false']").prop('checked', true);
+                    }
+                }
+
+
+
+            })//end ready
+
+        </script>
+    }
+
+</div>

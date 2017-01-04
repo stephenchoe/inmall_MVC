@@ -1,0 +1,83 @@
+﻿@model WebApp.Models.AddToCartModel
+@{
+
+    string successCallback = "cartItemAdded";
+    string failureCallback = "cartItemAddFailed";
+
+
+    AjaxOptions ajaxOptions = new AjaxOptions
+    {
+        HttpMethod = "POST",
+        OnSuccess = successCallback,
+        OnFailure = failureCallback
+    };
+
+    string formId = "addToCartForm";
+}
+<div class="flex-item-third">
+@using (Ajax.BeginForm("AddToCart", "Shopping", null, ajaxOptions, new { id = formId }))
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(m=>m.ProductId)
+    
+    <label class="label">數量</label>
+    <span class="fast-buy-select-wrapper">
+        @Html.DropDownListFor(i => i.Quantity, Model.QuantityOptions, new { @class = "fast-buy-select", id = "fast-buy-num-select" })
+        
+    </span>
+}
+</div>
+<div class="flex-item-third">
+    <button class="btn-next js-btn-buy-next-time" data-product-id="1">下次再買</button>
+</div>
+<div class="flex-item-third">
+    <button id="btnAddtoCart"  class="btn-fast-buy js-add-cart" >放入購物車</button>
+</div>
+
+ 
+
+@using (Html.BeginScriptContext())
+{
+    Html.AddScriptBlock(
+        @<script type="text/javascript">
+            $.wait = function (ms) {
+                var defer = $.Deferred();
+                setTimeout(function () {
+                    defer.resolve();
+                }, ms);
+                return defer;
+            };
+
+            var addItemFailedTitle = "加入購物車失敗";
+            var addItemFailedMsg = "系統暫時無回應，請稍後再試。";
+
+            function cartItemAddFailed() {
+                var settings = {
+                    type: 'error',
+                    title: addItemFailedTitle,
+                    text: addItemFailedMsg,
+                    showConfirmButton: true
+                };
+
+                swal(settings);
+            }
+
+            function cartItemAdded(result) {
+                $('.js-add-cart').addClass('bought');
+                $.wait(800).then(function () {
+                    $('.js-add-cart').removeClass('bought');
+                })
+                refreshCart(result.items);   // Shared/_Header
+            }
+        
+
+            $(document).ready(function () {
+                $('#btnAddtoCart').click(function () {
+                    $('#@formId').submit();
+                });
+            })//end ready
+
+
+        </script> , true);
+
+}

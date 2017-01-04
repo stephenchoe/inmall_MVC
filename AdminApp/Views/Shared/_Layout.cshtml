@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html lang="zh">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+  
+    @{
+        string title = "原住民商城後台管理系統";
+        var currentNode = Html.MvcSiteMap().SiteMap.CurrentNode;
+        if (currentNode != null && currentNode != Html.MvcSiteMap().SiteMap.RootNode)
+        {
+            title += "-" + currentNode.Title;
+        }
+
+    }
+
+    <title>@title</title>
+
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/themes/base/css")
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/bundles/jqueryval")
+
+    @Scripts.Render("~/bundles/bootstrap")   
+    @Scripts.Render("~/bundles/site")
+
+  
+
+    @RenderSection("linkScripts", false)
+
+</head>
+<body>
+    <header>
+        @Html.Partial("_Navbar")
+    </header>
+    <content>
+        @RenderBody()
+
+    </content>
+
+
+
+  
+
+
+    @RenderSection("scripts", required: false)
+
+    @Html.RenderScripts()
+
+
+</body>
+</html>

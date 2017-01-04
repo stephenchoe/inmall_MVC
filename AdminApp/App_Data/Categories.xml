@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Categories>
+    <Category  Name="各式包包/皮夾" Parent="0" DisplayOrder="30" Prefix="">
+        <SubCategory Name="後背包" Type="" DisplayOrder="20"  Prefix=""/>
+        <SubCategory Name="側背包" DisplayOrder="19" Prefix=""/>
+        <SubCategory Name="配件包" DisplayOrder="18" Prefix=""/>        
+        <SubCategory Name="化妝包" DisplayOrder="17" Prefix=""/>
+    </Category>
+    <Category  Name="個性飾品" Parent="0"  DisplayOrder="27" Prefix="">
+        <SubCategory Name="率性配件" Type="" DisplayOrder="20"  Prefix=""/>
+        <SubCategory Name="髮飾" Type=""  DisplayOrder="16" Prefix=""/>
+        <SubCategory Name="圍巾" Type="" DisplayOrder="15"  Prefix=""/>
+    </Category>
+    <Category  Name="優良食材" DisplayOrder="25" Parent="0" Prefix="">
+        <SubCategory Name="米/麵條"  Type=""  DisplayOrder="20"  Prefix=""/>
+        <SubCategory Name="咖啡/茶飲"  Type=""  DisplayOrder="15"  Prefix=""/>
+    </Category>
+    <Category  Name="居家好物" DisplayOrder="23" Parent="0" Prefix="">
+        <SubCategory Name="燈飾" Type=""  DisplayOrder="20" Prefix=""/>
+        <SubCategory Name="餐具" Type="" DisplayOrder="15"  Prefix=""/>
+    </Category>
+    <Category  Name="裝置藝術" DisplayOrder="21" Parent="0" Prefix="">
+        <SubCategory Name="石雕" Type="" DisplayOrder="20"   Prefix=""/>
+        <SubCategory Name="藤編" Type="" DisplayOrder="15"  Prefix=""/>
+    </Category>
+    <Category  Name="原民工坊" DisplayOrder="19" Parent="0" Prefix="">
+        
+    </Category>
+    <Category  Name="原民族群" DisplayOrder="17" Parent="0" Prefix="">
+        
+    </Category>
+    
+</Categories>

@@ -1,0 +1,59 @@
+﻿@model WebApp.Models.HomeIndexViewModel
+
+@section linkScripts{
+    @Scripts.Render("~/Scripts/flexSlider/js/jquery.flexslider.js")
+}
+
+
+<div class="layout-right-blk gray">
+    <div class="flexslider index-slider" id="index-slider">
+
+       
+            <ul class="slides" >
+                @foreach (var ad in Model.ADViewModelList)
+                {
+                    string target = ad.NewWindow ? "_blank" : "_self";
+                    string url = String.IsNullOrEmpty(ad.Url) ? "javascript:void(0)" : ad.Url;
+                    <li>
+                        <a class="banner-wrapper" href="@url" target="@target">
+                            <img class="banner" draggable="false" src="@Url.Action("ADImage", new { id = ad.Id })">
+                        </a>
+                    </li>
+                }
+            </ul>
+      
+    </div>
+    <div class="product-category-list-blk">
+        <ul class="product-category-list">
+            @foreach (var photo in Model.CategoryPhotoList)
+            {
+                <li class="item">
+                    <a href="@Url.Action("Category", "Product", new { id = photo.CategoryId})" class="link">  
+                        <img class="thumb lazy js-ratio-4-3"  alt="@photo.Caption" src="@Url.Action("CategoryPhoto", "Product", new { id = photo.Id, width = 480, height = 360 })" style="height: 175.5px; display: block;">
+                        <div class="vam-blk">
+                            <strong class="title">@photo.Caption</strong>
+                        </div>
+                    </a>
+                </li>
+            }
+         
+        </ul>
+
+    </div>
+
+</div>
+
+@section scripts{
+
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide"
+            });
+        });
+
+
+
+    </script>
+
+}

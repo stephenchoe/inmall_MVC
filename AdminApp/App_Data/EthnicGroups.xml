@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EthnicGroups>
+    <EthnicGroup  Name="阿美族"  DisplayOrder="30" Prefix="">
+        <Product>六大族系列湯筷組-阿美族</Product>
+        <Product>山豬牙項鍊(大)</Product>
+        <Product>阿美族傳統羽絨頭冠</Product>
+        <Product>原氣蓬勃後背包-阿美族</Product>
+        <Product>原民情感手機套</Product>
+    </EthnicGroup>
+    <EthnicGroup  Name="太魯閣族"  DisplayOrder="28" Prefix="">
+        <Product>棉麻長夾手拿包</Product>
+        <Product>原著小書包--太魯閣族</Product>
+        <Product>牛郎後背包(太魯閣族紋)</Product>
+        <Product>貓頭鷹桌飾巾</Product>
+    </EthnicGroup>
+    <EthnicGroup  Name="噶瑪蘭族"  DisplayOrder="25" Prefix="">
+        <Product>菱時尚郵差包</Product>
+     
+    </EthnicGroup>
+    <EthnicGroup  Name="布農族"  DisplayOrder="23" Prefix="">
+        <Product>原氣後背包-布農族</Product>
+        <Product>鋁線皮紋檯燈</Product>
+    </EthnicGroup>
+    
+</EthnicGroups>

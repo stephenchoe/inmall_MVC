@@ -1,0 +1,28 @@
+﻿@model MvcSiteMapProvider.Web.Html.Models.MenuHelperModel
+@using System.Web.Mvc.Html
+@using MvcSiteMapProvider.Web.Html.Models
+
+<ul class="main-nav" id="main-nav">
+
+    @foreach (var node in Model.Nodes)
+    {
+        string id = node.RouteValues["id"].ToString();
+            
+        <li class="nav-item has-more">
+            
+            <a class="nav-title" href="@Url.Action(node.Action, node.Controller, new { id = id})">@node.Title</a>
+            <ul class="sub-nav-list">
+                @foreach (var item in node.Children)
+                {
+                    string subId = item.RouteValues["id"].ToString();
+                    
+                    <li class="item">
+                        <a class="link" href="@Url.Action(item.Action, item.Controller, new { id = subId })">@item.Title</a>
+                    </li>
+                }
+
+            </ul>
+
+        </li>
+    }
+</ul>

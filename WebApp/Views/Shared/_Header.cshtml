@@ -1,0 +1,142 @@
+﻿<div class="header-container" id="header-container">
+    <div class="header">
+
+        <div class="main-logo">
+            <a href="/">
+                <span class="main-title hide-at-mobile">
+
+                    <img src="~/Content/images/global/mainTitle.jpg" />
+                </span>
+            </a>
+
+        </div>
+        <div class="main-logo travel show-at-desktop">
+
+        </div>
+        <button class="btn-open-menu hide-at-desktop" id="btn-open-menu">
+            <span class="line">開啟選單</span>
+        </button>
+        <button class="btn-search hide-at-desktop" id="btn-search">搜尋</button>
+
+
+        @if (Request.IsAuthenticated)
+        {
+            @Html.Partial("_MemberFunctions")
+        }
+        else
+        {
+
+            <a href="@Url.Action("Terms", "Member")" class="btn-register show-at-desktop" id="btn-member">註冊</a>
+            <a href="@Url.Action("Login", "Member")" class="btn-key" id="btn-member-login">登入</a>
+
+        }
+
+
+
+        <a href="@Url.Action("","Shopping")" class="btn-cart empty" id="btn-cart">購物車<span class="num empty" id="cart-num">0</span></a>
+        <div class="product-search-blk" id="product-search-blk">
+            <div class="blk">
+                <div class="hot-search-blk">
+                    @Html.Action("HotTags", "Product")
+                    @*<strong class="title">熱門搜尋</strong>
+                        <ul class="hot-search-list">
+                            <li class="item">
+                                <a href="http://www.inmall.com.tw/Product/Search?query=%E7%AD%86%E8%A8%98%E6%9C%AC" class="link">
+                                    筆記本
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="http://www.inmall.com.tw/Product/Search?query=%E7%9A%AE%E5%A4%BE" class="link">
+                                    皮夾
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="http://www.inmall.com.tw/Product/Search?query=%E7%87%88" class="link">
+                                    燈
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="http://www.inmall.com.tw/Product/Search?query=%E9%9E%8B%E5%AD%90" class="link">
+                                    鞋子
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="http://www.inmall.com.tw/Product/Search?query=%E9%A4%90%E7%9B%A4" class="link">
+                                    餐盤
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="http://www.inmall.com.tw/Product/Search?query=%E6%AF%9B%E5%B7%BE" class="link">
+                                    毛巾
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="http://www.inmall.com.tw/Product/Search?query=%E6%89%8B%E6%8F%90%E5%8C%85" class="link">
+                                    手提包
+                                </a>
+                            </li>
+                        </ul>*@
+                </div>
+                <form id="formKeywordSearch" method="get" action="/Product/Search" enctype="application/x-www-form-urlencoded">
+                    <div class="search-wrapper">
+                        <input class="search-ipt" type="text" id="product-search-ipt" name="query" placeholder="關鍵字">
+                        <button class="btn-orange" type="submit" id="btnSearch">搜尋</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+@using (Html.BeginScriptContext())
+{
+    Html.AddScriptBlock(
+        @<script type="text/javascript">
+            function refreshCart(_num) {
+                var $cartNum = $('#cart-num');
+                //if (_num == 0) return;
+                if ($cartNum.hasClass('empty')) {
+                    if (_num > 0) {
+                        $cartNum.text(_num).removeClass('empty');
+                    }
+                } else {
+                    $cartNum.addClass('empty').one("transitionend oTransitionEnd MSTransitionEnd", function (e) {
+                        if (_num != 0) {
+                            $cartNum.text(_num).removeClass('empty');
+                        }
+                    });
+                }
+            }
+            function getCartItems() {
+                $.ajax({
+                    url: '@Url.Action("GetCartItemsCount", "Shopping")',
+                    type: 'GET',
+                    dataType: 'text'
+                }).done(function (data) {
+                    refreshCart(data);
+                })
+
+
+
+            }
+            $(document).ready(function () {
+                getCartItems();
+
+                $('#formKeywordSearch').submit(function (e) {
+                    var keyword = $('#product-search-ipt').val();
+                    if (!keyword) {
+                        return false;
+                    }
+                });
+
+
+
+            })//end ready
+
+
+        </script> , true);
+
+}
+

@@ -1,0 +1,31 @@
+﻿@model WebApp.Models.ProductSortModel
+
+@{
+    string sortClass = "btn-sort";
+    object sortRouteValue;
+
+    if (Model.Sort == Model.CurrentSort)
+    {
+        sortClass += " act";
+        if (String.IsNullOrEmpty(Model.CurrentDir))
+        {
+            sortRouteValue = new { query = Model.Query, sort = Model.Sort, dir = "asc" };
+            sortClass += " asc";
+        }
+        else
+        {
+
+            sortRouteValue = new { query = Model.Query, sort = Model.Sort };
+        }
+    }
+    else
+    {
+        sortRouteValue = new { query = Model.Query, sort = Model.Sort };
+    }
+
+
+}
+
+
+<li class="item"><a href="@Url.Action("Search", sortRouteValue)" class="@sortClass">@Model.DisplayName</a></li>
+

@@ -1,0 +1,14 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+
+@{
+    string msg = "系統發生未預期錯誤,請稍後再試。如果問題持續發生,請聯絡系統管理員.";
+    if (!String.IsNullOrEmpty(ViewBag.Msg))
+    {
+        msg = ViewBag.Msg;
+    }
+
+    ViewBag.Title = msg;
+}
+
+
+<h2 class="text-danger">@msg</h2>

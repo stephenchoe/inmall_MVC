@@ -1,0 +1,122 @@
+﻿@model WebApp.Models.ProductViewModel
+
+@section linkScripts{
+    @Scripts.Render("~/Scripts/flexSlider/js/jquery.flexslider.js")
+
+}
+
+@{
+    var photoList = new List<WebApp.Models.ProductPhotoViewModel>();
+    var topPhoto = Model.PhotoViewList.Where(p => p.Top).FirstOrDefault();
+    photoList.Add(topPhoto);
+    foreach (var photo in Model.PhotoViewList)
+    {
+        if (!photo.Top)
+        {
+            photoList.Add(photo);
+        }
+    }
+    var supplier = Model.SupplierView;
+
+}
+
+<div class="layout-right-blk">
+    <div class="product-intro-section">
+        @Html.Partial("_Breadcrumb", Model.CategoryViewModel)
+        <div class="product-detail-info-blk">
+            <div class="adj">
+                <h2 class="product-name">@Model.Name</h2>
+                <h3 class="product-provider">@supplier.Name</h3>
+            </div>
+
+            <div class="flexslider product-slider" id="product-slider">
+                <ul class="slides">
+
+                    @foreach (var photoView in photoList)
+                    {
+                        string id = photoView.Id.ToString();
+                        <li>
+                            <img alt="" id="@id" src="@Url.Action("ProductPhoto", new { id = id, width = 385, height=385 })">
+                        </li>
+                    }
+
+
+
+                </ul>
+
+            </div>
+            <div class="product-price-bouns-blk">
+                <h3 class="price-blk">NTD <em class="price">@Model.Price</em></h3>
+            </div>
+            <div class="product-desc">
+                @foreach (var summary in Model.Summary)
+                {
+                    <text>★</text>@summary   <br>
+                }
+
+            </div>
+            <div class="fast-buy-blk flex-container">
+
+                @Html.Partial("_AddToCart", new WebApp.Models.AddToCartModel() { ProductId = Model.Id })
+            </div>
+            <div class="social-share-blk">
+                <ul class="social-share-list">
+                    <li class="item">
+                        @{
+                            string facebook = "https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fwww.inmall.com.tw%2fProduct%2fDetail%2f{{pid}}%2f%25E5%258E%259F%25E6%25B0%2591%25E7%2589%25B9%25E8%2589%25B2%25E9%25A0%25B8%25E9%258D%258A";
+                            facebook = facebook.Replace("{{pid}}", Model.OnlineId.ToString());
+                        }
+                        <a href="@facebook" class="btn-share-fb" target="_blank">分享到facebook</a>
+                    </li>
+                    <li class="item">
+                        @{
+                            string google = "https://plus.google.com/share?url=http%3a%2f%2fwww.inmall.com.tw%2fProduct%2fDetail%2f{{pid}}%2f%25E5%258E%259F%25E6%25B0%2591%25E7%2589%25B9%25E8%2589%25B2%25E9%25A0%25B8%25E9%258D%258A";
+                            google = google.Replace("{{pid}}", Model.OnlineId.ToString());
+                        }
+                        <a href="@google" class="btn-share-google" target="_blank">分享到google+</a>
+                    </li>
+                    <li class="item hide-at-desktop">
+                        @{
+                            string naver = "http://line.naver.jp/R/msg/text/?%E5%8E%9F%E6%B0%91%E7%89%B9%E8%89%B2%E9%A0%B8%E9%8D%8A%20http%3a%2f%2fwww.inmall.com.tw%2fProduct%2fDetail%2f{{pid}}%2f%25E5%258E%259F%25E6%25B0%2591%25E7%2589%25B9%25E8%2589%25B2%25E9%25A0%25B8%25E9%258D%258A";
+                            naver = naver.Replace("{{pid}}", Model.OnlineId.ToString());
+                        }
+                        <a href="@naver" class="btn-share-line" target="_blank">分享到line</a>
+                    </li>
+                    <li class="item">
+                        @{
+                            string twitter = "http://twitter.com/home/?status=%E5%8E%9F%E6%B0%91%E7%89%B9%E8%89%B2%E9%A0%B8%E9%8D%8A%20http%3a%2f%2fwww.inmall.com.tw%2fProduct%2fDetail%2f{{pid}}%2f%25E5%258E%259F%25E6%25B0%2591%25E7%2589%25B9%25E8%2589%25B2%25E9%25A0%25B8%25E9%258D%258A";
+                            twitter = naver.Replace("{{pid}}", Model.OnlineId.ToString());
+                        }
+                        <a href="@twitter" class="btn-share-twitter" target="_blank">分享到twitter</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="product-rating-wrapper">
+                @Html.Partial("_Rating", Model.RatingModel)
+            </div>
+        </div>
+    </div>
+
+    @Html.Partial("_Description", Model)
+
+    @*@Html.Partial("_Related")*@
+
+
+
+</div>
+
+
+@section scripts{
+
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide"
+            });
+        });
+
+
+
+    </script>
+
+}

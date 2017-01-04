@@ -1,0 +1,12 @@
+﻿@model IEnumerable<Model.Tag>
+
+<strong class="title">熱門搜尋</strong>
+<ul class="hot-search-list">
+    @foreach (var tag in Model)
+    {
+        <li class="item">
+            <a href="@Url.Action("Search", "Product", new { query = tag.Name })" class="link">@tag.Name</a>
+        </li>
+    }
+  
+</ul>

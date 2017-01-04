@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mvcSiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-4.0"
+            xsi:schemaLocation="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-4.0 MvcSiteMapSchema.xsd">
+
+    <mvcSiteMapNode title="首頁" controller="Home" action="Index" >
+        <mvcSiteMapNode title="花蓮原鄉e市集"  dynamicNodeProvider="WebApp.Services.CategoryDynamicNodeProvider, Inmall.WebApp" >
+        </mvcSiteMapNode>
+        <!--<mvcSiteMapNode title="各式包包/皮夾" controller="Product" action="Category" id="41"  >
+            <mvcSiteMapNode title="後背包" controller="Product" action="Category" id="46"  />
+            <mvcSiteMapNode title="側背包" controller="Product" action="Category" id="49"  />
+        </mvcSiteMapNode>
+        <mvcSiteMapNode title="個性飾品" controller="Product" action="Category" id="42"   />-->
+
+
+        <!--<mvcSiteMapNode title="會員服務條款" controller="Member" action="Terms"/>
+        <mvcSiteMapNode title="加入會員" controller="Member" action="Register"/>
+        <mvcSiteMapNode title="會員登入" controller="Member" action="Login"/>
+        <mvcSiteMapNode title="忘記密碼" controller="Member" action="ForgotPassword"/>-->
+    </mvcSiteMapNode>
+
+</mvcSiteMap>

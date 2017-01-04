@@ -1,0 +1,47 @@
+﻿@model ICollection<WebApp.Models.ProductPhotoViewModel>
+@{
+    
+    string cid = ViewData["cid"].ToString();
+}
+
+
+<div class="product-tile-list-blk">
+    @if (Model.Count > 0)
+    {
+        <ul class="product-tile-list list-show-2-3-3">
+            @foreach (var item in Model)
+            {
+                string imageSrc = Url.Action("ProductPhoto", new { id = item.Id, width = 385, height = 385 });
+
+                
+                object routeValue;
+                if (String.IsNullOrEmpty(cid))
+                {
+                    routeValue = new { pid = item.ProductId };
+                }
+                else
+                {
+                    routeValue = new { pid = item.ProductId, cid = cid };                    
+                }
+
+                <li class="item">
+                    <a href="@Url.Action("Details", routeValue )" class="link">
+                        <span class="frame">
+
+                            <img alt="@item.Name" class="thumb lazy js-ratio-4-3" src="@imageSrc" style="height: 175.5px; display: block;">
+
+                        </span>
+                        <h3 class="name">@item.Name</h3>
+                        <h4 class="unit">@item.SupplierName</h4>
+                        <h5 class="price">NTD @item.Price</h5>
+                    </a>
+                </li>
+            }
+
+
+        </ul>
+
+    }
+
+</div>
+

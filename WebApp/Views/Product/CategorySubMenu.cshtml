@@ -1,0 +1,42 @@
+﻿@model WebApp.Models.MainCategoryViewModel
+
+@{
+
+    int mainCategoryWidth = 768;
+    int mainCategoryHeight = 285;
+
+    int subCategoryWidth = 480;
+    int subCategoryHeight = 360;
+}
+
+
+<div class="layout-right-blk gray">
+
+    @Html.Partial("_Breadcrumb", Model)
+
+
+    <div class="category-banner-blk">
+        <img class="thumb lazy" src="@Url.Action("CategoryPhoto", new { id = Model.PhotoViewModel.Id, width = mainCategoryWidth, height = mainCategoryHeight })" alt="" style="display: block;">
+        <h2 class="title vam-blk"><span class="vam">@Model.Name</span></h2>
+    </div>
+    <div class="product-category-list-blk">
+        <ul class="product-category-list">
+            @foreach (var sub in Model.SubCategoryPhotoViewList)
+            {
+                <li class="item">
+
+                    <a href="@Url.Action("Category", new { id = sub.CategoryId })" class="link">
+                        <img class="thumb lazy js-ratio-4-3" src="@Url.Action("CategoryPhoto", new { id = sub.Id, width = subCategoryWidth, height = subCategoryHeight })" alt="@sub.Caption" style="height: 175.5px; display: block;">
+                        <div class="vam-blk">
+                            <h3 class="title vam">@sub.Caption</h3>
+                        </div>
+                    </a>
+                </li>
+
+
+            }
+
+
+        </ul>
+    </div>
+</div>

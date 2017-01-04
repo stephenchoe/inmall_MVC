@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @{
+        string title="";
+        if (String.IsNullOrEmpty(PageTitle))
+        {
+            title = String.Format("{0}-{1}", SiteTitle, SiteName);
+        }
+        else
+        {
+            title = String.Format("{0}-{1}-{2}", SiteTitle, PageTitle, SiteName);
+        }
+       
+    }
+
+    <title>@title</title>
+
+    @Styles.Render("~/Content/css/css")
+    @Styles.Render("~/Content/themes/base/css")
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/bundles/jqueryval")
+   
+    @Scripts.Render("~/bundles/modernizr")
+
+    @Scripts.Render("~/bundles/site")
+
+    @RenderSection("linkScripts", false)
+
+</head>
+<body>
+    <div class="main-container" id="mainContainer">
+
+        @Html.Partial("_Header")
+
+        <div class="desktop-wrapper">
+
+            @Html.Partial("_MainNav")
+
+            @RenderBody()
+
+
+        </div>
+
+       
+
+        @Html.Partial("_Footer")
+
+      
+
+    </div>
+
+  
+  
+  
+    
+    @RenderSection("scripts", false)
+
+    @Html.RenderScripts()
+</body>
+</html>

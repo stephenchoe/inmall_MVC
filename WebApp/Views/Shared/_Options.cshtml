@@ -1,0 +1,16 @@
+﻿@model IEnumerable<SelectListItem>
+
+@foreach (var option in Model)
+{
+    if (option.Selected)
+    {
+        <option value="@option.Value" selected="selected">@option.Text</option>
+    }
+    else
+    {
+        <option value="@option.Value">@option.Text</option>
+    }
+
+
+}
+

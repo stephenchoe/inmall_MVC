@@ -1,0 +1,148 @@
+﻿@model WebApp.Models.ProductRatingModel
+@{
+
+    string successCallback = "resetRatingLv";
+    string failureCallback = "ajaxError";
+
+
+    AjaxOptions ajaxOptions = new AjaxOptions
+    {
+        HttpMethod = "POST",
+        OnSuccess = successCallback,
+        OnFailure = failureCallback
+    };
+
+    string formId = "ratingForm";
+    string starInputId = "starInput";
+   
+
+}
+
+
+<div class="product-rating-blk">
+    @using (Ajax.BeginForm("Rating", "Product", null, ajaxOptions, new { id = formId }))
+    {
+
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(m => m.ProductId)
+        @Html.HiddenFor(m => m.Star, new { id = starInputId })      
+      
+
+        <p class="rating" id="rating-blk" data-rated="@Model.RatingStar">
+            <span class="heart">★</span>
+            <span class="heart">★</span>
+            <span class="heart">★</span>
+            <span class="heart">★</span>
+            <span class="heart">★</span>
+
+            <button class="btn-close" id="btn-rating-close">關閉</button>
+        </p>
+
+        if (Model.CanRating)
+        {
+            <button class="btn-recaptcha" id="btn-do-rate" data-product-id="@Model.ProductId">進行評等</button>
+        }
+        else
+        {
+            <button class="btn-recaptcha disabled" id="btn-do-rate" data-product-id="@Model.ProductId">已評等</button>
+          
+        }
+
+    }
+</div>
+
+@using (Html.BeginScriptContext())
+{
+    Html.AddScriptBlock(
+        @<script type="text/javascript">
+            var $ratedNums = $('#rated-nums'),
+                             $ratingBlk = $('#rating-blk'),
+                             $btnDoRate = $('#btn-do-rate'),
+                             $btnRatingClose = $('#btn-rating-close'),
+                             $ratingForm = $('#ratingForm'),
+                             $starInput = $('#starInput'),
+                             defaultRatedLv;
+
+            $.wait = function (ms) {
+                var defer = $.Deferred();
+                setTimeout(function () {
+                    defer.resolve();
+                }, ms);
+                return defer;
+            };
+
+            function ajaxError(xhr) {
+                console.log(xhr);
+                return;
+            }
+
+            function resetRatingLv(resp) {
+                console.log(resp);
+                var _rateLv = resp.rating;
+                $('#btn-rating-close').fadeOut();
+                $('#btn-do-rate').html('已評等').addClass('disabled');
+                $('#rating-blk').find('.heart').addClass('narrow').off('click', setRatingLv);
+                $.wait(350).then(function () {
+                    $('#rating-blk').removeClass('do-rate');
+                    $('#rating-blk').attr('data-rated', _rateLv).data('rated', _rateLv).find('.heart').removeClass('narrow');
+                })
+            }
+
+            function cancelProductRate() {
+                $btnRatingClose.fadeOut();
+                $btnDoRate.html('進行評等');
+                $ratingBlk.find('.heart').addClass('narrow').off('click', setRatingLv);
+                $.wait(350).then(function () {
+                    $ratingBlk.removeClass('do-rate');
+                    $ratingBlk.attr('data-rated', defaultRatedLv).data('rated', defaultRatedLv).find('.heart').removeClass('narrow');
+                    //$ratedNums.fadeIn();
+                })
+            }
+            function setRatingLv() {
+                var _lv = $(this).index() + 1;
+                $ratingBlk.attr('data-rated', _lv).data('rated', _lv);
+            }
+            function doProductRate(e) {
+                e.preventDefault();
+                var _self = $(this);
+                var _rateLv;
+                if (_self.hasClass('disabled')) {
+                    return;
+                }
+
+                if (!$ratingBlk.hasClass('do-rate')) {
+                    defaultRatedLv = $ratingBlk.data('rated');
+                    _self.html('送出');
+                    $ratingBlk.addClass('do-rate');
+                    $ratingBlk.find('.heart').addClass('narrow').on('click', setRatingLv);
+                    $.wait(400).then(function () {
+                        $ratingBlk.attr('data-rated', '0').data('rated', 0).find('.heart').removeClass('narrow');
+                        $btnRatingClose.delay(300).fadeIn(300);
+                    })                    
+                } else {
+                    _rateLv = $ratingBlk.data('rated');
+                    if (_rateLv === 0) {
+                        $ratingBlk.find('.heart').addClass('shake');
+                        $.wait(1000).then(function () {
+                            $ratingBlk.find('.heart').removeClass('shake')
+                        })
+                        return;
+                    }
+                    $starInput.val(_rateLv);
+                    $ratingForm.submit();
+                   
+                }
+            }
+
+            $(document).ready(function () {
+                $btnDoRate.on('click', doProductRate);
+                $btnRatingClose.on('click', cancelProductRate);
+
+
+
+            })//end ready
+
+
+        </script> , true);
+
+}

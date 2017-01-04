@@ -1,0 +1,332 @@
+﻿@using Web.Core.Recaptcha
+@using System.Configuration
+
+@model WebApp.Models.ProfilesUpdateModel
+
+@{
+    string formId = "apply-form";
+    var htmlAttributes = new { id = formId };
+
+    var statusResult = Model.ResultStatus;
+
+    string genderInputName = Html.NameFor(m => m.Gender).ToString();
+
+    string dateErrorMsgId = "dateErrorMsg";
+
+}
+@{
+    string updateTargetId = "divProfilesUpdate";
+
+    string beginCallback = "profilesUpdateBegin";
+    string successCallback = "profilesUpdateSuccess";
+    string failureCallback = "profilesUpdateFailed";
+
+
+    AjaxOptions ajaxOptions = new AjaxOptions
+    {
+        HttpMethod = "POST",
+        UpdateTargetId = updateTargetId,
+        OnBegin = beginCallback,
+        OnSuccess = successCallback,
+        OnFailure = failureCallback,
+        InsertionMode = InsertionMode.ReplaceWith
+
+
+    };
+
+}
+
+@if (statusResult == null)
+{
+    @section linkScripts{
+        @Scripts.Render("~/Scripts/Manage/profiles.js")
+        @Scripts.Render("~/Scripts/validation.js")
+    }
+}
+
+<div id="@updateTargetId" class="product-intro-section">
+    <script type="text/javascript">
+
+    @if (statusResult != null)
+    {
+
+
+            string callBack="";
+            if(!String.IsNullOrEmpty(statusResult.CallBack))
+            {
+                callBack = CompleteCallBack(statusResult.CallBack);
+            }
+            if(callBack!="")
+            {
+                <text>
+        $(document).ready(function () {
+
+            @Html.Raw(callBack)
+
+        })
+        </text>
+            }
+
+            string statusType = GetStatusTypeText(statusResult);
+            string title = statusResult.Title;
+            string msg = statusResult.StatusText;
+
+            if (statusType == "success")
+            {
+                <text>
+
+        profilesUpdatedTitleSetter('@title');
+        profilesUpdatedMsgSetter('@msg');
+        </text>
+            }
+            else if (statusType == "error")
+            {
+                <text>
+
+        profilesUpdateFailedMsgSetter('@title');
+        profilesUpdateFailedMsgSetter('@msg');
+        </text>
+
+            }
+            else
+            {
+                <text>
+        profilesUpdateFailedTitleSetter('@title');
+        profilesUpdateFailedMsgSetter('@msg');
+        </text>
+            }
+
+
+        var profilesUpdateResult = Model.ResultStatus.ProfilesUpdateResult;
+
+        if (profilesUpdateResult == WebApp.Models.ProfilesUpdateResult.Failure)
+        {
+                <text>
+        profilesUpdateError();
+        </text>
+        }
+        else if (profilesUpdateResult == WebApp.Models.ProfilesUpdateResult.Success)
+        {
+              <text>
+        profilesUpdated();
+        </text>
+        }
+        else  //Excption
+        {
+                <text>
+        profilesUpdateError();
+        </text>
+
+        }
+
+    }
+    </script>
+
+
+    <h2 class="page-title">加入會員</h2>
+
+
+    <div class="shopping-cart-blk member-apply-blk">
+
+        @using (Ajax.BeginForm("Profiles", "Manage", null, ajaxOptions, htmlAttributes))
+        {
+            @Html.AntiForgeryToken()
+            @Html.HiddenFor(m => m.Email)
+            <input type="hidden" name="FacebookID" value="">
+            <div class="checkout-form-blk">
+
+                <div class="form-row flex">
+
+                    @Html.LabelFor(u => u.Email, new { @class = "flex-label require" })
+
+                    <label class="flex-label">@Model.Email</label>
+                </div>
+                <div class="form-row flex">
+                    <label class="flex-label require">會員姓名：</label>
+
+                    <div class="flex-ipt-blk">
+                        @Html.LabelFor(u => u.LastName, new { @class = "one" })
+                        @Html.TextBoxFor(u => u.LastName, new { @class = "two ipt err-fix" })
+                        @Html.ValidationMessageFor(m => m.LastName, null, new { @class = "err" })
+                    </div>
+                    <div class="flex-ipt-blk">
+                        @Html.LabelFor(u => u.FirstName, new { @class = "one" })
+                        @Html.TextBoxFor(u => u.FirstName, new { @class = "two ipt err-fix" })
+                        @Html.ValidationMessageFor(m => m.FirstName, null, new { @class = "err" })
+                    </div>
+
+                </div>
+                <div class="form-row flex">
+                    <label class="flex-label require"><span class="letter-2x">稱</span>謂：</label>
+                    <div class="flex-ipt-blk">
+                        <span class="two">
+
+                            <input class="hide" type="radio" name="@genderInputName" id="male" value="true" checked="">
+                            <label for="male" class="btn-radio">先生</label>
+                        </span>
+                        <span class="two">
+
+                            <input class="hide" type="radio" name="@genderInputName" id="female" value="false">
+                            <label for="female" class="btn-radio">小姐</label>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-row flex">
+                    @Html.LabelFor(u => u.DOB, new { @class = "flex-label require" })
+
+                    @Html.EditorFor(u => u.DOB, "DatePicker")
+                    @Html.ValidationMessageFor(m => m.DOB, null, new { @class = "err", id = dateErrorMsgId })
+                </div>
+                <div class="form-row flex">
+                    @Html.LabelFor(u => u.PhoneNumber, new { @class = "flex-label require" })
+
+                    @Html.TextBoxFor(u => u.PhoneNumber, new { @class = "flex-ipt", type = "tel", placeholder = "請輸入您的電話" })
+                    @Html.ValidationMessageFor(m => m.PhoneNumber, null, new { @class = "err" })
+                </div>
+            </div>
+            <div class="checkout-form-blk">
+                <h3 class="title require">居住地址</h3>
+                <div class="form-row" id="twzipcode">
+                    <span class="form-col">
+                        <label class="fast-buy-select-label">縣市</label>
+                        <span class="fast-buy-select-wrapper">
+
+                            <div data-role="county" data-style="fast-buy-select">
+                                @Html.DropDownListFor(u => u.CityId, Model.CityOptions, new { @class = "fast-buy-select" })
+                            </div>
+                        </span>
+                    </span>
+                    <span class="form-col">
+                        <label class="fast-buy-select-label">鄉鎮市區</label>
+                        <span class="fast-buy-select-wrapper">
+
+                            <div data-role="district" data-name="township" data-style="fast-buy-select">
+                                @Html.DropDownListFor(u => u.DistrictId, Model.DistrictOptions, new { @class = "fast-buy-select" })
+                            </div>
+
+                        </span>
+                    </span>
+                </div>
+                <div class="form-row">
+                    <span class="form-col full">
+
+                        @Html.TextBoxFor(u => u.StreetAddress, new { @class = "ipt", type = "tel", placeholder = "請輸入村里、街道、門牌等詳細地址" })
+                        @Html.ValidationMessageFor(m => m.StreetAddress, null, new { @class = "err" })
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="checkout-form-blk">
+
+
+                <div class="shopping-go-on-blk">
+
+                    <button class="btn-orange" type="button" id="btnSubmit">送出</button>
+                </div>
+            </div>
+        }  @*//end form*@
+
+    </div>
+
+
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+
+            @if(statusResult == null)
+            {
+                <text>
+            SetValidatorErrorStyle('@formId');
+            </text>
+            }
+
+            updateTargetIdSetter('@updateTargetId');
+
+            $('#btnSubmit').click(function (e) {
+                e.preventDefault;
+
+
+                var form = $("#@formId");
+                if (!form.valid()) {
+                    return false;
+                }
+                var dateValue = $("#@Html.IdFor(m=>m.DOB)").val();
+                var spanDateErrMsg = $('#@dateErrorMsgId');
+                var isValid = validateDate(dateValue)
+                if (!isValid) {
+                    spanDateErrMsg.text('日期格式不正確');
+                    return false;
+                } else {
+                    spanDateErrMsg.text('');
+                }
+
+                Loading('@updateTargetId');
+
+                form.submit();
+
+            });
+
+
+
+
+
+            var genderString = "@Model.Gender.ToString().ToLower()";
+            if (genderString == "true") {
+                setGender(true);
+            } else {
+                setGender(false);
+            }
+
+
+
+            $('#@Html.IdFor(u=>u.CityId)').change(function () {
+                var cid = $(this).val();
+                loadDistricts(cid);
+
+            });
+
+            function loadDistricts(cid) {
+
+                $.ajax({
+                    type: "GET",
+                    cache: true,
+                    url: 'GetDistrictOptions' + '?cid=' + cid,
+                    dataType: 'html',
+                    async: true,
+                    success: function (data) {
+                        $('#@Html.IdFor(u=>u.DistrictId)').html(data);
+                    }
+                });
+
+            }
+
+            $('input[name="@genderInputName"]').click(function () {
+                var gender = $(this).val();
+
+                if (gender == 'true') {
+                    setGender(true);
+                } else {
+                    setGender(false);
+                }
+            });
+
+            function setGender(gender) {
+                if (gender) {
+                    $("input[name=@Html.NameFor(u=>u.Gender)][value='true']").prop('checked', true);
+                } else {
+                    $("input[name=@Html.NameFor(u=>u.Gender)][value='false']").prop('checked', true);
+                }
+            }
+
+
+
+        })//end ready
+
+    </script>
+
+
+
+</div>

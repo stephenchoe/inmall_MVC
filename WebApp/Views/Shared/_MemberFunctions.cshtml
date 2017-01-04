@@ -1,0 +1,51 @@
+﻿@{
+
+    string lououtFormId = "logoutForm";
+}
+
+<div class="member-func-wrapper">
+    <button class="btn-member" id="btn-member">會員功能</button>
+    <div class="product-search-blk member-func-blk" id="member-func-blk">
+        <div class="blk">
+            <ul class="member-func-list">
+                <li class="item">
+                    <a href="http://www.inmall.com.tw/Member/OrderTrack" class="btn-member-func">
+
+                        <span class="name">訂單查詢</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="http://www.inmall.com.tw/Member/BucketList" class="btn-member-func">
+
+                        <span class="name">下次購買清單</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="/Manage/ChangePassword" class="btn-member-func">
+
+                        <span class="name">變更密碼</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="/Manage/Profiles" class="btn-member-func">
+                        <span class="name">會員資料</span>
+                    </a>
+                </li>
+                @using (Html.BeginForm("Logout", "Member", FormMethod.Post, new { id = lououtFormId, }))
+                {
+                    @Html.AntiForgeryToken()
+
+
+                    <li class="item">
+                        <a href="javascript:document.getElementById('@lououtFormId').submit()" class="btn-member-func">
+
+                            <span class="name">登出</span>
+                        </a>
+                    </li>
+
+                }
+
+            </ul>
+        </div>
+    </div>
+</div>

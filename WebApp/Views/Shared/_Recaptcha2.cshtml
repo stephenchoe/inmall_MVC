@@ -1,0 +1,6 @@
+﻿@using Web.Core.Recaptcha
+@using System.Configuration
+
+
+@Html.Recaptcha2(ConfigurationManager.AppSettings["Recaptcha2SiteKey"])
+@Html.ValidationMessage("g-recaptcha-response", "", new { @id = "recaptchaErrMsg", @class = "err" })

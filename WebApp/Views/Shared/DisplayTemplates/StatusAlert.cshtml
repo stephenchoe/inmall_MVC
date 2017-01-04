@@ -1,0 +1,44 @@
+﻿@model Web.Core.Models.StatusAlert
+@{
+    string callBack ="" ;
+    if (!String.IsNullOrEmpty(Model.CallBack))
+    {
+        callBack = CompleteCallBack(Model.CallBack);
+    }
+    //string okCallBack = "";
+    //if (!String.IsNullOrEmpty(Model.OKCallBack))
+    //{
+    //    okCallBack = CompleteCallBack(Model.OKCallBack);
+    //}
+    //string cancelCallBack = ""; 
+    //if (!String.IsNullOrEmpty(Model.CancelCallBack))
+    //{
+    //    cancelCallBack = CompleteCallBack(Model.CancelCallBack);
+    //}
+
+    //string success = Model.Success.ToString().ToLower();
+
+    //string title = Model.Title;
+    //string text = Model.StatusText;
+
+    //string showConfirmButton = Model.ShowConfirmButton.ToString().ToLower();
+    //string showCancelButton = Model.ShowCancelButton.ToString().ToLower();
+}
+
+
+@if (callBack != "")
+{
+    <script type="text/javascript">
+
+    $(document).ready(function () {
+        
+        @Html.Raw(callBack)
+
+    })
+
+    </script>
+}
+
+
+
+ 

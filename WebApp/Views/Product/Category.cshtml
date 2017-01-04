@@ -1,0 +1,43 @@
+﻿@model  WebApp.Models.SubCategoryViewModel
+
+@{
+    var sortModel = Model.ProductSortModel;
+}
+
+<div class="layout-right-blk gray">
+    @Html.Partial("_Breadcrumb", Model)
+    <div class="category-title-blk">
+        <h2 class="title">@Model.Name</h2>
+    </div>
+  
+    <div class="sort-by-blk">
+        <ul class="sort-by-list ">
+           @{
+               sortModel.Sort = "date";
+               sortModel.DisplayName = "上架時間";
+           }
+
+            @Html.Partial("_CategorySort", sortModel)
+
+            @{
+                sortModel.Sort = "price";
+                sortModel.DisplayName = "價格";
+            }
+
+            @Html.Partial("_CategorySort", sortModel)
+
+           @{
+               sortModel.Sort = "clicks";
+               sortModel.DisplayName = "點閱人氣";
+            }
+
+            @Html.Partial("_CategorySort", sortModel)
+          
+        </ul>
+    </div>
+    <div class="result-num-blk">
+        <p class="num">共有 @Model.ProductCount 項產品</p>
+    </div>
+
+    @Html.Partial("_ProductList", Model.ProductPhotoViewList, new ViewDataDictionary { { "cid", Model.Id } })
+</div>

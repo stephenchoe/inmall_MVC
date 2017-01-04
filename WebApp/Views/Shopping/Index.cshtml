@@ -1,0 +1,227 @@
+﻿@model WebApp.Models.ShoppingCartViewModel
+
+@using Core.Extensions
+
+@{
+
+
+    var itemListModel = Model.CartItemViewList;
+    var updateCartModel = Model.UpdateCartModel;
+    var statusResult = updateCartModel.ResultStatus;
+
+    string updateTargetId = "divCartIndex";
+    updateCartModel.UpdateTargetId = updateTargetId;
+
+    int itemsCount = 0;
+    if (!itemListModel.IsNullOrEmpty())
+    {
+        itemsCount = itemListModel.Count;
+    }
+
+}
+
+@if (statusResult == null)
+{
+    @section linkScripts{
+        @Scripts.Render("~/Scripts/Shopping/cart.js")
+    }
+}
+else
+{
+    <script type="text/javascript">
+        refreshCart(@itemsCount);
+    </script>
+}
+
+@if (itemsCount==0)
+{
+
+    <div class="product-intro-section">
+        <h2 class="page-title">我的購物車</h2>
+        <div class="shopping-cart-blk">
+            <p class="shopping-empty-blk bold">您的購物車內現在沒有商品，請繼續尋找花蓮原鄉e市集的產品吧!</p>
+            <div class="shopping-go-on-blk">
+                <a href="/" class="btn-white">回花蓮原鄉e市集首頁</a>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+
+    <div id="@updateTargetId" class="product-intro-section">
+        <script type="text/javascript">
+
+    @if (statusResult != null)
+    {
+
+
+            string statusType = GetStatusTypeText(statusResult);
+            string msg = statusResult.StatusText;
+
+            if (statusType != "success")
+            {
+                  <text>
+                cartUpdateFailedMsgSetter('@msg');
+                cartUpdateFailed();
+                </text>
+            }
+
+    }
+    </script>
+
+
+        <h2 class="page-title">購物車 : 購物明細</h2>
+        <div class="shopping-cart-blk">
+            <div class="shopping-num-blk">
+                <p>購物車內合計有 <span class="num" id="shopping-items-num">@Model.ItemCount</span> 項</p>
+            </div>
+
+            <ul class="shopping-item-list">
+                @foreach (var item in Model.CartItemViewList)
+                {
+                    var photo = item.ItemPhotoViewModel;
+
+                    string imageSrc = Url.Action("ProductPhoto", "Product", new { id = photo.Id, width = 200, height = 200 });
+
+                    <li class="item">
+                        <div class="frame">
+                            <img alt="@photo.Caption" class="thumb lazy js-ratio-4-3" src="@imageSrc" style="float: left;height: 59.25px; display: inline-block;">
+
+                            <h4 class="name">
+                                @item.ProductName
+                            </h4>
+                        </div>
+                        <div class="item-info">
+                            <div class="info-wrapper">
+                                <div class="info-blk">
+                                    <p class="info">單價 <em class="price"> $@item.Price</em></p>
+                                </div>
+                                <div class="info-blk even">
+                                    <button class="btn-minus js-shopping-item-num-minus">增加</button>
+                                    <input class="ipt js-shopping-item-num-ipt" type="text" value="@item.Quantity" pattern="\d*" data-pid="@item.ProductId" data-buy-num="1">
+                                    <button class="btn-add js-shopping-item-num-add">減少</button>
+                                </div>
+                            </div>
+                            <div class="info-blk">
+                                <h5 class="total-price">小計：<span class="num">$@item.Amount</span></h5>
+                            </div>
+                            <div class="info-blk even">
+                                <button class="btn-remove-cart  js-remove-cart" data-name="@item.ProductName" data-pid="@item.ProductId">移除</button>
+                            </div>
+                        </div>
+                    </li>
+                }
+
+            </ul>
+
+            <div class="shopping-sum-blk">
+                <h4 class="title">商品合計：</h4>
+                <p class="num">NT$ <span id="shopping-total">@Model.TotalAmount</span> 元</p>
+            </div>
+            @if (Model.CarryFee > 0)
+            {
+
+                <div class="shopping-fee-blk " id="shopping-fee-blk">
+                    <div class="" id="fee-normal">
+                        <h4 class="title">運費 <span class="num">NT$ @Model.CarryFee 元</span></h4>
+                        <p class="desc">商品購買金額未滿799，需自付 @Model.CarryFee 元運費</p>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="shopping-fee-blk " id="shopping-fee-blk">
+                    <div class="" id="fee-normal">
+                        <h4 class="title">運費 <span class="num">NT$ 0 元</span></h4>
+                        <p class="desc">商品購買金額滿799免運費</p>
+                    </div>
+                </div>
+            }
+
+            <div class="shopping-total-blk">
+                <h4 class="title">消費總計：</h4>
+                <p class="num">NT$ <span id="shopping-payment">@Model.TotalMoney</span>元</p>
+                <p class="desc">『商品的送貨範圍僅限台灣本島，外島運費另計』</p>
+            </div>
+
+        </div>
+
+
+
+        <div class="shopping-go-on-blk">
+            <a href="/" class="btn-go-on">繼續購物</a>
+            <a href="/Shopping/Order" class="btn-orange">結帳</a>
+        </div>
+        @*<div style="display:none">*@
+        <div>
+
+            @Html.Partial("_UpdateItem", updateCartModel)
+        </div>
+
+        <script type="text/javascript">
+
+            function adjShoppingItemNum() {
+                var _self = $(this);
+                var _ipt = _self.siblings('.js-shopping-item-num-ipt');
+                var _num = Math.floor(parseInt(_ipt.val(), 10));
+                if (_self.hasClass('js-shopping-item-num-add')) {
+                    _num++;
+                } else {
+                    _num--;
+                }
+                _ipt.val(_num);
+                _ipt.change();
+            }
+
+
+            $(document).ready(function () {
+
+                updateTargetIdSetter('@updateTargetId');
+
+                $('.js-shopping-item-num-add').on('click', adjShoppingItemNum);
+                $('.js-shopping-item-num-minus').on('click', adjShoppingItemNum);
+
+                $('.btn-remove-cart').on('click', function () {
+                    var name = $(this).data('name');
+                    var pid = $(this).data('pid');
+                    swal({
+                        title: '移除確認',
+                        text: '確定要將『' + name + '』從購物車移除嗎?',
+                        type: "warning",
+                        showCancelButton: true,
+                        confirmButtonColor: "#DD6B55",
+                        confirmButtonText: "確認刪除",
+                        cancelButtonText: "取消",
+                        closeOnConfirm: true
+                    },
+                    function () {    
+                        updateCart(pid, 0);  //  _UpdateItem.cshtml
+                    });
+
+                   
+                });
+
+                $('.js-shopping-item-num-ipt').on('change', function () {
+                    var _self = $(this);
+                    var _num = Math.floor(parseInt(_self.val(), 10));
+                    var _pid = _self.data('pid');
+                    $currentNumIpt = _self;
+                    if (!$.isNumeric(_num) || _num === 0) {
+                        _num = 1;
+                        _self.val(_num)
+                    }
+
+                    updateCart(_pid, _num);  //  _UpdateItem.cshtml
+                });
+
+
+            })//end ready
+
+        </script>
+
+    </div>
+
+}
+
+

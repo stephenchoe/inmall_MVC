@@ -1,0 +1,280 @@
+﻿@using Web.Core.Recaptcha
+@using System.Configuration
+
+@model WebApp.Models.LoginViewModel
+
+@{
+    //Recaptcha
+
+    string siteKey = ConfigurationManager.AppSettings["Recaptcha2SiteKey"];
+    string recaptchaInputName = ConfigurationManager.AppSettings["Recaptcha2VarName"];
+    string recaptchaErrMsgId = "recaptchaErrMsg";
+}
+
+@{
+    string updateTargetId = "divLoginForm";
+
+    string beginCallback = "loginBegin";
+    string successCallback = "loginSuccess";
+    string failureCallback = "loginFailed";
+
+
+    AjaxOptions ajaxOptions = new AjaxOptions
+    {
+        HttpMethod = "POST",
+        UpdateTargetId = updateTargetId,
+        OnBegin = beginCallback,
+        OnSuccess = successCallback,
+        OnFailure = failureCallback,
+        InsertionMode = InsertionMode.ReplaceWith
+
+
+    };
+
+    string formId = "login-form";
+    var htmlAttributes = new { id = formId };
+
+    var statusResult = Model.ResultStatus;
+
+}
+
+
+
+@if (Request.IsAuthenticated)
+{
+    <script>
+        window.location = location.origin;
+    </script>
+}
+else
+{
+    if (statusResult == null)
+    {
+        @section linkScripts{
+            @Scripts.Render("~/Scripts/Member/login.js")
+        }
+    }
+    <div id="@updateTargetId" class="product-intro-section">
+
+        <script type="text/javascript">
+
+    @if (statusResult != null)
+    {
+
+
+            string callBack="";
+            if(!String.IsNullOrEmpty(statusResult.CallBack))
+            {
+                callBack = CompleteCallBack(statusResult.CallBack);
+            }
+            if(callBack!="")
+            {
+                <text>
+            $(document).ready(function () {
+
+                @Html.Raw(callBack)
+
+            })
+            </text>
+            }
+
+            string statusType = GetStatusTypeText(statusResult);
+            string title = statusResult.Title;
+            string msg = statusResult.StatusText;
+
+            if (statusType == "success")
+            {
+                <text>
+            loginedTitleSetter('@title');
+            loginedMsgSetter('@msg');
+            </text>
+            }
+            else if (statusType == "error")
+            {
+                <text>
+
+            loginFailedMsgSetter('@title');
+            loginFailedMsgSetter('@msg');
+            </text>
+
+            }
+            else
+            {
+                <text>
+            loginFailedTitleSetter('@title');
+            loginFailedMsgSetter('@msg');
+            </text>
+            }
+
+
+        var loginResult = Model.ResultStatus.LoginResult;
+        if (loginResult == WebApp.Models.LoginResult.RequiresVerification)
+        {
+                <text>
+            requiresVerification('@Model.Email');
+            </text>
+        }
+        else if(loginResult == WebApp.Models.LoginResult.Failure)
+        {
+                <text>
+            loginError();
+            </text>
+        }
+        else if (loginResult == WebApp.Models.LoginResult.Locked)
+        {
+                <text>
+            locked();
+            </text>
+        }
+         else if (loginResult == WebApp.Models.LoginResult.Success)
+        {
+              <text>
+            logined();
+            </text>
+        }
+        else
+        {
+                <text>
+            loginError();
+            </text>
+
+        }
+
+    }
+
+
+        </script>
+
+
+
+
+
+        <h2 class="page-title">會員登入</h2>
+        <div class="shopping-cart-blk member-apply-blk">
+            <div class="checkout-form-blk">
+                <div class="form-row">
+                    <a href="http://www.inmall.com.tw/Member/Facebook" class="btn-facebook-login full">以 facebook 登入</a>
+                </div>
+
+
+
+                @using (Ajax.BeginForm("Login", "Member", null, ajaxOptions, htmlAttributes))
+                {
+
+                    @Html.AntiForgeryToken()
+
+                    @Html.HiddenFor(m => m.ReturnUrl)
+
+                    <div class="form-row flex">
+                        @Html.LabelFor(m => m.Email, new { @class = "flex-label require" })
+
+                        <div class="flex-ipt-blk container">
+                            @Html.TextBoxFor(m => m.Email, new { @class = "flex-ipt", placeholder = "請輸入您的電子信箱" })
+                            @Html.ValidationMessageFor(m => m.Email, null, new { @class = "err" })
+                        </div>
+                    </div>
+                    <div class="form-row flex">
+                        @Html.LabelFor(m => m.Password, new { @class = "flex-label require" })
+
+                        <div class="flex-ipt-blk container">
+                            @Html.PasswordFor(m => m.Password, new { @class = "ipt", placeholder = "請輸入您的密碼" })
+                            @Html.ValidationMessageFor(m => m.Password, null, new { @class = "err" })
+                        </div>
+
+                    </div>
+
+                    <div class="form-row flex">
+
+                        <div class="flex-ipt-blk container">
+                            @Html.Recaptcha2(siteKey)
+                            @Html.ValidationMessage(recaptchaInputName, "", new { @id = recaptchaErrMsgId, @class = "err" })
+                        </div>
+                    </div>
+                    <div class="shopping-go-on-blk adj">
+
+                        <button class="btn-orange" type="submit" id="btnLogin">送出</button>
+                    </div>
+
+
+
+
+                }@*//end form*@
+
+
+
+
+                <script type="text/javascript">
+
+                    $(document).ready(function () {
+
+                        updateTargetIdSetter('@updateTargetId');
+                        returnUrlSetter('@Model.ReturnUrl');
+
+                        $("#@formId").submit(function (event) {
+
+                            if (!$(this).valid()) {
+                                return false;
+                            }
+
+
+                            //圖形驗證
+                            var validCaptcha = false;
+                            var recaptchaResponse = $('#@recaptchaInputName').val();
+                            if (recaptchaResponse) {
+                                $.ajax({
+                                    type: "POST",
+                                    async: false,
+                                    cache: false,
+                                    url: '/Captcha/CaptchaValidAsync',
+                                    data: { '@recaptchaInputName': recaptchaResponse },
+                                    success: function (result) {
+                                        if (result.toLowerCase() == 'true') {
+                                            validCaptcha = true;
+                                        } else {
+                                            validCaptcha = false;
+                                        }
+                                    },
+                                    error: function () {
+                                        validCaptcha = false;
+                                    }
+                                });
+                            }
+                            var spanCaptchaErrMsg = $('#@recaptchaErrMsgId');
+                            if (!validCaptcha) {
+                                spanCaptchaErrMsg.text('您尚未通過圖形驗證');
+                            } else {
+                                spanCaptchaErrMsg.text('');
+                            }
+
+
+                            var canSubmit = (validCaptcha);
+
+                            if (!canSubmit) {
+                                return false;
+                            }
+
+
+                            //表單送出
+
+
+                        });
+
+
+                    })//end ready
+
+                </script>
+
+
+
+            </div>
+        </div>
+
+        <div class="shopping-go-on-blk">
+            <a href="Terms" class="btn-white">立即加入會員</a>
+            <a href="ForgotPassword" class="btn-white" id="btnFindPass">忘記密碼</a>
+        </div>
+
+
+    </div>
+
+}

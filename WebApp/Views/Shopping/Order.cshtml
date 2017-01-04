@@ -1,0 +1,211 @@
+﻿<div class="product-intro-section">
+    <h2 class="page-title">購物車：寄送資料</h2>
+    <div class="shopping-cart-blk">
+        <div class="checkout-step-blk">
+            <ol class="checkout-step-list">
+                <li class="item">
+                    <strong class="step-name act" data-order="1">寄送資料</strong>
+                </li>
+                <li class="item">
+                    <strong class="step-name" data-order="2">付款方式</strong>
+                </li>
+                <li class="item">
+                    <strong class="step-name" data-order="3">訂單確認</strong>
+                </li>
+            </ol>
+        </div>
+
+
+        <div class="shopping-num-blk">
+            <p>
+                本訂單共 <span class="num" id="shopping-items-num">1</span> 項商品
+                ，總計 <em class="num">NT$ 240</em>
+            </p>
+        </div>
+        <div class="checkout-login-blk h-center">
+            <span class="fix">如果你還沒登入建議立即</span>
+            <div class="h-center">
+                <a href="/Member/SignIn" class="btn-orange">登入會員帳號</a>
+                <a href="#" class="btn-facebook-login">Facebook登入</a>
+            </div>
+        </div>
+        <form id="order-form" method="post" enctype="application/x-www-form-urlencoded" onsubmit="return false" novalidate="novalidate">
+            <input type="hidden" name="Gift" value="0">
+            <div class="checkout-fill-blk">
+                <h4 class="checkout-title">也可以直接填寫您的寄送資料</h4>
+                <div class="checkout-form-blk">
+                    <h5 class="title">訂購人資訊</h5>
+                    <div class="form-row">
+                        <label for="name" class="label require">姓名</label>
+                        <input class="ipt" type="text" id="name" name="Purchaser" maxlength="40" placeholder="請輸入您的姓名">
+                    </div>
+                    <div class="form-row">
+                        <label for="tel" class="label require">電話</label>
+                        <input class="ipt" type="text" id="tel" name="PurchaserTel" maxlength="20" placeholder="請輸入您的電話">
+                    </div>
+                    <div class="form-row">
+                        <label for="email" class="label require">信箱</label>
+                        <input class="ipt" type="text" id="email" name="PurchaserEmail" maxlength="128" placeholder="請輸入您的信箱">
+                    </div>
+                </div>
+                <div class="checkout-form-blk">
+                    <div class="receiver-title-blk">
+                        <h5 class="title pull-left">收貨人資訊</h5>
+                        <button class="btn-hook pull-right" id="btn-same-purchaser">同訂購人</button>
+                    </div>
+                    <div class="form-row">
+                        <label for="receiver-name" class="label require">姓名</label>
+                        <input class="ipt" type="text" id="receiver-name" name="Recipient" maxlength="40" value="" placeholder="請輸入您的姓名">
+                    </div>
+                    <div class="form-row">
+                        <label for="receiver-tel" class="label require">電話</label>
+                        <input class="ipt" type="text" id="receiver-tel" name="RecipientTel" maxlength="20" value="" placeholder="請輸入您的電話">
+                    </div>
+                    <div class="form-row">
+                        <label for="receiver-email" class="label require">信箱</label>
+                        <input class="ipt" type="text" id="receiver-email" name="RecipientEmail" maxlength="128" value="" placeholder="請輸入您的信箱">
+                    </div>
+                </div>
+                <div class="checkout-form-blk">
+                    <h5 class="title">您的聯絡時間</h5>
+                    <div class="form-row">
+                        <span class="form-col half">
+                            <input class="hide" type="radio" name="ContactTime" title="皆可" value="0" id="contact-time-0" checked="">
+                            <label for="contact-time-0" class="btn-radio">皆可</label>
+                        </span>
+                        <span class="form-col half">
+                            <input class="hide" type="radio" name="ContactTime" title="上午08:00~12:00" value="1" id="contact-time-1">
+                            <label for="contact-time-1" class="btn-radio">上午08:00~12:00</label>
+                        </span>
+                        <span class="form-col half">
+                            <input class="hide" type="radio" name="ContactTime" title="下午12:00~18:00" value="2" id="contact-time-2">
+                            <label for="contact-time-2" class="btn-radio">下午12:00~18:00</label>
+                        </span>
+                        <span class="form-col half">
+                            <input class="hide" type="radio" name="ContactTime" title="晚上18:00~22:00" value="3" id="contact-time-3">
+                            <label for="contact-time-3" class="btn-radio">晚上18:00~22:00</label>
+                        </span>
+                    </div>
+                </div>
+                <div class="checkout-form-blk">
+                    <h5 class="title">收貨地址</h5>
+                    <div class="form-row twzipcode">
+                        <span class="form-col">
+                            <label class="fast-buy-select-label">縣市</label>
+                            <span class="fast-buy-select-wrapper">
+                                <input type="hidden" name="RecipientAddressCounty">
+                                <input type="hidden" name="RecipientAddressTownship">
+                                <input type="hidden" id="zipcode-for-copy">
+                                <input type="hidden" id="addr-for-copy">
+                                <div data-role="county" data-value="" id="RecipientAddressCounty" data-style="fast-buy-select">
+                                    <select name="county" class="fast-buy-select"><option value="">縣市</option><option value="基隆市">基隆市</option><option value="台北市">台北市</option><option value="新北市">新北市</option><option value="宜蘭縣">宜蘭縣</option><option value="新竹市">新竹市</option><option value="新竹縣">新竹縣</option><option value="桃園市">桃園市</option><option value="苗栗縣">苗栗縣</option><option value="台中市">台中市</option><option value="彰化縣">彰化縣</option><option value="南投縣">南投縣</option><option value="嘉義市">嘉義市</option><option value="嘉義縣">嘉義縣</option><option value="雲林縣">雲林縣</option><option value="台南市">台南市</option><option value="高雄市">高雄市</option><option value="屏東縣">屏東縣</option><option value="台東縣">台東縣</option><option value="花蓮縣">花蓮縣</option><option value="金門縣">金門縣</option><option value="連江縣">連江縣</option><option value="澎湖縣">澎湖縣</option><option value="南海諸島">南海諸島</option></select>
+                                </div>
+                                <!--
+                                <div data-role="zipcode"
+                                     data-name="RecipientCountyID"
+                                     data-value=""
+                                     >
+                                </div> -->
+                            </span>
+                        </span>
+                        <span class="form-col">
+                            <label class="fast-buy-select-label">鄉鎮市區</label>
+                            <span class="fast-buy-select-wrapper">
+                                <div data-role="district" data-value="RecipientAddressTownship" id="RecipientAddressTownship" data-style="fast-buy-select">
+                                    <select name="district" class="fast-buy-select"><option value="">鄉鎮市區</option></select>
+                                </div>
+                                <div data-role="zipcode" data-name="RecipientAddressZipcode" data-value="" data-style="hide">
+                                    <input type="text" name="RecipientAddressZipcode" class="hide">
+                                </div>
+                            </span>
+                        </span>
+                        <span class="form-col full">
+                            <input type="text" class="ipt" name="RecipientAddress" maxlength="50" value=" " placeholder="請輸入村里、街道、門牌等詳細地址">
+                        </span>
+                    </div>
+                    <div class="form-row">
+                        <span class="form-col full">
+                            <input type="text" class="ipt" name="Comment" placeholder="請註明您的特殊需求 ">
+                        </span>
+                    </div>
+                </div>
+                <div class="checkout-form-blk">
+                    <h5 class="title">發票類型</h5>
+                    <div class="form-row">
+                        <span class="form-col third">
+                            <input class="hide" type="radio" name="InvoiceType" id="invoice-type-1" value="1" checked="">
+                            <label for="invoice-type-1" class="btn-radio">一般發票</label>
+                        </span>
+                        <span class="form-col third">
+                            <input class="hide" type="radio" name="InvoiceType" id="invoice-type-2" value="2">
+                            <label for="invoice-type-2" class="btn-radio">二聯式發票</label>
+                        </span>
+                        <span class="form-col third">
+                            <input class="hide" type="radio" name="InvoiceType" id="invoice-type-3" value="3">
+                            <label for="invoice-type-3" class="btn-radio">三聯式發票</label>
+                        </span>
+                    </div>
+                </div>
+                <div class="checkout-form-blk">
+                    <h5 class="title">發票寄送資訊</h5>
+                    <button class="btn-hook" id="btn-same-reciver">同收貨人</button>
+
+                    <div class="form-row flex">
+                        <label for="invoice-number" class="flex-label">統一編號：</label>
+                        <input class="flex-ipt" type="text" id="invoice-number" name="InvoiceVatNumber" maxlength="20" placeholder="請輸入統一編號">
+                    </div>
+                    <div class="form-row flex">
+                        <label for="invoice-title" class="flex-label">發票抬頭：</label> <input class="flex-ipt" type="text" id="invoice-title" name="InvoiceTitle" maxlength="30" placeholder="請輸入發票抬頭">
+                    </div>
+                    <div class="form-row flex">
+                        <label for="invoice-name" class="flex-label">發票收件人姓名：</label> <input class="flex-ipt" type="text" id="invoice-name" name="InvoiceRecipient" placeholder="請輸入發票收件人姓名">
+                    </div>
+                    <div class="form-row twzipcode" id="invoice-addr-blk">
+                        <span class="form-col full">
+                            <label class="label">發票收件人地址：</label>
+                        </span>
+                        <span class="form-col">
+                            <label class="fast-buy-select-label">縣市</label>
+                            <span class="fast-buy-select-wrapper">
+                                <input type="hidden" name="InvoiceRecipientAddressCounty">
+                                <input type="hidden" name="InvoiceRecipientAddressTownship">
+                                <div data-role="county" data-value="" id="InvoiceRecipientAddressCounty" data-style="fast-buy-select">
+                                    <select name="county" class="fast-buy-select"><option value="">縣市</option><option value="基隆市">基隆市</option><option value="台北市">台北市</option><option value="新北市">新北市</option><option value="宜蘭縣">宜蘭縣</option><option value="新竹市">新竹市</option><option value="新竹縣">新竹縣</option><option value="桃園市">桃園市</option><option value="苗栗縣">苗栗縣</option><option value="台中市">台中市</option><option value="彰化縣">彰化縣</option><option value="南投縣">南投縣</option><option value="嘉義市">嘉義市</option><option value="嘉義縣">嘉義縣</option><option value="雲林縣">雲林縣</option><option value="台南市">台南市</option><option value="高雄市">高雄市</option><option value="屏東縣">屏東縣</option><option value="台東縣">台東縣</option><option value="花蓮縣">花蓮縣</option><option value="金門縣">金門縣</option><option value="連江縣">連江縣</option><option value="澎湖縣">澎湖縣</option><option value="南海諸島">南海諸島</option></select>
+                                </div>
+
+                            </span>
+                        </span>
+                        <span class="form-col">
+                            <label class="fast-buy-select-label">鄉鎮市區</label>
+                            <span class="fast-buy-select-wrapper">
+                                <div data-role="district" data-value="" id="InvoiceRecipientAddressTownship" data-style="fast-buy-select">
+                                    <select name="district" class="fast-buy-select"><option value="">鄉鎮市區</option></select>
+                                </div>
+                                <div data-role="zipcode" data-name="InvoiceRecipientAddressZipcode" data-value="" data-style="hide">
+                                    <input type="text" name="InvoiceRecipientAddressZipcode" class="hide">
+                                </div>
+                            </span>
+                        </span>
+                        <span class="form-col full">
+                            <input type="text" class="ipt" name="InvoiceRecipientAddress" maxlength="50" placeholder="請輸入村里、街道、門牌等詳細地址">
+                        </span>
+                    </div>
+                </div>
+                <div class="checkout-form-blk">
+                    <h5 class="title">注意事項</h5>
+                    <ul class="checkout-notice-list">
+                        <li class="item">外島目前沒有貨到付款的服務，請使用ATM轉帳，謝謝！</li>
+                        <li class="item">選擇縣市與鄉鎮後，地址欄位可免填縣市和鄉鎮。</li>
+                        <li class="item">配送時間為白天，請填寫白天可以簽收的中文地址，以利宅配人員辨識與聯繫。</li>
+                        <li class="item">因商品配送方式採用宅配到府，需要專人簽收，寄送地址請勿填寫郵政信箱。</li>
+                        <li class="item">若選擇貨到付款，宅配人員在送貨前會以電話聯絡。</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="shopping-go-on-blk">
+                <a href="/Shopping" class="btn-go-on">回購物車</a>
+                <button type="submit" class="btn-orange">選擇付款方式</button>
+            </div>
+        </form>
+    </div>
+</div>

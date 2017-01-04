@@ -1,0 +1,54 @@
+﻿@model WebApp.Models.ProductSearchModel
+
+@{
+    var sortModel = Model.ProductSortModel;
+    string title = "";
+    if (!String.IsNullOrEmpty(sortModel.Query))
+    {
+        title = String.Format("搜尋-「{0}」", sortModel.Query);
+    }
+      var values= new ViewDataDictionary { { "Action", "Search" } };
+}
+
+<div class="layout-right-blk gray">
+    <div class="category-title-blk">
+        <h2 class="title">@title</h2>
+    </div>
+    <div class="sort-by-blk">
+        <ul class="sort-by-list four">
+            @{
+                sortModel.Sort = "date";
+                sortModel.DisplayName = "上架時間";
+            }
+
+            @Html.Partial("_QuerySort", sortModel)
+
+            @{
+                sortModel.Sort = "price";
+                sortModel.DisplayName = "價格";
+            }
+
+            @Html.Partial("_QuerySort", sortModel)
+
+            @{
+                sortModel.Sort = "clicks";
+                sortModel.DisplayName = "點閱人氣";
+            }
+
+            @Html.Partial("_QuerySort", sortModel)
+
+            @{
+                sortModel.Sort = "accuracy";
+                sortModel.DisplayName = "精準度";
+            }
+
+            @Html.Partial("_QuerySort", sortModel)
+
+        </ul>
+    </div>
+    <div class="result-num-blk">
+        <p class="num">共有 @Model.ProductCount 項產品</p>
+    </div>
+    
+    @Html.Partial("_ProductList", Model.ProductPhotoViewList, new ViewDataDictionary { { "cid","" } })
+</div>

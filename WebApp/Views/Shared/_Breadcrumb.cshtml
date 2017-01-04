@@ -1,0 +1,25 @@
+﻿@model WebApp.Models.CategoryViewModel
+
+@{
+    int parentId = 0;
+    string parentName = "";
+
+    if (Model is WebApp.Models.SubCategoryViewModel)
+    {
+        var parent = Model as WebApp.Models.SubCategoryViewModel;
+        parentId = parent.ParentId;
+        parentName = parent.ParentName;
+    }
+}
+
+<div class="breadcrumb">
+    <a href="/" class="unit icon-home" title="首頁">首頁</a>
+    @if (parentId > 0)
+    {
+
+        <a href="@Url.Action("Category", new { id = parentId })" class="unit icon-home" title="@parentName">@parentName</a>
+    }
+
+    <a href="@Url.Action("Category", new { id = Model.Id })" class="unit icon-home" title="@Model.Name">@Model.Name</a>
+
+</div>

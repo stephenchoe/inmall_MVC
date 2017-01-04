@@ -1,0 +1,2138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Products>
+
+    <Product>
+        <OnlineId>130</OnlineId>
+        <Category>後背包</Category>
+        <Name>原氣後背包-布農族</Name>
+        <Price>1890</Price>
+        <Summary>
+            <Item>親手打樣設計獨特包款</Item>
+            <Item>兩側大口袋設計，方便收納水壺、雨傘</Item>
+            <Item>環保又不單調、攜帶方便</Item>
+            <Item>鋪棉設計，保護物品</Item>
+        </Summary>
+        <Features>
+        </Features>
+        <Photoes Path="各式包包_皮夾,後背包,原氣後背包-布農族">
+            <Photo Caption="" File="top.jpg" Top="1" DisplayOrder="0"></Photo>
+            <Photo Caption="✽每個商品皆為純手工製作，商品大小會有些微不同。" File="a.jpg" Top="0" DisplayOrder="8"></Photo>
+            <Photo Caption="✽顏色略有偏差，以實品顏色為準。" File="b.jpg" Top="0" DisplayOrder="7"></Photo>
+            <Photo Caption="✽美麗的花紋，充滿原氣。" File="c.jpg" Top="0" DisplayOrder="6"></Photo>
+            <Photo Caption="✽台灣布料生產，台灣製造。" File="d.jpg" Top="0" DisplayOrder="5"></Photo>
+        </Photoes>
+        <Description>
+            <Title></Title>
+            <Content>
+                <![CDATA[
+                   使用獨有花蓮生產製造傳統花紋花布製成，棉布柔軟材質，保護包內物品。大容量設計前口袋，方便多種小東西收納，手工縫製一體成形背帶，可負重5kg~8kg，加大加寬可攜帶更多物品夾。
+                <br>
+                原住民傳統與現代風格兼具，傳統圖騰變成幾何花紋，親授設計樣板，獨一無二。揹著後背包尋找生命中的歡樂吧! 
+     ]]>
+            </Content>
+        </Description>
+        <Specification>
+            <MadeBy>麻布、棉布</MadeBy>
+            <Size>長:32 cm 寬:12 cm 高:40cm</Size>
+            <MadeIn></MadeIn>
+            <PS></PS>
+        </Specification>
+        <Supplier>
+            <Name>嘎娃文化藝術工作室</Name>
+            <Address></Address>
+            <Contact>徐香蘭</Contact>
+            <Tel>03-8564-811</Tel>
+            <Phone>0939-154083</Phone>
+            <Email></Email>
+            <Description>
+                <Title></Title>
+                <Content>
+                    <![CDATA[
+                嘎娃文化藝術工作室致力於阿美族祖傳技藝的延續，時尚元素的混搭設計，使用構樹纖維皮製作的手提包，以及以花蓮六大原住民族代表色與圖紋為主題，別出心裁的樣式，環保低碳、大自然等元素都為嘎娃老師運用的素材，符合現今的大眾對生活品質的需求，為達極致美學的作品，嘎娃老師不斷嘗試以樹皮結合織布，研發設計。
+                <br>
+                
+                嘎娃老師有感阿美族人與外界接觸多且久，生活習慣受外人影響很大，固有的生活方式已有所改變，紡織樹皮技術也漸行消失，在因緣際會之下，嘎娃老師重新認識過去族人生活中使用的樹皮，目前致力發展樹皮結合現代生活，從裝置藝術到生活用品，都可看見嘎娃老師的巧思與用心，未來嘎娃老師祈願帶領更多人認識樹皮、愛上樹皮，進而建立一個樹皮博物館，讓更多人可以體會古老技藝的重要性。
+                <br>
+                    ]]>
+
+                </Content>
+            </Description>
+        </Supplier>
+        <WaitDays>7</WaitDays>
+        <Tags>
+            <Tag>包包</Tag>
+            <Tag>背包</Tag>
+        </Tags>
+    </Product>
+    <Product>
+        <OnlineId>973</OnlineId>
+        <Category>率性配件</Category>
+        <Name>原民特色頸鍊</Name>
+        <Price>1280</Price>
+        <Summary>
+            <Item>在飾品中導入原民美學概念</Item>
+            <Item>串編頸鍊、原民特色工藝品</Item>
+            <Item>立體串珠、創意設計</Item>
+            <Item>編織串珠、亮眼造型</Item>
+        </Summary>
+        <Features>
+            <Item>在飾品中導入原民美學概念</Item>
+            <Item>串編頸鍊、原民特色工藝品</Item>
+            <Item>立體串珠、創意設計</Item>
+            <Item>編織串珠、亮眼造型</Item>
+        </Features>
+        <Photoes Path="個性飾品,率性配件,原民特色頸鍊">
+            <Photo Caption="編珠圖紋、原民風格" File="a.jpg" Top="0" DisplayOrder="8"></Photo>
+            <Photo Caption="扣環飾品，精美實用" File="b.jpg" Top="0" DisplayOrder="7"></Photo>
+            <Photo Caption="精細頸飾鍊，特色原民工藝品。" File="c.jpg" Top="0" DisplayOrder="6"></Photo>
+            <Photo Caption="手工串編珠、原民工藝特色運用" File="top.jpg" Top="1" DisplayOrder="5"></Photo>
+            <Photo Caption="亮麗配色，原民造型呈現。" File="d.jpg" Top="0" DisplayOrder="4"></Photo>
+        </Photoes>
+        <Description>
+        </Description>
+        <Specification>
+            <MadeIn>台灣</MadeIn>
+            <MadeBy>串珠，飾珠、扣環</MadeBy>
+            <Size></Size>
+            <PS></PS>
+        </Specification>
+        <Supplier>
+            <Name>美瑜工作室</Name>
+            <Address></Address>
+            <Contact>陳美玉</Contact>
+            <Tel>03-8529-450</Tel>
+            <Phone>0919-239657</Phone>
+            <Email>melody20251502@yahoo.com.tw</Email>
+            <Description>
+                <Title>以天然植物種子並結合進口串珠為創作素材的阿美族串珠飾品創藝師  陳美玉 !</Title>
+                <Content>
+                    <![CDATA[
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 以在地原生植物的果仁薏苡珠(鴨母珠)做成原民風格的精美飾品，如手鍊、項鍊、耳環、別針，薏苡珠在女性飾品上都有很多表現的空間，陳美玉女士有開設課程推廣教授薏苡珠飾品DIY串珠的體驗課程。<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;串珠技藝是各原住民族共通的工藝，不同族別會使用不同的配色與圖紋以呼應部落的傳統與特色，陳美玉小姐的串珠工藝是結合西式的配色概念，並採用進口的精美串珠作為製作的材料，進口珠有較多的色彩變化，色系也較為珠光明亮，可以為作品增添時尚的美感，這是不同於一般傳統串珠工藝品的特色，並在作品中採用傳統的薏苡珠，新式的配色加上傳統的飾物，配合原民的串珠手工藝，更能彰顯在地的原民特色。陳美玉女士製作的串珠作品，以用色鮮明亮麗為特點，作品構圖參照原民的圖紋與樣式，在粗獷的原民風格中，以薏苡珠搭配各式色系串珠營造細膩的圖騰美學，堪為原民串珠手工藝的代表作品。
+
+                    ]]>
+
+                </Content>
+            </Description>
+        </Supplier>
+        <WaitDays>7</WaitDays>
+        <Tags>
+            <Tag>項鍊</Tag>
+            <Tag>鍊子</Tag>
+            <Tag>串珠</Tag>
+        </Tags>
+    </Product>
+    <Product>
+        <OnlineId>910</OnlineId>
+        <Category>側背包</Category>
+        <Name>傳統阿美族情人袋---紅</Name>
+        <Price>2100</Price>
+        <Summary>
+            <Item>在提包工藝中導入原民美學概念</Item>
+            <Item>手工編織、原民配飾</Item>
+            <Item>傳統工法、精細編工</Item>
+            <Item>懷舊樣式、造型彩豔</Item>
+            <Item>編織提包、原民工藝</Item>
+        </Summary>
+        <Features>
+            <Item>在提包工藝中導入原民美學概念</Item>
+            <Item>手工編織、原民配飾</Item>
+            <Item>傳統工法、精細編工</Item>
+            <Item>懷舊樣式、造型彩豔</Item>
+            <Item>編織提包、原民工藝</Item>
+        </Features>
+        <Photoes Path="各式包包_皮夾,側背包,傳統阿美族情人袋---紅">
+            <Photo Caption="混色流蘇，原民風格" File="top.jpg" Top="1" DisplayOrder="9"></Photo>
+            <Photo Caption="原民編織工藝、傳統配飾" File="a.jpg" Top="0" DisplayOrder="8"></Photo>
+            <Photo Caption="彩珠亮片，做工精緻" File="b.jpg" Top="0" DisplayOrder="7"></Photo>
+            <Photo Caption="手工編織，配色搶眼" File="c.jpg" Top="0" DisplayOrder="6"></Photo>
+            <Photo Caption="縫製內裡，剪裁合宜" File="d.jpg" Top="0" DisplayOrder="5"></Photo>
+        </Photoes>
+        <Description>
+        </Description>
+        <Specification>
+            <MadeIn>台灣</MadeIn>
+            <MadeBy>玻璃珠、陶珠、港線</MadeBy>
+            <Size>5cm × 2 cm</Size>
+            <PS></PS>
+        </Specification>
+        <Supplier>
+            <Name>古風社區發展協會</Name>
+            <Address></Address>
+            <Contact>李月春  李曉芳</Contact>
+            <Tel>0929-527176</Tel>
+            <Phone>0955278558</Phone>
+            <Email>niun04290423@yahoo.com.tw</Email>
+            <Description>
+                <Title>一群在地傳承原民文化與傳統的布農族青年團隊代表   李月春 !</Title>
+                <Content>
+                    <![CDATA[
+                 布農族的古風部落位於卓溪鄉古風村，位處台灣東部之花東縱谷，有金針山、萬人山、牛突山、安土崛山等群山環繞，而九岸溪及秀姑巒溪、螺仔溪緊鄰玉山國家公園，其中安通溫泉山明水秀，佳景天成，此處所蘊育之優質白米更是遠近馳名。<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;李月春是位正值壯年的退伍軍官，帶領社區內多名回鄉的青年, 以社區發展協會為班底組織經營的團隊，一同從事社區營造的工作，發展布農族的特色產業，各自貢獻所長。布農族向來以八部合音的天籟之聲享譽國際，在工藝品的創作上，歷來的傳統以特色串珠與手工編織為主，為了與其他原住民族工藝品做區隔，開發新類型的文創工藝品，其中運用社區內的大批孟宗竹林，結合串珠與彩繪的技法，製作出本土原民風的竹風鈴，並獲選為花蓮縣政府指定為禮賓專用的伴手禮.<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 特色小米酒是限定生產的訂製酒類，酒味香醇，濃而不烈，入口甘甜，不過需低溫冷藏以免過度發酵膨漲而溢滿瓶外，所以只能先電話預約後，才得以到部落品味此佳釀。因應近年來食用油的食安問題，開始種植苦茶樹並提煉有機苦茶油，並獲得有機單位的認證，成為部落的新興產業，唯產量不多，每年都是供不應求，需要及早預訂以免向隅。<br>
+     ]]>
+
+                </Content>
+            </Description>
+        </Supplier>
+        <WaitDays>60</WaitDays>
+        <Tags>
+            <Tag>包包</Tag>
+            <Tag>背包</Tag>
+            <Tag>袋子</Tag>
+        </Tags>
+    </Product>
+    <Product>
+        <OnlineId>65</OnlineId>
+        <Category>側背包</Category>
+        <Name>菱時尚郵差包</Name>
+        <Price>2800</Price>
+        <Summary>
+            <Item>獨特香蕉絲布拼接棉布</Item>
+            <Item>棉布內裡柔軟，保護物品不受傷害</Item>
+            <Item>內部巧妙設計，拿取容易</Item>
+        </Summary>
+        <Features>
+
+        </Features>
+        <Photoes Path="各式包包_皮夾,側背包,菱時尚郵差包">
+            <Photo Caption="【材質】香蕉絲、棉布" File="a.jpg" Top="0" DisplayOrder="9"></Photo>
+            <Photo Caption="【保養知識 】不使用時請置放於通風處以免發霉。若淋到雨或是因為潮濕導致作品部分發霉，可以清水洗滌，但避免大力搓揉。清洗後請放置陽光下曝曬，待乾燥後即可。" File="b.jpg" Top="0" DisplayOrder="8"></Photo>
+            <Photo Caption="【關於香蕉絲】過去噶瑪蘭人就地取材，運用一年四季都生產的香蕉幹假莖，香蕉編織的工藝就此代代相傳。香蕉為一年生植物，新芽長出，需將舊枝砍掉；新芽茁壯，需去除多餘旁枝，砍下來的香蕉幹，將它撕成絲，成為織布用的線材。挑選香蕉幹很重要，一根樹幹，只有六片樹皮可以使用，外層和裡層容易脆弱、斷裂。撕成絲的樹皮，曬乾後，細分成較細的絲線，再將絲線連接起來，纏成線球。" File="top.jpg" Top="1" DisplayOrder="7"></Photo>
+            <Photo Caption="" File="d.jpg" Top="0" DisplayOrder="6"></Photo>
+            <Photo Caption="" File="e.jpg" Top="0" DisplayOrder="5"></Photo>
+        </Photoes>
+        <Description>
+            <Title>商品介紹</Title>
+            <Content>
+                <![CDATA[
+                  細密的香蕉絲布遇上綿布，觸感透氣舒適如同會呼吸的肌膚，常常觸摸會讓香蕉絲的色澤越來越光亮，如同隨著思緒的紀錄越發沉澱、透徹。
+                <br>
+                工藝師們親手將植物染色後的香蕉絲，編織成獨有傳統的菱形紋相互穿插，搭配大地色系棉布，呈現自然質樸又不失獨特魅力，觸感似草蓆卻不扎人皮膚，冬暖夏涼，貼心的香蕉絲，陪你/妳一起生活。
+                <br>
+                （因為為手工製作，每個尺寸可能會些微不同）
+     ]]>
+            </Content>
+        </Description>
+        <Specification>
+            <MadeIn></MadeIn>
+            <MadeBy>香蕉絲、棉布</MadeBy>
+            <Size>厚度：8cm 寬：30cm 高：25cm 帶長：總長150cm</Size>
+            <PS></PS>
+        </Specification>
+        <Supplier>
+            <Name>新社香蕉絲工坊</Name>
+            <Address>977 花蓮縣豐濱鄉新社村小湖2鄰42 (花東台11線 43.5公里 右轉第一間房子)</Address>
+            <Contact></Contact>
+            <Tel>03-8711361</Tel>
+            <Phone></Phone>
+            <Email>pataronang@gmail.com</Email>
+            <Description>
+                <Title></Title>
+                <Content>
+                    <![CDATA[
+               台灣唯一以香蕉絲作為編織材料的工坊，也是台灣唯一以原生材料從事編織的工坊。香蕉的種植、砍伐、刮絲、晾曬、分線、捻線、繞線、整經到編織等工序中，重新找回在血脈中那深厚的技藝傳承。
+★消失的智慧
+<br>
+當花東海岸公路開通後，外面低廉且色彩豐富的物品進入部落，族人慢慢的放棄了辛苦的編織文化。部落中記得如何編織耆老相繼凋零，香蕉絲的手工藝也漸漸失傳。
+<br>
+★新枝回根
+<br>
+文化漸消之時，原住民意識與運動漸漸抬頭，噶瑪蘭族正名與文化運動同時展開，老一輩族人重新拾起傳統香蕉絲織布的技法。直日本人來台尋找香蕉絲的歷史後，香蕉絲的技藝，再度引起注目。
+<br>
+★編織香蕉花園
+編織，不是屬於耆老的技藝，可以是新的創作；織紋圖，也不是只有傳統平織，現在可以擁有千變萬化的織紋，當香蕉絲織物與絲、麻、棉等不同材質混合後，織物的未來，將無限寬廣，創意更加無限馳騁。
+<br>
+
+新社部落的工藝師在創作中傳達出她們對噶瑪蘭族傳統智慧與工藝的認同、重視、珍惜。
+<br>
+<br>
+★新社香蕉絲工坊紀錄：
+<br>
+1.1997與2002年獲邀至台灣中日編織藝術節示範，並與沖繩香蕉絲編織國寶級藝師平良敏子等人交流。
+<br>
+2.1998年起朱阿比、潘烏吉與潘阿玉三人擔負起噶瑪蘭族香蕉絲之作指導工作。
+<br>
+3.2000年朱阿比、潘烏吉與潘阿玉製作的香蕉織布，獲台中文化局公益貢獻獎及編織工藝獎第二名。
+<br>
+4.2011年獲得花蓮縣政府100年度花蓮縣特色伴手禮。
+     ]]>
+
+                </Content>
+            </Description>
+        </Supplier>
+        <WaitDays>15</WaitDays>
+        <Tags>
+            <Tag>包包</Tag>
+            <Tag>背包</Tag>
+            <Tag>香蕉絲</Tag>
+        </Tags>
+    </Product>
+    <Product>
+        <OnlineId>150</OnlineId>
+        <Category>側背包</Category>
+        <Name>原著小書包--太魯閣族</Name>
+        <Price>580</Price>
+        <Summary>
+            <Item>親手打樣設計獨特樣式</Item>
+            <Item>台灣布料生產，台灣製造</Item>
+            <Item>環保又不單調、攜帶方便</Item>
+            <Item>獨特造型，外出有型</Item>
+        </Summary>
+        <Features>
+
+        </Features>
+        <Photoes Path="各式包包_皮夾,側背包,原著小書包--太魯閣族">
+            <Photo Caption="【材質】麻布、棉布" File="top.jpg" Top="1" DisplayOrder="9"></Photo>
+            <Photo Caption="✽外觀長方形、亞麻白襯著太魯閣族紋，內裡是個性黑配白色菱形幾何圖形。" File="a.jpg" Top="0" DisplayOrder="8"></Photo>
+            <Photo Caption="✽使用獨有花蓮生產製造傳統圖騰花紋布製成，內裡棉布柔軟材。" File="c.jpg" Top="0" DisplayOrder="7"></Photo>
+            <Photo Caption="✽每個商品皆為純手工製作，商品大小會有些微不同。" File="d.jpg" Top="0" DisplayOrder="6"></Photo>
+            <Photo Caption="" File="e.jpg" Top="0" DisplayOrder="5"></Photo>
+        </Photoes>
+        <Description>
+            <Title>原著小書包--太魯閣族</Title>
+            <Content>
+                <![CDATA[
+                 寧靜素雅、時尚與傳統完美結合！快樂上學趣！耐操、實用又美觀！帶一個回家吧！
+                <br>
+               原住民傳統與現代風格兼具，傳統圖騰變成幾何花紋，親授設計樣板，獨一無二。
+     ]]>
+            </Content>
+        </Description>
+        <Specification>
+            <MadeIn></MadeIn>
+            <MadeBy></MadeBy>
+            <Size>長:14cm 寬:4 cm 高:10cm</Size>
+            <PS></PS>
+        </Specification>
+        <Supplier>
+            <Name>嘎娃文化藝術工作室</Name>
+            <Address></Address>
+            <Contact>徐香蘭</Contact>
+            <Tel>03-8564-811</Tel>
+            <Phone>0939-154083</Phone>
+            <Email></Email>
+            <Description>
+                <Title></Title>
+                <Content>
+                    <![CDATA[
+              嘎娃文化藝術工作室致力於阿美族祖傳技藝的延續，時尚元素的混搭設計，使用構樹纖維皮製作的手提包，以及以花蓮六大原住民族代表色與圖紋為主題，別出心裁的樣式，環保低碳、大自然等元素都為嘎娃老師運用的素材，符合現今的大眾對生活品質的需求，為達極致美學的作品，嘎娃老師不斷嘗試以樹皮結合織布，研發設計。
+<br>
+嘎娃老師有感阿美族人與外界接觸多且久，生活習慣受外人影響很大，固有的生活方式已有所改變，紡織樹皮技術也漸行消失，在因緣際會之下，嘎娃老師重新認識過去族人生活中使用的樹皮，目前致力發展樹皮結合現代生活，從裝置藝術到生活用品，都可看見嘎娃老師的巧思與用心，未來嘎娃老師祈願帶領更多人認識樹皮、愛上樹皮，進而建立一個樹皮博物館，讓更多人可以體會古老技藝的重要性。
+<br>
+     ]]>
+
+                </Content>
+            </Description>
+        </Supplier>
+        <WaitDays>7</WaitDays>
+        <Tags>
+            <Tag>包包</Tag>
+            <Tag>背包</Tag>
+            <Tag>書包</Tag>
+        </Tags>
+    </Product>
+    <Product>
+        <OnlineId>85</OnlineId>
+        <Category>配件包</Category>
+        <Name>原民情感手機套</Name>
+        <Price>950</Price>
+        <Summary>
+            <Item>獨一無二花樣設計</Item>
+            <Item>雕刻、編織、染色、鑲嵌金工親手製作</Item>
+            <Item>圖案細膩，個性收藏</Item>
+        </Summary>
+        <Features>
+
+        </Features>
+        <Photoes Path="各式包包_皮夾,配件包,原民情感手機套">
+            <Photo Caption="【材質】植物鞣牛皮的質感柔順，每塊牛皮皆有獨一無二的天然紋路。" File="top.jpg" Top="1" DisplayOrder="9"></Photo>
+            <Photo Caption="✽顏色略有偏差，以實品顏色為準。" File="a.jpg" Top="0" DisplayOrder="8"></Photo>
+            <Photo Caption="✽皮本身的柔軟度，除了染色製程沒有特別加工；提醒您，柔軟度為個人觸感的感受會因人而異。" File="c.jpg" Top="0" DisplayOrder="7"></Photo>
+            <Photo Caption="✽因為為手工製作，每個尺寸可能會些微不同" File="d.jpg" Top="0" DisplayOrder="6"></Photo>
+            <Photo Caption="" File="e.jpg" Top="0" DisplayOrder="5"></Photo>
+        </Photoes>
+        <Description>
+            <Title>原民情感手機套</Title>
+            <Content>
+                <![CDATA[
+                宇宙星辰下
+                <br>
+              太陽神之子民
+               
+                <br>
+                人　是祢賦予的名
+                 <br>
+                 無條件敬佩彩虹橋上的祢
+                  <br>
+                  臣服於祢嚴峻垂望的視線
+                   <br>
+                   黝黑臉龐　炭灰手指
+                    <br>
+                    向祢榮耀的痕跡
+                     <br>
+                     徬徨不安時　仰望天際
+                      <br>
+                      遵循祢的指引
+                       <br>
+                       方向在眼下展開
+                       <br>
+                       披著三角圖騰
+                       <br>
+                       棲棲遑遑天地間
+                       <br>
+                       唯一令人安心的崇高力量
+                         <br>
+                         
+                            <br>
+                            
+                               <br>
+                               那魯灣手藝工坊珍惜自然造物、重視素材，漂流木、皮雕、絲瓜、椰殼、石頭等，力求保持原始風貌感覺。
+     ]]>
+            </Content>
+        </Description>
+        <Specification>
+            <MadeIn></MadeIn>
+            <MadeBy>皮革、五金</MadeBy>
+            <Size>長：6cm 寬：17.5cm 厚：3cm</Size>
+            <PS></PS>
+        </Specification>
+        <Supplier>
+            <Name>那魯灣手藝工坊</Name>
+            <Address></Address>
+            <Contact>許新財（古拉斯）</Contact>
+            <Tel>03-8541411</Tel>
+            <Phone>0933-485540</Phone>
+            <Email>a202202@ms27.hinet.net.tw</Email>
+            <Description>
+                <Title></Title>
+                <Content>
+                    <![CDATA[
+              『那魯灣』是一個很多族群都用的虛詞，用來表示『喜悅』，就像歡呼；而那魯灣工坊的LOGO和MARK象徵著洄瀾、隱喻著阿美族戴著羽冠的勇士。
+<br>
+自然素材與工藝美學的結合古拉斯老師與擅長皮雕的妻子伊浪老師組成的「那魯灣手藝工坊」，已不只侷限在漂流木和皮革，或是琉璃珠、十字繡、織布等傳統原住民工藝而是融入大量生活素材，並應用在生活中，深受消費者的喜愛和肯定。
+<br>
+不管是花蓮海邊的鵝卵石，或是一般生活中的漂流木、絲瓜、椰殼、石頭、酒瓶、鐵罐等多樣素材，都是老師靈感和驚奇來源，揉雜這些日常的複合媒材，取用古老的族人文化，結合原住民文化的日常特色，製作出的圖騰皮雕及燈飾融合了現代時尚與原住民元素而形成那魯灣工坊獨有的特色。
+<br>
+     ]]>
+
+                </Content>
+            </Description>
+        </Supplier>
+        <WaitDays>7</WaitDays>
+        <Tags>
+            <Tag>雕刻</Tag>
+            <Tag>皮革</Tag>
+            <Tag>手機套</Tag>
+        </Tags>
+    </Product>
+    <Product>
+        <OnlineId>321</OnlineId>
+        <Category>配件包</Category>
+        <Name>棉麻長夾手拿包</Name>
+        <Price>2500</Price>
+        <Summary>
+            <Item>圖樣優雅細緻</Item>
+            <Item>台灣布料生產，台灣製造</Item>
+            <Item>外層金屬扣，內層多格</Item>
+            <Item>智慧型手機也可置入收納</Item>
+        </Summary>
+        <Features>
+
+        </Features>
+        <Photoes Path="各式包包_皮夾,配件包,棉麻長夾手拿包">
+            <Photo Caption="" File="top.jpg" Top="1" DisplayOrder="3"></Photo>
+            <Photo Caption="✽墨黑的顏色，稱出氣質。" File="a.jpg" Top="0" DisplayOrder="8"></Photo>
+            <Photo Caption="✽顏色略有偏差，以實品顏色為準。" File="b.jpg" Top="0" DisplayOrder="7"></Photo>
+        </Photoes>
+        <Description>
+            <Title>長夾</Title>
+            <Content>
+                <![CDATA[
+               零錢總是隨意地塞在口袋嗎?每次鈔票總是皺得不美麗嗎?長夾是第一首選，幫您保護辛苦得來的金錢。
+                         
+                            <br>
+                            
+                              
+     ]]>
+            </Content>
+        </Description>
+        <Specification>
+            <MadeIn></MadeIn>
+            <MadeBy></MadeBy>
+            <Size>22*13cm(+-1cm)</Size>
+            <PS></PS>
+        </Specification>
+        <Supplier>
+            <Name>那都蘭工作室</Name>
+            <Address></Address>
+            <Contact>將博‧里漢</Contact>
+            <Tel></Tel>
+            <Phone>0952-562560</Phone>
+            <Email></Email>
+            <Description>
+                <Title>從手工編織印證太魯閣族部落智慧的尋夢者胡秀蘭與將博‧里漢 !</Title>
+                <Content>
+                    <![CDATA[
+              編織是各原民部落共同的特色手工藝，雖是共同的技藝，但每族都有不同的風俗與傳說，讓各族的編織品有不同的圖形與顏色，這些美麗的圖紋傳說，隨著耆老的凋零逐漸被遺忘，需要有心的族人來傳承部落的技藝，延續部落的傳說。
+<br>
+胡秀蘭女士與兒子將博‧里漢，共同成立那都蘭工作室，製作太魯閣族特色的編織品，打破男性外出打獵、女性在家織布的舊風俗，因為部落技藝的傳承是部落族人共同的責任。
+<br>
+『每當織完一塊又寬又長的織布後，總會深呼一口氣，覺得真不容易啊！！不過想想以前的老人家織布那才叫辛苦，對於傳統織具來說，身體就是織布機的一部分，除了技術以外，一塊織布的完整度全要靠自身的力道與協調性去支撐與平衡，相較現在的織具，代替了我們用身體去支撐的部分，使我們在織布來說更為方便也增加效率，不過所傳下來的技術卻不會因此流失，真正被遺忘的反而是傳承，因為織布是祖先給我的技藝而不是記憶，但願有更多的手能一起讓這一絲一線編織下去。』
+<br>
+     ]]>
+
+                </Content>
+            </Description>
+        </Supplier>
+        <WaitDays>10</WaitDays>
+        <Tags>
+            <Tag>手工編織</Tag>
+            <Tag>皮夾</Tag>
+            <Tag>錢包</Tag>
+            <Tag>長夾</Tag>
+            <Tag>手機袋</Tag>
+        </Tags>
+    </Product>
+    <Product>
+        <OnlineId>979</OnlineId>
+        <Category>配件包</Category>
+        <Name>黑色系布紋鑰匙包</Name>
+        <Price>300</Price>
+        <Summary>
+            <Item>黑色系綿布、原民圖紋</Item>
+            <Item>手工縫製、立體裁型</Item>
+            <Item>細密縫線、樸實簡約</Item>
+            <Item>創意鑰匙收納袋、送禮自用兩相宜</Item>
+        </Summary>
+        <Features>
+
+        </Features>
+        <Photoes Path="各式包包_皮夾,配件包,黑色系布紋鑰匙包">
+            <Photo Caption="黑底紅邊，原民圖紋設計。" File="top.jpg" Top="1" DisplayOrder="9"></Photo>
+            <Photo Caption="立體裁剪、滾邊處理。" File="b.jpg" Top="0" DisplayOrder="8"></Photo>
+            <Photo Caption="細密縫線、單純實用設計。" File="c.jpg" Top="0" DisplayOrder="7"></Photo>
+            <Photo Caption="古樸扣環、創意生活用品。" File="d.jpg" Top="0" DisplayOrder="6"></Photo>
+        </Photoes>
+        <Description>
+            <Title></Title>
+            <Content></Content>
+        </Description>
+        <Specification>
+            <MadeIn>台灣</MadeIn>
+            <MadeBy>綿麻編織布、扣環</MadeBy>
+            <Size></Size>
+            <PS></PS>
+        </Specification>
+        <Supplier>
+            <Name>原漾工坊 </Name>
+            <Address></Address>
+            <Contact>林詠梅</Contact>
+            <Tel></Tel>
+            <Phone>0919-941823 </Phone>
+            <Email></Email>
+            <Description>
+                <Title>自助助人關心弱勢婦女的阿美族縫紉工坊主持人  林詠梅 !</Title>
+                <Content>
+                    <![CDATA[
+               縫紉與服飾創意設計很有興趣，民國九十八年起，便著手規劃「原漾工坊」，並像工廠分工的培訓模式一樣，招收對縫紉有興趣的弱勢婦女當學員，傳授車布邊、裁剪布料、車縫枕頭套或床罩等縫紉技巧，一旦學員的技術成熟了，便可以自行在家裡接單、賺外快。
+<br>
+曾參加台北市主辦的原住民創意產品設計競賽，參賽作品完全以手工用苧麻和黃麻編成一件原住民服裝，取名「傳承」，拿到全國第4名佳績，作品的靈感來自於小時候看到阿公編織漁網的景象。
+<br>
+ 林詠梅表示:『原漾工坊針對飯店民宿備品提供專業設計製作與修改服務，所以工坊的學員學習縫紉技巧可以很快就上手』，而且她樂於把工坊的資源和有心一起打拚的媽媽們共享，成為接單賺錢的平臺；為了行銷工坊，她積極與民宿、飯店、洗衣廠聯繫且宣傳其工坊提供服務的內容，為的就是增加產品的訂單，創造工坊的業績。因為工坊成員多，所以可以接受批量的客製化的訂單，對於願意關懷弱勢家庭的公司企業，可以製作特色的公司服飾與企業識別的布質工藝品、如公仔布偶、毛巾枕套、帽飾加工，都已有很熟念的生產與製作經驗，歡迎善意的良心企業主選購與下訂單。
+<br>
+     ]]>
+
+                </Content>
+            </Description>
+        </Supplier>
+        <WaitDays>0</WaitDays>
+        <Tags>
+            <Tag>鑰匙包</Tag>
+            <Tag>鑰匙包</Tag>
+        </Tags>
+    </Product>
+    <Product>
+        <OnlineId>728</OnlineId>
+        <Category>化妝包</Category>
+        <Name>時尚手織布小提包</Name>
+        <Price>2500</Price>
+        <Summary>
+            <Item>在提包工藝品中導入原民美學圖飾</Item>
+            <Item>精工編織、菱形圖紋</Item>
+            <Item>立體編製、配色簡約</Item>
+            <Item>典雅色系、仕女款式</Item>
+            <Item>編織工藝、精緻呈現</Item>
+        </Summary>
+        <Features>
+
+        </Features>
+        <Photoes Path="各式包包_皮夾,化妝包,時尚手織布小提包">
+            <Photo Caption="精製提把，美觀耐用。" File="top.jpg" Top="1" DisplayOrder="3"></Photo>
+            <Photo Caption="手工分色，菱形圖紋。" File="a.jpg" Top="0" DisplayOrder="8"></Photo>
+            <Photo Caption="精彩傳統手工，原民工藝展現。" File="b.jpg" Top="0" DisplayOrder="7"></Photo>
+            <Photo Caption="時尚配色美學，原民圖紋新展現。" File="c.jpg" Top="0" DisplayOrder="6"></Photo>
+            <Photo Caption="祖靈之眼，守護部落。" File="e.jpg" Top="0" DisplayOrder="5"></Photo>
+        </Photoes>
+        <Description>
+            <Title></Title>
+            <Content></Content>
+        </Description>
+        <Specification>
+            <MadeIn>台灣</MadeIn>
+            <MadeBy>手工編織布、精緻提把</MadeBy>
+            <Size>22(L)*12(W)*15(H)</Size>
+            <PS></PS>
+        </Specification>
+        <Supplier>
+            <Name>瑪賽工作室</Name>
+            <Address></Address>
+            <Contact></Contact>
+            <Tel></Tel>
+            <Phone>0928-079223 </Phone>
+            <Email>alsionl@gmail.com</Email>
+            <Description>
+                <Title>持續創作以傳承部落工藝傳奇的太魯閣編織工藝師  藍月美 !</Title>
+                <Content>
+                    <![CDATA[
+              太魯閣族的傳統，男子外出打獵捕食，女子在家織布作衣，因為時代的變遷，原民傳統逐漸式微，最終甚至被人所遺忘，有鑑於此，藍月美女士四處積極拜師學習部落的編織工藝，參加了各種原住民技藝研習並取得教師資格，而到學校及社區教學，以推廣原住民手工編織工藝為志業。曾向台中跟簡玲亮老師學習，希望能將當初來不及學的彌補回來，期望能將祖先的智慧傳承下去。學成後並到各個學校及社區教學，推廣太魯閣族的傳統手工編織技藝，期望能延續祖先的智慧。
+<br>
+ 瑪賽是藍月美女士的母語名字。因外祖母曾是部落最善織的長者，臉上並保有傳統的紋面，家中患有腦性麻痺的徐貝爾為其長子，他勇於挑戰自我，也挑戰「男獵女織」文化傳統而跟隨母親學習傳統織布。瑪賽工作室擅長繁複的手織工序及梭子操作，手工織布機時時來回碰撞出精美的作品，包括太魯閣圖案編織、手提包設計、靠枕設計，尤其利用彩虹圖案的創新配色，呼應太魯閣族的彩虹橋神話傳說，具有原民文化特色。
+<br>
+母與子不斷的在為太魯閣族的傳統編織努力，他們一同傳承這項文化，使得傳統編織有了延續的機會，並且不斷的創新，讓太魯閣族的傳統編織不會面臨失傳的危機。為了推廣太魯閣族手工編織的工藝，所以在工作室的工作分配上，以學校教學為主，以少量訂單為輔，工作室內展示的編織作品保有濃烈的原民風格。
+<br>
+     ]]>
+
+                </Content>
+            </Description>
+        </Supplier>
+        <WaitDays>10</WaitDays>
+        <Tags>
+            <Tag>手工編織</Tag>
+            <Tag>手提包</Tag>
+            <Tag>菱形圖紋</Tag>
+        </Tags>
+    </Product>
+    <Product>
+        <OnlineId>937</OnlineId>
+        <Category>化妝包</Category>
+        <Name>植物染手拿包</Name>
+        <Price>450</Price>
+        <Summary>
+            <Item>自然素材染色</Item>
+            <Item>獨特色澤與花紋</Item>
+            <Item>天然染色，前幾次清洗時會略掉一些顏色</Item>
+        </Summary>
+        <Features>
+            <Item>原創設計圖樣</Item>
+            <Item>棉質布料，耐用舒適</Item>
+            <Item>可客製化，大量訂購</Item>
+        </Features>
+        <Photoes Path="各式包包_皮夾,化妝包,植物染手拿包">
+            <Photo Caption="手工綿布混合縫製。" File="top.jpg" Top="1" DisplayOrder="9"></Photo>
+            <Photo Caption="扣環飾品，精細縫工。" File="b.jpg" Top="0" DisplayOrder="8"></Photo>
+            <Photo Caption="原創手作，特色型染。" File="c.jpg" Top="0" DisplayOrder="7"></Photo>
+            <Photo Caption="特色裁剪，手工製型。" File="d.jpg" Top="0" DisplayOrder="6"></Photo>
+            <Photo Caption="可客製化與大量訂購。" File="e.jpg" Top="0" DisplayOrder="5"></Photo>
+        </Photoes>
+        <Description>
+            <Title></Title>
+            <Content>
+                <![CDATA[
+             藍染+柿子染+福木染
+<br>
+ 三種染色混搭出獨特色紋，耐看好用，呈現獨特氣質。
+<br>
+柿子染：使用澀柿子汁染製後，染出顏色接近淡褐色與卡其色之間，顏色耐髒、耐看。
+<br>
+福木染：福木葉形狀像是日本古時候之的貨幣，因此取名為「福木」，表示栽種此樹易發財得福。
+利用福木落葉，熬煮取色、染色，染出的顏色如夕陽。
+<br>
+藍染：台灣早期用來做藍染的主要有：木藍和山藍。利用發酵的過程，把藍色的染料粹取出來，所取出的色素稱為藍靛，再經一個發酵的過程，才可以用來染布。
+<br>
+染布花紋皆不太一樣，所以每件商品花紋會有些不同
+每台螢幕皆有色差，請考慮過再下單
+如果髮圈髒了，請以冷水、溫水輕輕搓洗表面，洗清後用布將它吸乾，然後放在通風陰涼處直至完全陰乾。<br>
+     ]]>
+
+
+            </Content>
+        </Description>
+        <Specification>
+            <MadeIn>台灣</MadeIn>
+            <MadeBy>綿布，扣環</MadeBy>
+            <Size>15cmx12.5cm</Size>
+            <PS></PS>
+        </Specification>
+        <Supplier>
+            <Name>阿魯巴染山下部落</Name>
+            <Address></Address>
+            <Contact>何欽蓉</Contact>
+            <Tel>03-8656360</Tel>
+            <Phone>0920-580225</Phone>
+            <Email>egg710102@gmail.com</Email>
+            <Description>
+                <Title>以植物染為阿美族手工藝品帶來新風格的山下部落工藝師 古欽水 !</Title>
+                <Content>
+                    <![CDATA[
+               阿魯巴染Alupalan為花蓮縣壽豐鄉Alupalan山下部落的部落名稱，「alupal」阿美語的意思是「柿子」。早期部落種了很多的alupal，所以就把這裡取為Ci Alupalan（很多柿子的地方），部落依山而居，後稱山下部落。運用部落植物Alupal作為產業研發，嘗試著葉子拓染跟藍染作為結合，而在結合的過程中，產生了以柿葉為主的植物印染工藝。
+<br>
+用獨特的植物染工藝，以樸實的葉子做高低錯落擺置，簡單的圖案和文字加上素雅的配色，製作具時尚氣息與設計感的原民風飾品、情人背袋、手提包、圍巾、桌布、吊飾、杯墊、皮夾、印染布包等文創商品。除了有柿子植物染藝品製作與販售，也開設了拼布與皮雕課程，希望透過不同以往的工藝技藝學習課程，希望能提升部落工藝的技能水準，利用複合媒材研發出具有在地特色並能與其他部落作有效區隔之商品。
+
+<br>
+  『部落傳統工藝這條路，希望未來不再只依靠記憶去完成，而是靠你我的現在去實現。』，是阿魯巴染山下部落工藝師們的共同創作信念。
+<br>
+     ]]>
+
+                </Content>
+            </Description>
+        </Supplier>
+        <WaitDays>7</WaitDays>
+        <Tags>
+            <Tag>植物染</Tag>
+            <Tag>手拿包</Tag>
+            <Tag>天然染色</Tag>
+            <Tag>棉布</Tag>
+        </Tags>
+    </Product>
+    <Product>
+        <OnlineId>933</OnlineId>
+        <Category>髮飾</Category>
+        <Name>植物染髮圈A</Name>
+        <Price>100</Price>
+        <Summary>
+            <Item>自然素材染色</Item>
+            <Item>獨特色澤與花紋</Item>
+            <Item>天然染色，前幾次清洗時會略掉一些顏色</Item>
+        </Summary>
+        <Features>
+            <Item>原創設計圖樣</Item>
+            <Item>棉質布料，耐用舒適</Item>
+            <Item>可客製化，大量訂購</Item>
+        </Features>
+        <Photoes Path="個性飾品,髮飾,植物染髮圈A">
+            <Photo Caption="手工綿布混合縫製。" File="top.jpg" Top="1" DisplayOrder="9"></Photo>
+            <Photo Caption="特色裁剪，手工製型。" File="b.jpg" Top="0" DisplayOrder="8"></Photo>
+            <Photo Caption="原創手作，特色型染。" File="a.jpg" Top="0" DisplayOrder="7"></Photo>
+            <Photo Caption="可客製化與大量訂購。" File="d.jpg" Top="0" DisplayOrder="6"></Photo>
+        </Photoes>
+        <Description>
+            <Title></Title>
+            <Content>
+                <![CDATA[
+             藍染+柿子染+福木染
+<br>
+ 三種染色混搭出獨特色紋，耐看好用，呈現獨特氣質。
+<br>
+柿子染：使用澀柿子汁染製後，染出顏色接近淡褐色與卡其色之間，顏色耐髒、耐看。
+<br>
+福木染：福木葉形狀像是日本古時候之的貨幣，因此取名為「福木」，表示栽種此樹易發財得福。
+利用福木落葉，熬煮取色、染色，染出的顏色如夕陽。
+<br>
+藍染：台灣早期用來做藍染的主要有：木藍和山藍。利用發酵的過程，把藍色的染料粹取出來，所取出的色素稱為藍靛，再經一個發酵的過程，才可以用來染布。
+<br>
+染布花紋皆不太一樣，所以每件商品花紋會有些不同
+每台螢幕皆有色差，請考慮過再下單
+如果髮圈髒了，請以冷水、溫水輕輕搓洗表面，洗清後用布將它吸乾，然後放在通風陰涼處直至完全陰乾。<br>
+     ]]>
+
+
+            </Content>
+        </Description>
+        <Specification>
+            <MadeIn>台灣</MadeIn>
+            <MadeBy>綿布</MadeBy>
+            <Size>9cm(有彈性，可伸縮)</Size>
+            <PS></PS>
+        </Specification>
+        <Supplier>
+            <Name>阿魯巴染山下部落</Name>
+            <Address></Address>
+            <Contact>何欽蓉</Contact>
+            <Tel>03-8656360</Tel>
+            <Phone>0920-580225</Phone>
+            <Email>egg710102@gmail.com</Email>
+            <Description>
+                <Title>以植物染為阿美族手工藝品帶來新風格的山下部落工藝師 古欽水 !</Title>
+                <Content>
+                    <![CDATA[
+               阿魯巴染Alupalan為花蓮縣壽豐鄉Alupalan山下部落的部落名稱，「alupal」阿美語的意思是「柿子」。早期部落種了很多的alupal，所以就把這裡取為Ci Alupalan（很多柿子的地方），部落依山而居，後稱山下部落。運用部落植物Alupal作為產業研發，嘗試著葉子拓染跟藍染作為結合，而在結合的過程中，產生了以柿葉為主的植物印染工藝。
+<br>
+用獨特的植物染工藝，以樸實的葉子做高低錯落擺置，簡單的圖案和文字加上素雅的配色，製作具時尚氣息與設計感的原民風飾品、情人背袋、手提包、圍巾、桌布、吊飾、杯墊、皮夾、印染布包等文創商品。除了有柿子植物染藝品製作與販售，也開設了拼布與皮雕課程，希望透過不同以往的工藝技藝學習課程，希望能提升部落工藝的技能水準，利用複合媒材研發出具有在地特色並能與其他部落作有效區隔之商品。
+
+<br>
+  『部落傳統工藝這條路，希望未來不再只依靠記憶去完成，而是靠你我的現在去實現。』，是阿魯巴染山下部落工藝師們的共同創作信念。
+<br>
+     ]]>
+
+                </Content>
+            </Description>
+        </Supplier>
+        <WaitDays>7</WaitDays>
+        <Tags>
+            <Tag>植物染</Tag>
+            <Tag>髮圈</Tag>
+            <Tag>天然染色</Tag>
+            <Tag>棉布</Tag>
+        </Tags>
+    </Product>
+    <Product>
+        <OnlineId>637</OnlineId>
+        <Category>髮飾</Category>
+        <Name>彩珠髮夾</Name>
+        <Price>150</Price>
+        <Summary>
+            <Item>自然素材染色</Item>
+            <Item>獨特色澤與花紋</Item>
+            <Item>天然染色，前幾次清洗時會略掉一些顏色</Item>
+        </Summary>
+        <Features>
+            <Item>在飾品中導入原民美學概念</Item>
+            <Item>串編彩珠，原民圖紋</Item>
+            <Item>髮夾飾品，原民風格</Item>
+        </Features>
+        <Photoes Path="個性飾品,髮飾,彩珠髮夾">
+            <Photo Caption="串珠工藝的生活運用。" File="top.jpg" Top="1" DisplayOrder="9"></Photo>
+            <Photo Caption="手工串珠、細密結實。" File="a.jpg" Top="0" DisplayOrder="8"></Photo>
+            <Photo Caption="編繩細密，堅實耐用。" File="b.jpg" Top="0" DisplayOrder="7"></Photo>
+            <Photo Caption="原民風設計配色亮麗。" File="c.jpg" Top="0" DisplayOrder="6"></Photo>
+            <Photo Caption="原民串珠，特色鮮明。" File="d.jpg" Top="0" DisplayOrder="6"></Photo>
+        </Photoes>
+        <Description>
+            <Title></Title>
+            <Content></Content>
+        </Description>
+        <Specification>
+            <MadeIn>台灣</MadeIn>
+            <MadeBy>尼龍絲線、串珠、金屬髮夾</MadeBy>
+            <Size>8cm*1.5cm(大)， 6.5cm*1.5cm(小)</Size>
+            <PS></PS>
+        </Specification>
+        <Supplier>
+            <Name>繡藝工作坊</Name>
+            <Address></Address>
+            <Contact>黃阿秀</Contact>
+            <Tel></Tel>
+            <Phone>0920-257180</Phone>
+            <Email></Email>
+            <Description>
+                <Title>精美串珠工藝描繪部落傳說的阿美族工藝師 黃阿秀 !</Title>
+                <Content>
+                    <![CDATA[
+台灣原民部落一直是有語言無文字的民族，文化的傳承是透過圖藝的紀錄，與口語故事的代代相傳，在經過長遠的流傳後，逐漸地口語故事變成生動的傳說，生動的傳說昇華為部落的神話，原民部透過工藝品的製作，來紀錄這些輝煌的故事，虔誠精細的工藝也象徵對祖靈的無限推崇之意。
+<br>
+
+串珠的豐豔多彩，最能代表阿美族的樂天性情，阿美族的傳統服飾，除了豔麗的色彩，配戴大量的彩珠也是其色彩亮麗的特色，配合精美的串珠工藝，在傳統服飾中，更可以發揮畫龍點睛的作用。
+<br>
+ 依據現代的生活習慣，把串珠工藝導進生活用品中，如鑰匙圈、手機吊飾、耳環、手鍊、手環、項鍊等之類的工藝飾品，配合金工技藝與薏苡珠的應用，讓串珠工藝呈現更多樣變化的原民特色，以時尚的設計感，引進原民風格，在構圖的巧思之下，讓原色圖紋融入現代生活中，這是也是現代原民工藝的發展趨勢，在現代生活中，採用原民風的設計元素，傳統的樣式也能成為流行的風格。
+<br>
+     ]]>
+
+                </Content>
+            </Description>
+        </Supplier>
+        <WaitDays>7</WaitDays>
+        <Tags>
+            <Tag>串珠</Tag>
+            <Tag>髮夾</Tag>
+
+        </Tags>
+    </Product>
+    <Product>
+        <OnlineId>297</OnlineId>
+        <Category>圍巾</Category>
+        <Name>貓頭鷹桌飾巾</Name>
+        <Price>4500</Price>
+        <Kind>貓頭鷹桌飾巾(黑),貓頭鷹桌飾巾(紅),貓頭鷹桌飾巾(藍)</Kind>
+        <Summary>
+            <Item>純手工製作獨一無二</Item>
+            <Item>圖樣細緻，材質觸感優良</Item>
+            <Item>冬日保暖好物</Item>
+            <Item>圖騰優雅時尚</Item>
+        </Summary>
+        <Features>
+        </Features>
+        <Photoes Path="個性飾品,圍巾,貓頭鷹桌飾巾">
+            <Photo Caption="✽因為手工製作，每條圍巾可能會有些微不同。" File="top.jpg" Top="1" DisplayOrder="9"></Photo>
+            <Photo Caption="✽觸感優良，令人愛不釋手。" File="b.jpg" Top="0" DisplayOrder="7"></Photo>
+            <Photo Caption="✽美麗花紋，賞心悅目。" File="c.jpg" Top="0" DisplayOrder="6"></Photo>
+            <Photo Caption="✽典雅細緻，實用的冬日配件。" File="d.jpg" Top="0" DisplayOrder="5"></Photo>
+            <Photo Caption="" File="e.jpg" Top="0" DisplayOrder="3"></Photo>
+        </Photoes>
+        <Description>
+            <Title>圍巾</Title>
+            <Content>
+                <![CDATA[
+繞頸溫暖<br>
+
+當冷冽糾纏<br>
+秋冬暗自悄轉<br>
+依然花色款款 
+     ]]>
+
+            </Content>
+        </Description>
+        <Specification>
+            <MadeIn></MadeIn>
+            <MadeBy></MadeBy>
+            <Size>170*22cm (+-3cm)</Size>
+            <PS></PS>
+        </Specification>
+        <Supplier>
+            <Name>那都蘭工作室</Name>
+            <Address></Address>
+            <Contact>將博‧里漢</Contact>
+            <Tel></Tel>
+            <Phone>0952-562560</Phone>
+            <Email>nadolan@kimo.com</Email>
+            <Description>
+                <Title>從手工編織印證太魯閣族部落智慧的尋夢者胡秀蘭與將博‧里漢 !</Title>
+                <Content>
+                    <![CDATA[
+編織是各原民部落共同的特色手工藝，雖是共同的技藝，但每族都有不同的風俗與傳說，讓各族的編織品有不同的圖形與顏色，這些美麗的圖紋傳說，隨著耆老的凋零逐漸被遺忘，需要有心的族人來傳承部落的技藝，延續部落的傳說。<br>
+
+胡秀蘭女士與兒子將博‧里漢，共同成立那都蘭工作室，製作太魯閣族特色的編織品，打破男性外出打獵、女性在家織布的舊風俗，因為部落技藝的傳承是部落族人共同的責任。<br>
+『每當織完一塊又寬又長的織布後，總會深呼一口氣，覺得真不容易啊！！不過想想以前的老人家織布那才叫辛苦，對於傳統織具來說，身體就是織布機的一部分，除了技術以外，一塊織布的完整度全要靠自身的力道與協調性去支撐與平衡，相較現在的織具，代替了我們用身體去支撐的部分，使我們在織布來說更為方便也增加效率，不過所傳下來的技術卻不會因此流失，真正被遺忘的反而是傳承，因為織布是祖先給我的技藝而不是記憶，但願有更多的手能一起讓這一絲一線編織下去。』<br>
+     ]]>
+
+                </Content>
+            </Description>
+        </Supplier>
+        <WaitDays>10</WaitDays>
+        <Tags>
+            <Tag>桌飾巾</Tag>
+            <Tag>圍巾</Tag>
+        </Tags>
+    </Product>
+    <Product>
+        <OnlineId>1090</OnlineId>
+        <Category>圍巾</Category>
+        <Name>部落手織-圍巾</Name>
+        <Price>2580</Price>
+        <Summary>
+            <Item>純手工織布</Item>
+            <Item>象徵山水的圖紋</Item>
+            <Item>簡單又大氣的顏色搭配</Item>
+        </Summary>
+        <Features>
+        </Features>
+        <Photoes Path="個性飾品,圍巾,部落手織-圍巾">
+            <Photo Caption="採用傳統手織織作而成，略顯立體的織紋，手工更為繁複，黑白雙色的簡潔搭配，輔以象徵山水的織紋，代表自然大氣，呈現當代美感。" File="top.jpg" Top="1" DisplayOrder="9"></Photo>
+            <Photo Caption="在天冷時來條與眾不同的圍巾，溫暖你的每一天。" File="b.jpg" Top="0" DisplayOrder="7"></Photo>
+        </Photoes>
+        <Description>
+            <Title></Title>
+            <Content></Content>
+        </Description>
+        <Specification>
+            <MadeIn></MadeIn>
+            <MadeBy>棉線</MadeBy>
+            <Size>長108cm(不含流蘇長度)20cm(流蘇) 寬10cm</Size>
+            <PS></PS>
+        </Specification>
+        <Supplier>
+            <Name>多加巧藝工坊</Name>
+            <Address></Address>
+            <Contact>陳子玄</Contact>
+            <Tel></Tel>
+            <Phone>0988-320-592</Phone>
+            <Email></Email>
+            <Description>
+                <Title></Title>
+                <Content>
+                    <![CDATA[
+太魯閣族工藝師—陳子玄、陳婉麗，她們帶領一群太魯閣族婦女，以傳統織布工藝傳承原住民部落文化，製作出多款式的包包、圍巾、抱枕等實用作品，期望將原住民的傳統文化，讓更多的人來認識。
+
+  ]]>
+
+                </Content>
+            </Description>
+        </Supplier>
+        <WaitDays>10</WaitDays>
+        <Tags>
+            <Tag>流蘇</Tag>
+            <Tag>圍巾</Tag>
+            <Tag>手工織布</Tag>
+        </Tags>
+    </Product>
+    <Product>
+        <OnlineId>921</OnlineId>
+        <Category>米/麵條</Category>
+        <Name>邦查太陽米-胚芽米300克裝</Name>
+        <Price>60</Price>
+        <Summary>
+            <Item>友善土地栽種</Item>
+            <Item>依循季節時令適地適種植</Item>
+            <Item>人工曝曬</Item>
+            <Item>目前無庫存，預定8月初可出貨</Item>
+        </Summary>
+        <Features>
+            <Item>優質米種、真空包裝。</Item>
+            <Item>當季採收、米質鮮甜。</Item>
+            <Item>養生、健康。</Item>
+            <Item>小包裝設計，饋贈送禮嚐鮮體驗。</Item>
+            <Item>原民在地農產品加工製造。</Item>
+        </Features>
+        <Photoes Path="優良食材,米_麵條,邦查太陽米-胚芽米300克裝">
+            <Photo Caption="胚芽米原色，自然多樣" File="top.jpg" Top="1" DisplayOrder="9"></Photo>
+            <Photo Caption="優質米種。" File="b.jpg" Top="0" DisplayOrder="7"></Photo>
+            <Photo Caption="米粒飽滿，顆顆晶亮。" File="c.jpg" Top="0" DisplayOrder="6"></Photo>
+            <Photo Caption="半斤真空小包裝，送禮方便、體驗良質米。" File="d.jpg" Top="0" DisplayOrder="5"></Photo>
+            <Photo Caption="花東優質環境生態，蘊育美味米種。" File="e.jpg" Top="0" DisplayOrder="4"></Photo>
+        </Photoes>
+        <Description>
+            <Title></Title>
+            <Content></Content>
+        </Description>
+        <Specification>
+            <MadeIn>台灣花蓮 , 重量：300g/盒 , 保存期限：六個月</MadeIn>
+            <MadeBy></MadeBy>
+            <Size></Size>
+            <PS></PS>
+        </Specification>
+        <Supplier>
+            <Name>邦查農場</Name>
+            <Address></Address>
+            <Contact>蘇秀蓮</Contact>
+            <Tel>03-8703818</Tel>
+            <Phone></Phone>
+            <Email></Email>
+            <Description>
+                <Title>一群共同為友善土地耕作奮鬥的阿美族婦女 蘇秀蓮</Title>
+                <Content>
+                    <![CDATA[
+在花蓮光復鄉馬太鞍這片土地上，由陽光、雨水、汗水孕育出的不僅是豐收的農產品，還有一個農地復耕、雜糧復作能自給自足的原鄉夢想。蘇秀蓮打造的邦查農場，強調友善土地的農法來種植蔬果，園區共有十七公頃，作物包括稻米、青椒、地瓜、玉米等各種季節性、全年性作物與各式野菜，還有自己養的土蜜蜂，幫作物受粉繁殖，形成一個良性的自然循環。
+<br>
+蘇秀蓮女士在展望會的專家協助下學習耕種、施肥等農田管理工作，展望會也補助經費讓她購買設施，在揪集當地婦女一起胼手胝足拚命的耕作，種下地瓜葉、紅蘿蔔、白蘿蔔、玉米、牧草等各種作物，一次次的收成讓邦查農場逐漸的成長與茁壯。
+<br>
+邦查農場起先以小地主大佃農的方式，租用鄰近的農田進行友善土地的播種與生產，同時也為部落婦女提供更多在地就業工作的機會。邦查農場曾接受原住民電視台"前進部落"及"TINA的廚房"等知名節目拍攝與專訪介紹，因應網路購物的時代來臨，也開始增加網路訂購的行銷業務，把健康美味的蔬菜從產地透過宅配物流業者，直接運送到消費者手中，完整保存在產地時的鮮美狀態。
+
+  ]]>
+
+                </Content>
+            </Description>
+        </Supplier>
+        <WaitDays></WaitDays>
+        <Tags>
+            <Tag>太陽米</Tag>
+            <Tag>胚芽米</Tag>
+            <Tag>米</Tag>
+            <Tag>人工曝曬</Tag>
+        </Tags>
+    </Product>
+    <Product>
+        <OnlineId>309</OnlineId>
+        <Category>米/麵條</Category>
+        <Name>寶地原生種小米(300克)</Name>
+        <Price>250</Price>
+        <Summary>
+            <Item>新鮮、顆粒完整</Item>
+            <Item>製作粥、飯養生又健康</Item>
+            <Item>自然光澤，品質優良</Item>
+        </Summary>
+        <Features></Features>
+        <Photoes Path="優良食材,米_麵條,寶地原生種小米(300克)">
+            <Photo Caption="✽養生健康，但請勿過量食用。" File="top.jpg" Top="1" DisplayOrder="1"></Photo>
+            <Photo Caption="✽自然光澤，品質優良。" File="a.jpg" Top="0" DisplayOrder="9"></Photo>
+            <Photo Caption="✽友善土地耕作，友愛環境。" File="b.jpg" Top="0" DisplayOrder="7"></Photo>
+            <Photo Caption="✽商品顏色以實物為主。" File="c.jpg" Top="0" DisplayOrder="6"></Photo>
+            <Photo Caption="✽粒粒皆辛苦，常懷感恩心。" File="d.jpg" Top="0" DisplayOrder="5"></Photo>
+        </Photoes>
+        <Description>
+            <Title>小米</Title>
+            <Content>小米又稱梁米、粟米、粟谷。容易被人體消化吸收，故被營養專家稱「保健米」。</Content>
+        </Description>
+        <Specification>
+
+            <MadeIn>台灣花蓮 , 重量：300g/盒 , 保存期限：六個月</MadeIn>
+            <MadeBy></MadeBy>
+            <Size></Size>
+            <PS></PS>
+        </Specification>
+        <Supplier>
+            <Name>寶地休閒農場</Name>
+            <Address></Address>
+            <Contact>陳月英</Contact>
+            <Tel></Tel>
+            <Phone>0976-054416</Phone>
+            <Email></Email>
+            <Description>
+                <Title>友善土地耕作的阿美族休閒農場場主 卓阿敏</Title>
+                <Content>
+                    <![CDATA[
+有著台灣原住民樂天知足的性格，自幼年便從事農務的卓阿敏先生，在成年後看見部落文化的凋零，決定返鄉務農，傳承部落文化，種植原住民傳統農作物，介紹阿美族傳統美味的野菜食材。推廣紅藜、樹豆、小米、紫糯米成為現今市集的熱銷農產品。
+<br>
+以自製蔬果皮酵素及廚餘加上蔬果菜葉廢棄物製作堆肥，採取原始土壤自製微生物菌種，然後在堆肥中添加微生物菌製成液態肥，及使用純天然植物製成驅蟲劑播撒之後，土地恢復為健康狀態，蟲害數量減少，水稻及蔬菜生長狀態良好。
+<br>
+採用自然農法的生態平衡機制，利用作物與生物之間的多樣性及共生關係，無需網室溫室，只要適時適地適種，作物生長在有陽光露水的土地上，在不施化肥及農藥的天然環境下，即使夏季一樣可以種植蔬果，開創與大地永續共生的自然農法。
+<br>
+  ]]>
+
+                </Content>
+            </Description>
+        </Supplier>
+        <WaitDays></WaitDays>
+        <Tags>
+            <Tag>小米</Tag>
+            <Tag>養生</Tag>
+            <Tag>米</Tag>
+            <Tag>自然農法</Tag>
+        </Tags>
+    </Product>
+    <Product>
+        <OnlineId>1054</OnlineId>
+        <Category>咖啡/茶飲</Category>
+        <Name>有機蝶豆花茶</Name>
+        <Price>250</Price>
+        <Summary>
+            <Item>有機栽種蝶豆花</Item>
+            <Item>香氣獨特的花茶</Item>
+            <Item>台灣花蓮在地生產</Item>
+        </Summary>
+        <Features></Features>
+        <Photoes Path="優良食材,咖啡_茶飲,有機蝶豆花茶">
+            <Photo Caption="彩蝶般紛飛的蝶豆花，是妖豔而美麗的熱帶花朵，將其烘乾後，製作成芬芳的蝶豆花茶" File="top.jpg" Top="1" DisplayOrder="6"></Photo>
+            <Photo Caption="藍紫色的花茶，飄散著淡淡的蝶豆花香，舒心而清爽。" File="a.jpg" Top="0" DisplayOrder="9"></Photo>
+            <Photo Caption="天然有機認證的蝶豆花，讓你每口喝的沒負擔。" File="b.jpg" Top="0" DisplayOrder="7"></Photo>
+            <Photo Caption="驗證機構：慈心有機驗證(股)公司  驗證證書字號：TOC-C0285(認證有效期至108年11月27日)" File="d.jpg" Top="0" DisplayOrder="5"></Photo>
+
+        </Photoes>
+        <Description>
+            <Title></Title>
+            <Content></Content>
+        </Description>
+        <Specification>
+            <MadeIn>台灣花蓮 , 重量：20公克±5% , 保存期限：8個月</MadeIn>
+
+
+            <MadeBy></MadeBy>
+            <Size></Size>
+            <PS>
+                此商品孕婦不適合飲用，請特別注意。 此商品需放置在陰涼乾燥處保存。
+            </PS>
+        </Specification>
+        <Supplier>
+            <Name>花蓮豐禾有機農場</Name>
+            <Address></Address>
+            <Contact>張小姐</Contact>
+            <Tel></Tel>
+            <Phone>0989-293274</Phone>
+            <Email></Email>
+            <Description>
+                <Title></Title>
+                <Content>
+                    <![CDATA[
+花蓮豐禾有機農場，透過研究來提升有機的生產技術，期望能將有機農產品能普及生活，因此，他們也透過推廣及輔導，讓喜歡有機的農戶，可以一起共同努力，讓健康美味的食材，可以遍及每個角落，生機滿滿。
+<br>
+  ]]>
+
+                </Content>
+            </Description>
+        </Supplier>
+        <WaitDays></WaitDays>
+        <Tags>
+            <Tag>蝶豆花</Tag>
+            <Tag>有機</Tag>
+            <Tag>花茶</Tag>
+            <Tag>茶</Tag>
+        </Tags>
+    </Product>
+    <Product>
+        <OnlineId>203</OnlineId>
+        <Category>咖啡/茶飲</Category>
+        <Name>原鄉濾掛式咖啡</Name>
+        <Price>350</Price>
+        <Summary>
+            <Item>濾掛式咖啡粉</Item>
+            <Item>每盒10入</Item>
+            <Item>輕鬆、簡單的享用咖啡</Item>
+            <Item>上班族、學生最愛的濾掛式</Item>
+        </Summary>
+        <Features></Features>
+        <Photoes Path="優良食材,咖啡_茶飲,原鄉濾掛式咖啡">
+            <Photo Caption="" File="top.jpg" Top="1" DisplayOrder="1"></Photo>
+            <Photo Caption="✽夢幻的口味，嚐過才知道" File="b.jpg" Top="0" DisplayOrder="9"></Photo>
+            <Photo Caption="✽回甘，餘韻迴盪舌尖" File="c.jpg" Top="0" DisplayOrder="8"></Photo>
+            <Photo Caption="✽喝咖啡也可以很輕鬆" File="d.jpg" Top="0" DisplayOrder="7"></Photo>
+            <Photo Caption="✽不同的沖泡方法帶來不一樣的口感" File="e.jpg" Top="0" DisplayOrder="5"></Photo>
+
+        </Photoes>
+        <Description>
+            <Title></Title>
+            <Content></Content>
+        </Description>
+        <Specification>
+            <MadeIn>台灣花蓮 , 10包/盒</MadeIn>
+
+
+            <MadeBy></MadeBy>
+            <Size></Size>
+            <PS></PS>
+        </Specification>
+        <Supplier>
+            <Name>原鄉咖啡</Name>
+            <Address></Address>
+            <Contact>曾麗花</Contact>
+            <Tel></Tel>
+            <Phone>0921-863470</Phone>
+            <Email></Email>
+            <Description>
+                <Title>沈浸在咖啡芬芳香氣的曾麗花-木工藝與咖啡</Title>
+                <Content>
+                    <![CDATA[
+採用本地原鄉部落裁種的咖啡豆，引進新式的烘焙機，在現場研磨烹煮的咖啡香氣中，一邊品嚐本地的原鄉咖啡，一邊觀賞原民風格的木工藝品，是本工坊的特色，如祝福金榜題名的文昌木筆，以木質紋理引人入勝的古式木瓶，昔日用以臼米今日用以盛物或當擺飾的原民風木臼，都是咖啡館內的珍藏擺飾。
+<br>
+台灣在日據時代開始有咖啡的種植紀錄，時至今日已過百年時光，以風味濃烈的阿拉比卡為主要的裁植品種，相同的咖啡豆在不同的烘焙温度，會呈現出不可言喻的口感差異，唯有親自品味才能領會箇中奧妙，偏酸? 濃苦? 甘醇? 要看每位來賓的喜好口感，沒有一成不變的組合，如酸味香濃，濃苦提神，甘醇回津，唯有細細的品飲與回味，才可以找出個人最愛的咖啡之味，本咖啡廳的招牌咖啡豆，是以友善土地裁種的日曬豆，以天然友善的植種方式，在花蓮的縱谷之間，最貼近大地的脈動，值得您細細品味，花蓮原鄉咖啡的質樸韻味。
+<br>
+
+  ]]>
+
+                </Content>
+            </Description>
+        </Supplier>
+        <WaitDays>7</WaitDays>
+        <Tags>
+            <Tag>咖啡</Tag>
+            <Tag>濾掛式</Tag>
+        </Tags>
+    </Product>
+    <Product>
+        <OnlineId>68</OnlineId>
+        <Category>燈飾</Category>
+        <Name>時尚酒瓶燈</Name>
+        <Price>3900</Price>
+        <Summary>
+            <Item>創意環保，綠色複合媒材新生活</Item>
+            <Item>翻轉概念，顛覆生活用品的既有印象入</Item>
+            <Item>純手工製作，耐心等候</Item>
+        </Summary>
+        <Features></Features>
+        <Photoes Path="居家好物,燈飾,時尚酒瓶燈">
+            <Photo Caption="【材質】一個一個玻璃酒瓶，充滿新生命。" File="top.jpg" Top="1" DisplayOrder="10"></Photo>
+            <Photo Caption="✽顏色略有偏差，以實品顏色為準。" File="b.jpg" Top="0" DisplayOrder="9"></Photo>
+            <Photo Caption="✽提醒您，玻璃瓶的外觀為個人觸感的感受會因人而異。" File="c.jpg" Top="0" DisplayOrder="8"></Photo>
+            <Photo Caption="✽因為為手工製作，每個尺寸可能會些微不同" File="d.jpg" Top="0" DisplayOrder="7"></Photo>
+            <Photo Caption="" File="e.jpg" Top="0" DisplayOrder="5"></Photo>
+
+        </Photoes>
+        <Description>
+            <Title>時尚酒瓶燈</Title>
+            <Content>
+                <![CDATA[
+一個看似即將被丟棄的酒瓶，在這一刻，它的人生出現了不一樣的契機，他將不會被丟在資源回收場裡，而是賦予新的生命被擺放在家中供人使用及欣賞。
+<br>
+那魯灣手藝工坊珍惜自然造物、重視素材，漂流木、皮雕、絲瓜、椰殼、石頭等，力求保持原始風貌感覺。
+<br>
+
+  ]]>
+            </Content>
+        </Description>
+        <Specification>
+            <MadeIn></MadeIn>
+
+
+            <MadeBy>電料、酒瓶、漂流木、五金</MadeBy>
+            <Size>高：45cm 寬：20cm 厚：26cm</Size>
+            <PS></PS>
+        </Specification>
+        <Supplier>
+            <Name>那魯灣手藝工坊</Name>
+            <Address></Address>
+            <Contact>許新財（古拉斯）</Contact>
+            <Tel>03-8541-411</Tel>
+            <Phone>0933-485540</Phone>
+            <Email>a202202@ms27.hinet.net.tw</Email>
+            <Description>
+                <Title></Title>
+                <Content>
+                    <![CDATA[
+『那魯灣』是一個很多族群都用的虛詞，用來表示『喜悅』，就像歡呼；而那魯灣工坊的LOGO和MARK象徵著洄瀾、隱喻著阿美族戴著羽冠的勇士。
+<br>
+古拉斯老師與擅長皮雕的妻子伊浪老師組成的「那魯灣手藝工坊」，已不只侷限在漂流木和皮革，或是琉璃珠、十字繡、織布等傳統原住民工藝而是融入大量生活素材，並應用在生活中，深受消費者的喜愛和肯定。
+<br>
+不管是花蓮海邊的鵝卵石，或是一般生活中的漂流木、絲瓜、椰殼、石頭、酒瓶、鐵罐等多樣素材，都是老師靈感和驚奇來源，揉雜這些日常的複合媒材，取用古老的族人文化，結合原住民文化的日常特色，製作出的圖騰皮雕及燈飾融合了現代時尚與原住民元素而形成那魯灣工坊獨有的特色。
+
+
+  ]]>
+
+                </Content>
+            </Description>
+        </Supplier>
+        <WaitDays>30</WaitDays>
+        <Tags>
+            <Tag>燈</Tag>
+            <Tag>酒瓶</Tag>
+        </Tags>
+    </Product>
+    <Product>
+        <OnlineId>755</OnlineId>
+        <Category>燈飾</Category>
+        <Name>鋁線皮紋檯燈</Name>
+        <Price>1500</Price>
+        <Summary>
+            <Item>在生活用品中導入原民美學概念</Item>
+            <Item>彩珠圖紋、簡約樸實</Item>
+            <Item>手工捶製、生活設計</Item>
+        </Summary>
+        <Features></Features>
+        <Photoes Path="居家好物,燈飾,鋁線皮紋檯燈">
+            <Photo Caption="原民工藝，手工捶打樹皮。" File="top.jpg" Top="1" DisplayOrder="10"></Photo>
+            <Photo Caption="純手工編製。" File="b.jpg" Top="0" DisplayOrder="9"></Photo>
+            <Photo Caption="生活用品，巧思工藝。" File="c.jpg" Top="0" DisplayOrder="8"></Photo>
+            <Photo Caption="傳統工藝，源於堅持。" File="d.jpg" Top="0" DisplayOrder="7"></Photo>
+            <Photo Caption="實用簡約，原民風格。" File="e.jpg" Top="0" DisplayOrder="5"></Photo>
+
+        </Photoes>
+        <Description>
+            <Title></Title>
+            <Content></Content>
+        </Description>
+        <Specification>
+            <MadeIn>台灣</MadeIn>
+
+
+            <MadeBy>樹皮、麻線、鐵架，彩珠、燈線組</MadeBy>
+            <Size>燈罩9.5X14X17、總高度約35CM</Size>
+            <PS></PS>
+        </Specification>
+        <Supplier>
+            <Name>李欣手作工坊</Name>
+            <Address></Address>
+            <Contact></Contact>
+            <Tel>03-8547489</Tel>
+            <Phone>0920-223583</Phone>
+
+            <Email>shop5.5@hotmail.com</Email>
+            <Description>
+                <Title> 因相遇而開始的泰雅族綜合媒材工藝家 李欣 !</Title>
+                <Content>
+                    <![CDATA[
+因夏而長，因冬而停，千槌而形，甘之如飴………..這是李欣的創作寫照，
+       當少女遇見了樹皮，深深著迷於那千變萬化的紋路，每次的搥打都令她期待再期待，因時代的變遷而漸漸淡忘的傳統技藝，忘卻的傳承，如今重新被找了回來，這是李欣對原民創作的執念，施以不同的素材與元件，在不同器皿上呈現傳統泰雅族樹皮工藝的光輝。
+       <br>
+ 以樹皮工藝做為創作基材，會是一條漫漫的長路，樹皮猶如生鐵也是要經過不斷的捶打才能逐漸成形，加上樹皮原料的採集不易，其實在今日已難看到樹皮類的相關手工藝品，堅持且持續的創作是成功工藝師必備的條件，在傳統的工藝中加上新世代的元素，成功延續原民工藝的創作精神，在樹皮上施以綜合媒材，製成日常用品，如面紙盒、檯燈、筆筒、筆記本、衣帽掛勾、鑰匙圈、相框、杯墊、名片夾、編織手環，在日常生活中，俯拾之間皆可為作品，觸感粗獷的樹皮佐以女性特有的纖細手工與巧思，賞心悅目的手工藝品於焉而生。
+ <br>
+
+  ]]>
+
+                </Content>
+            </Description>
+        </Supplier>
+        <WaitDays>7</WaitDays>
+        <Tags>
+            <Tag>燈</Tag>
+            <Tag>樹皮</Tag>
+        </Tags>
+    </Product>
+    <Product>
+        <OnlineId>131</OnlineId>
+        <Category>餐具</Category>
+        <Name>六大族系列湯筷組-阿美族</Name>
+        <Price>200</Price>
+        <Summary>
+            <Item>親手打樣設計獨特樣式</Item>
+            <Item>台灣布料生產，台灣製造</Item>
+            <Item>環保又不單調、攜帶方便</Item>
+            <Item>獨特造型，外出有型</Item>
+        </Summary>
+        <Features></Features>
+        <Photoes Path="居家好物,餐具,六大族系列湯筷組-阿美族">
+            <Photo Caption="棉布材質" File="top.jpg" Top="1" DisplayOrder="10"></Photo>
+            <Photo Caption="✽外觀長方型、鮮紅襯著阿美族紋。內裡為黑色。" File="b.jpg" Top="0" DisplayOrder="9"></Photo>
+            <Photo Caption="✽使用獨有花蓮生產製造傳統圖騰花紋布製成。" File="c.jpg" Top="0" DisplayOrder="8"></Photo>
+            <Photo Caption="✽每個商品皆為純手工製作，商品大小會有些微不同。" File="d.jpg" Top="0" DisplayOrder="7"></Photo>
+            <Photo Caption="" File="e.jpg" Top="0" DisplayOrder="5"></Photo>
+
+        </Photoes>
+        <Description>
+            <Title>六大族系列湯筷組-阿美族</Title>
+            <Content>
+                <![CDATA[
+熱情奔放、時尚與傳統完美結合、送禮自用兩相宜！還不趕快帶回家！
+ <br>
+ 原住民傳統與現代風格兼具，傳統圖騰變成幾何花紋，親授設計樣板，獨一無二。<br>
+
+  ]]>
+
+
+            </Content>
+        </Description>
+        <Specification>
+            <MadeIn></MadeIn>
+
+
+            <MadeBy></MadeBy>
+            <Size>長:6 cm 高:22cm</Size>
+            <PS></PS>
+        </Specification>
+        <Supplier>
+            <Name>嘎娃文化藝術工作室</Name>
+            <Address></Address>
+            <Contact>徐香蘭</Contact>
+            <Tel>03-8564-811</Tel>
+            <Phone>0939-154083</Phone>
+
+            <Email>shop5.5@hotmail.com</Email>
+            <Description>
+                <Title></Title>
+                <Content>
+                    <![CDATA[
+嘎娃文化藝術工作室致力於阿美族祖傳技藝的延續，時尚元素的混搭設計，使用構樹纖維皮製作的手提包，以及以花蓮六大原住民族代表色與圖紋為主題，別出心裁的樣式，環保低碳、大自然等元素都為嘎娃老師運用的素材，符合現今的大眾對生活品質的需求，為達極致美學的作品，嘎娃老師不斷嘗試以樹皮結合織布，研發設計。
+ <br>
+嘎娃老師有感阿美族人與外界接觸多且久，生活習慣受外人影響很大，固有的生活方式已有所改變，紡織樹皮技術也漸行消失，在因緣際會之下，嘎娃老師重新認識過去族人生活中使用的樹皮，目前致力發展樹皮結合現代生活，從裝置藝術到生活用品，都可看見嘎娃老師的巧思與用心，未來嘎娃老師祈願帶領更多人認識樹皮、愛上樹皮，進而建立一個樹皮博物館，讓更多人可以體會古老技藝的重要性。
+<br>
+  ]]>
+
+                </Content>
+            </Description>
+        </Supplier>
+        <WaitDays>0</WaitDays>
+        <Tags>
+            <Tag>餐具</Tag>
+            <Tag>筷子</Tag>
+            <Tag>湯匙</Tag>
+        </Tags>
+    </Product>
+    <Product>
+        <OnlineId>44</OnlineId>
+        <Category>餐具</Category>
+        <Name>典雅木盤組</Name>
+        <Price>6000</Price>
+        <Summary>
+            <Item>漂流木/天然原木色</Item>
+            <Item>簡單木盤盛裝簡單食材</Item>
+            <Item>獨一無二天然紋理/隨時間會形成獨有色澤</Item>
+        </Summary>
+        <Features></Features>
+        <Photoes Path="居家好物,餐具,典雅木盤組">
+            <Photo Caption=" 【木製品】木頭製品就像生活的調料，能為平凡的日子帶進一抹溫暖陽光，原始自然的清新療癒，輕易地便週遭環境撒上滿是歡樂的氣氛。 " File="top.jpg" Top="1" DisplayOrder="10"></Photo>
+            <Photo Caption="✽顏色略有偏差，以實品顏色為準。" File="b.jpg" Top="0" DisplayOrder="9"></Photo>
+            <Photo Caption="✽因為手工製作，每個尺寸可能會些微不同。" File="c.jpg" Top="0" DisplayOrder="8"></Photo>
+            <Photo Caption="✽美麗的木紋，讓人感到自然的舒服。" File="d.jpg" Top="0" DisplayOrder="7"></Photo>
+            <Photo Caption="【保養注意事項】用清水清洗擦乾，陰乾即可，一個月一次薄薄的食用橄欖油擦拭在木頭表面，請使用柔軟的海綿清洗，請勿長時間浸泡，避免太陽直曬以及放入洗碗機以免翹曲變形、開裂。" File="e.jpg" Top="0" DisplayOrder="5"></Photo>
+
+        </Photoes>
+        <Description>
+            <Title>木盤</Title>
+            <Content>
+                <![CDATA[
+日常生活中，常見的瓷盤再平凡不過，偶爾也想用點木盤增添家裡不一樣的氣氛。
+<br>
+輕巧方便使用的木製餐盤，為輕食小點或午餐時光增添風味。
+<br>
+
+看似容易，卻隱藏不簡單的巧思，自在地刻出海浪般的紋路，翻轉一般餐盤的視覺，有起伏的木盤更顯得獨特性格。 
+<br>
+  ]]>
+
+
+            </Content>
+        </Description>
+        <Specification>
+            <MadeIn></MadeIn>
+
+
+            <MadeBy>漂流木、手工磨製</MadeBy>
+            <Size>長：55cm 寬：17 cm 高：3.5 cm</Size>
+            <PS></PS>
+        </Specification>
+        <Supplier>
+            <Name>那ㄜ哩岸木雕工作室</Name>
+            <Address></Address>
+            <Contact>了嘎.里外</Contact>
+            <Tel></Tel>
+            <Phone>0988-234442</Phone>
+
+            <Email>shop5.5@hotmail.com</Email>
+            <Description>
+                <Title>用心對待木頭的人！</Title>
+                <Content>
+                    <![CDATA[
+站在自己的土地領域上，感受祖先所留下土地的芬芳，想要將一切刻印在自己身體與心靈上，讓生命與土地連結在一起，也讓下一代可以接收到自己與部落的密不可分。
+<br>
+ 了嘎.里外老師的作品如同平靜的海浪一樣，平緩、內斂，了解木紋自然紋路與曲線，創造獨特的美感來表現自己與文化理念。
+ <br>
+
+  ]]>
+
+                </Content>
+            </Description>
+        </Supplier>
+        <WaitDays>0</WaitDays>
+        <Tags>
+            <Tag>餐具</Tag>
+            <Tag>盤子</Tag>
+            <Tag>木盤</Tag>
+            <Tag>木雕</Tag>
+            <Tag>漂流木</Tag>
+        </Tags>
+    </Product>
+    <Product>
+        <OnlineId>360</OnlineId>
+        <Category>藤編</Category>
+        <Name>中型獵物背籠</Name>
+        <Price>1700</Price>
+        <Summary>
+            <Item>手工編織</Item>
+            <Item>手工精細</Item>
+            <Item>傳統風格，原汁原味</Item>
+        </Summary>
+        <Features></Features>
+        <Photoes Path="裝置藝術,藤編,中型獵物背籠">
+            <Photo Caption="✽平時也可以拿來收納東西喔" File="top.jpg" Top="1" DisplayOrder="10"></Photo>
+            <Photo Caption="✽中型獵物背籠為手工製作，藤編色澤會有差異，請以實品為準" File="a.jpg" Top="0" DisplayOrder="5"></Photo>
+            <Photo Caption="✽顏色略有偏差，以實品顏色為準。" File="b.jpg" Top="0" DisplayOrder="9"></Photo>
+            <Photo Caption="✽傳統風格，原汁原味" File="c.jpg" Top="0" DisplayOrder="8"></Photo>
+            <Photo Caption="" File="d.jpg" Top="0" DisplayOrder="7"></Photo>
+
+
+        </Photoes>
+        <Description>
+            <Title></Title>
+            <Content></Content>
+        </Description>
+        <Specification>
+            <MadeIn></MadeIn>
+            <MadeBy>黃籐、手工編製</MadeBy>
+            <Size></Size>
+            <PS></PS>
+        </Specification>
+        <Supplier>
+            <Name>歌勒文傳工作室</Name>
+            <Address></Address>
+            <Contact>都姆恩‧馬紹</Contact>
+            <Tel></Tel>
+            <Phone>0936-102826</Phone>
+
+            <Email>shop5.5@hotmail.com</Email>
+            <Description>
+                <Title>傳承太魯閣族傳統藤編工藝的馬邵‧阿信(劉阿樹) !</Title>
+                <Content>
+                    <![CDATA[
+歌勒文傳工作室位於太魯閣峽谷區的山腳下，是由木頭搭建的房屋，裡頭擺放著許多太魯閣族傳統藤編製品。馬邵‧阿信是部落著名的藤編師，對於這項技藝，馬邵‧阿信老師有著一定的堅持。
+<br>
+以黃籐為主要的創作材質，製成各式樣的日常生活用品，舉凡獵人所需的獵物背籠及相關日常生活物品，皆需仰賴籐編的容器，才能使在高山的生活更為方便。馬邵‧阿信有感於傳統技藝正逐漸流逝，為傳承太魯閣族的傳統文化，便成立歌勒文傳工作室，教授傳統籐編技巧，並與女兒們共同發揮創意巧思，將早期實用的籐編生活器物，轉變成為小巧的觀光紀念品及創意的牆面掛飾，讓傳統技藝融入現代生活中，建立太魯閣族傳統籐編文化的新世代定位點。
+<br>
+歌勒文傳工作室提供預約的遊客或學生進行籐編體驗活動，讓更多人體驗太魯閣的傳統籐編之美。工作室的作品中，主要以太魯閣傳統日常生活中的工具為大宗，並製作鑰匙圈等精巧飾品，不定時的舉辦教學活動，讓我們更能貼近太魯閣族的傳統工藝之美。
+<br>
+  ]]>
+
+                </Content>
+            </Description>
+        </Supplier>
+        <WaitDays>20</WaitDays>
+        <Tags>
+            <Tag>藤</Tag>
+            <Tag>籃子</Tag>
+            <Tag>水果籃</Tag>
+            <Tag>菜籃</Tag>
+        </Tags>
+    </Product>
+    <Product>
+        <OnlineId>362</OnlineId>
+        <Category>藤編</Category>
+        <Name>捕魚魚籠</Name>
+        <Price>700</Price>
+        <Summary>
+            <Item>手工編織</Item>
+            <Item>造型收納</Item>
+            <Item>傳統風格</Item>
+        </Summary>
+        <Features></Features>
+        <Photoes Path="裝置藝術,藤編,捕魚魚籠">
+            <Photo Caption="✽平時也可以拿來收納東西喔" File="top.jpg" Top="1" DisplayOrder="10"></Photo>
+            <Photo Caption="✽捕魚魚籠為手工製作，藤編色澤會有差異，請以實品為準" File="a.jpg" Top="0" DisplayOrder="5"></Photo>
+            <Photo Caption="✽當然它不只能用來裝魚，也可以用來裝其他東西" File="b.jpg" Top="0" DisplayOrder="9"></Photo>
+        </Photoes>
+        <Description>
+            <Title></Title>
+            <Content></Content>
+        </Description>
+        <Specification>
+            <MadeIn></MadeIn>
+            <MadeBy>黃籐、手工編製</MadeBy>
+            <Size></Size>
+            <PS></PS>
+        </Specification>
+        <Supplier>
+            <Name>歌勒文傳工作室</Name>
+            <Address></Address>
+            <Contact>都姆恩‧馬紹</Contact>
+            <Tel></Tel>
+            <Phone>0936-102826</Phone>
+
+            <Email>shop5.5@hotmail.com</Email>
+            <Description>
+                <Title>傳承太魯閣族傳統藤編工藝的馬邵‧阿信(劉阿樹) !</Title>
+                <Content>
+                    <![CDATA[
+歌勒文傳工作室位於太魯閣峽谷區的山腳下，是由木頭搭建的房屋，裡頭擺放著許多太魯閣族傳統藤編製品。馬邵‧阿信是部落著名的藤編師，對於這項技藝，馬邵‧阿信老師有著一定的堅持。
+<br>
+以黃籐為主要的創作材質，製成各式樣的日常生活用品，舉凡獵人所需的獵物背籠及相關日常生活物品，皆需仰賴籐編的容器，才能使在高山的生活更為方便。馬邵‧阿信有感於傳統技藝正逐漸流逝，為傳承太魯閣族的傳統文化，便成立歌勒文傳工作室，教授傳統籐編技巧，並與女兒們共同發揮創意巧思，將早期實用的籐編生活器物，轉變成為小巧的觀光紀念品及創意的牆面掛飾，讓傳統技藝融入現代生活中，建立太魯閣族傳統籐編文化的新世代定位點。
+<br>
+歌勒文傳工作室提供預約的遊客或學生進行籐編體驗活動，讓更多人體驗太魯閣的傳統籐編之美。工作室的作品中，主要以太魯閣傳統日常生活中的工具為大宗，並製作鑰匙圈等精巧飾品，不定時的舉辦教學活動，讓我們更能貼近太魯閣族的傳統工藝之美。
+<br>
+  ]]>
+
+                </Content>
+            </Description>
+        </Supplier>
+        <WaitDays>10</WaitDays>
+        <Tags>
+            <Tag>藤</Tag>
+            <Tag>魚籠</Tag>
+            <Tag>籃子</Tag>
+            <Tag>水果籃</Tag>
+            <Tag>菜籃</Tag>
+        </Tags>
+    </Product>
+    <Product>
+        <OnlineId>449</OnlineId>
+        <Category>石雕</Category>
+        <Name>韻系列2-手工石雕</Name>
+        <Price>200000</Price>
+        <Summary>
+            <Item>律動感十足</Item>
+            <Item>純手工雕刻而成</Item>
+            <Item>栩栩如生的石雕</Item>
+            <Item>別出心裁的細膩雕刻</Item>
+            <Item>完美呈現阿美族文化意涵</Item>
+        </Summary>
+        <Features></Features>
+        <Photoes Path="裝置藝術,石雕,韻系列2-手工石雕">
+            <Photo Caption="精緻細膩的雕刻，令人眼睛為之一亮" File="top.jpg" Top="1" DisplayOrder="10"></Photo>
+            <Photo Caption="任何細節都不能馬虎，才能成就這完美的作品" File="b.jpg" Top="0" DisplayOrder="5"></Photo>
+            <Photo Caption="簡單質樸的石雕，完美呈現阿美族文化意涵" File="c.jpg" Top="0" DisplayOrder="9"></Photo>
+        </Photoes>
+        <Description>
+            <Title></Title>
+            <Content></Content>
+        </Description>
+        <Specification>
+            <MadeIn>台灣</MadeIn>
+            <MadeBy></MadeBy>
+            <Size></Size>
+            <PS></PS>
+        </Specification>
+        <Supplier>
+            <Name>山磊雕</Name>
+            <Address></Address>
+            <Contact>鄭詠鐸</Contact>
+            <Tel></Tel>
+            <Phone>0936-218909</Phone>
+
+            <Email></Email>
+            <Description>
+                <Title>以石雕作品來呈現阿美族文化意涵的石雕藝術師鄭詠鐸 !</Title>
+                <Content>
+                    <![CDATA[
+出生花蓮光復鄉馬太鞍的石雕家鄭詠鐸，從事石雕已有三十多個年頭，以原住民文化為創作靈感，舉凡阿美族的故事人物、傳統文化、神話傳說、舞蹈姿態等，都會成為創作的題材，雕刻的方式也從具體與細膩的工藝表現，到以簡單的線條呈現抽象的精神呈現，以石為材、心為本，創作具阿美族文化意涵的石雕藝術作品。
+ <br>
+鄭詠鐸在各項比賽中獲獎，包括花蓮洄瀾美展洄瀾獎，花蓮國際石雕展最佳人氣獎、典藏資格，台灣工藝競賽工藝之夢特獎等；作品經台北市原民會、長庚大學等單位收藏；在花蓮還有「石雕公車亭」大型裝置藝術；在馬太鞍部落入口，也
+有以族人為創作主題的石雕部落意象。
+<br>
+曾經受託雕刻石製的佛像，並曾應聘在中台禪寺工作2年。對鄭詠鐸來說，只要是美麗精緻的作品，都可以被稱為藝術品，不管它是否為了商業利益而創作，所以可接受客製石雕工作，歡迎前來山磊雕一塊品茗、賞石、觀海景。
+<br>
+  ]]>
+
+                </Content>
+            </Description>
+        </Supplier>
+        <WaitDays>120</WaitDays>
+        <Tags>
+            <Tag>雕刻</Tag>
+            <Tag>石雕</Tag>
+            <Tag>阿美族</Tag>
+            <Tag>藝術</Tag>
+        </Tags>
+    </Product>
+    <Product>
+        <OnlineId>382</OnlineId>
+        <Category>石雕</Category>
+        <Name>原藝石座-小</Name>
+        <Price>1000</Price>
+        <Summary>
+            <Item>台灣製造， 品質保證 </Item>
+            <Item>接單後製作，請耐心等候</Item>
+            <Item>彩繪花紋設計，獨一無二</Item>
+            <Item>簡單質樸，居家簡約風格擺飾</Item>
+            <Item>收納擺設優良選擇，具創意風格特色</Item>
+        </Summary>
+        <Features></Features>
+        <Photoes Path="裝置藝術,石雕,原藝石座-小">
+            <Photo Caption="簡單質樸的石座，結合原民風格圖文設計" File="top.jpg" Top="1" DisplayOrder="10"></Photo>
+            <Photo Caption="不論用來收納或是擺設，手工創意石座絕對是你的好選擇" File="b.jpg" Top="0" DisplayOrder="9"></Photo>
+            <Photo Caption="所有的石座都是純手工彩繪，每一批石座的圖案會略有差異" File="c.jpg" Top="0" DisplayOrder="8"></Photo>
+            <Photo Caption="美麗的圖紋完美的呈現在石座上，用來居家擺設絕對能令人驚艷" File="d.jpg" Top="0" DisplayOrder="7"></Photo>
+        </Photoes>
+        <Description>
+            <Title></Title>
+            <Content></Content>
+        </Description>
+        <Specification>
+            <MadeIn>台灣</MadeIn>
+            <MadeBy>石頭</MadeBy>
+            <Size>直徑8cm</Size>
+            <PS></PS>
+        </Specification>
+        <Supplier>
+            <Name>黎芯吉耀工作坊</Name>
+            <Address></Address>
+            <Contact>高曉茜</Contact>
+            <Tel></Tel>
+            <Phone>0986-310980</Phone>
+
+            <Email></Email>
+            <Description>
+                <Title></Title>
+                <Content>
+                    <![CDATA[
+吉耀(Giyaw)，是我傳承自祖先的姓；黎芯(Lisin)，則是我父親為我取的名字。
+「Lisin」的意思是慶典和祭典，也是紀念我在漢人的農曆春節出生，所以我的漢名叫做「曾春子」。
+<br>
+「絹印，喚醒了我對阿美族文化的記憶」
+染織的開始喚醒春子老師對童年和少年的記憶，從血液中的記憶、經驗和歷程，不斷的浮出，從那一刻起，春子老師自覺，人生有好多事還要做！
+<br>
+代表阿美族的山與海的線條、菱形標記代表祖靈以此圖紋找到我們，透過創作喚醒族人對過去生活記憶是最大的心願。
+<br>
+耀男老師擅長將原住民族的圖騰結合文化元素，加以鮮豔大膽的色彩表現，設計成極富新意卻不失傳統的創意圖像；不以原住民族專長的手工製作，而靈活運用電腦繪圖設計，將圖像更活用於各式商品和藝術設計，呈現熱情活潑的原住民新藝術內涵。
+<br>
+  ]]>
+
+                </Content>
+            </Description>
+        </Supplier>
+        <WaitDays>15</WaitDays>
+        <Tags>
+            <Tag>雕刻</Tag>
+            <Tag>石雕</Tag>
+            <Tag>石座</Tag>
+            <Tag>藝術</Tag>
+            <Tag>彩繪</Tag>
+        </Tags>
+    </Product>
+    <Product>
+        <OnlineId>382</OnlineId>
+        <Category>石雕</Category>
+        <Name>原藝石座-小</Name>
+        <Price>1000</Price>
+        <Summary>
+            <Item>台灣製造， 品質保證 </Item>
+            <Item>接單後製作，請耐心等候</Item>
+            <Item>彩繪花紋設計，獨一無二</Item>
+            <Item>簡單質樸，居家簡約風格擺飾</Item>
+            <Item>收納擺設優良選擇，具創意風格特色</Item>
+        </Summary>
+        <Features></Features>
+        <Photoes Path="裝置藝術,石雕,原藝石座-小">
+            <Photo Caption="簡單質樸的石座，結合原民風格圖文設計" File="top.jpg" Top="1" DisplayOrder="10"></Photo>
+            <Photo Caption="不論用來收納或是擺設，手工創意石座絕對是你的好選擇" File="b.jpg" Top="0" DisplayOrder="9"></Photo>
+            <Photo Caption="所有的石座都是純手工彩繪，每一批石座的圖案會略有差異" File="c.jpg" Top="0" DisplayOrder="8"></Photo>
+            <Photo Caption="美麗的圖紋完美的呈現在石座上，用來居家擺設絕對能令人驚艷" File="d.jpg" Top="0" DisplayOrder="7"></Photo>
+        </Photoes>
+        <Description>
+            <Title></Title>
+            <Content></Content>
+        </Description>
+        <Specification>
+            <MadeIn>台灣</MadeIn>
+            <MadeBy>石頭</MadeBy>
+            <Size>直徑8cm</Size>
+            <PS></PS>
+        </Specification>
+        <Supplier>
+            <Name>黎芯吉耀工作坊</Name>
+            <Address></Address>
+            <Contact>高曉茜</Contact>
+            <Tel></Tel>
+            <Phone>0986-310980</Phone>
+
+            <Email></Email>
+            <Description>
+                <Title></Title>
+                <Content>
+                    <![CDATA[
+吉耀(Giyaw)，是我傳承自祖先的姓；黎芯(Lisin)，則是我父親為我取的名字。
+「Lisin」的意思是慶典和祭典，也是紀念我在漢人的農曆春節出生，所以我的漢名叫做「曾春子」。
+<br>
+「絹印，喚醒了我對阿美族文化的記憶」
+染織的開始喚醒春子老師對童年和少年的記憶，從血液中的記憶、經驗和歷程，不斷的浮出，從那一刻起，春子老師自覺，人生有好多事還要做！
+<br>
+代表阿美族的山與海的線條、菱形標記代表祖靈以此圖紋找到我們，透過創作喚醒族人對過去生活記憶是最大的心願。
+<br>
+耀男老師擅長將原住民族的圖騰結合文化元素，加以鮮豔大膽的色彩表現，設計成極富新意卻不失傳統的創意圖像；不以原住民族專長的手工製作，而靈活運用電腦繪圖設計，將圖像更活用於各式商品和藝術設計，呈現熱情活潑的原住民新藝術內涵。
+<br>
+  ]]>
+
+                </Content>
+            </Description>
+        </Supplier>
+        <WaitDays>15</WaitDays>
+        <Tags>
+            <Tag>雕刻</Tag>
+            <Tag>石雕</Tag>
+            <Tag>石座</Tag>
+            <Tag>藝術</Tag>
+            <Tag>彩繪</Tag>
+        </Tags>
+    </Product>
+
+    <Product>
+        <OnlineId>373</OnlineId>
+        <Category>後背包</Category>
+        <Name>原氣蓬勃後背包-阿美族</Name>
+        <Price>1800</Price>
+        <Summary>
+            <Item>台灣製造， 品質保證</Item>
+            <Item>雙肩背包，給肩膀最小的負擔</Item>
+            <Item>大容量設計，再多的東西也裝得下</Item>
+            <Item>獨特花紋設計，結合傳統與時尚</Item>
+            <Item>兩側口袋設計，方便收納水壺、雨傘</Item>
+        </Summary>
+        <Features>
+        </Features>
+        <Photoes Path="各式包包_皮夾,後背包,原氣蓬勃後背包-阿美族">
+            <Photo Caption="細緻創新的圖紋設計，結合後背包的大版面，更能完整呈現拉阿魯哇族傳統服飾色彩的特色" File="top.jpg" Top="1" DisplayOrder="0"></Photo>
+            <Photo Caption="兩側大口袋設計，方便收納水壺、雨傘，出門不再手忙腳亂" File="b.jpg" Top="0" DisplayOrder="7"></Photo>
+            <Photo Caption="背帶也印有獨家設計的特色花紋，打造一體成型的時尚感" File="c.jpg" Top="0" DisplayOrder="6"></Photo>
+            <Photo Caption="用布面包裹的拉鍊，使用起來好拉不費力" File="d.jpg" Top="0" DisplayOrder="5"></Photo>
+        </Photoes>
+        <Description>
+            <Title></Title>
+            <Content></Content>
+        </Description>
+        <Specification>
+            <MadeBy></MadeBy>
+            <Size>30x10x41cm</Size>
+            <MadeIn>台灣</MadeIn>
+            <PS></PS>
+        </Specification>
+        <Supplier>
+            <Name>黎芯吉耀工作坊</Name>
+            <Address></Address>
+            <Contact>高曉茜</Contact>
+            <Tel></Tel>
+            <Phone>0986-310980</Phone>
+            <Email></Email>
+            <Description>
+                <Title></Title>
+                <Content>
+                    <![CDATA[
+                    吉耀(Giyaw)，是我傳承自祖先的姓；黎芯(Lisin)，則是我父親為我取的名字。
+                    <br>
+              耀男老師擅長將原住民族的圖騰結合文化元素，加以鮮豔大膽的色彩表現，設計成極富新意卻不失傳統的創意圖像；不以原住民族專長的手工製作，而靈活運用電腦繪圖設計，將圖像更活用於各式商品和藝術設計，呈現熱情活潑的原住民新藝術內涵。
+                    ]]>
+
+                </Content>
+            </Description>
+        </Supplier>
+        <WaitDays>60</WaitDays>
+        <Tags>
+            <Tag>包包</Tag>
+            <Tag>背包</Tag>
+        </Tags>
+    </Product>
+    <Product>
+        <OnlineId>133</OnlineId>
+        <Category>後背包</Category>
+        <Name>牛郎後背包(太魯閣族紋)</Name>
+        <Price>1980</Price>
+        <Summary>
+            <Item>上開式包款並備有特殊扣環</Item>
+            <Item>親手打樣設計獨特包款</Item>
+            <Item>環保又不單調、攜帶方便</Item>
+            <Item>樹皮材質，像布一樣柔軟</Item>
+        </Summary>
+        <Features>
+        </Features>
+        <Photoes Path="各式包包_皮夾,後背包,牛郎後背包(太魯閣族紋)">
+            <Photo Caption="" File="top.jpg" Top="1" DisplayOrder="0"></Photo>
+            <Photo Caption="✽每個商品皆為純手工製作，商品大小會有些微不同。" File="a.jpg" Top="0" DisplayOrder="8"></Photo>
+            <Photo Caption="✽顏色略有偏差，以實品顏色為準。" File="b.jpg" Top="0" DisplayOrder="7"></Photo>
+            <Photo Caption="✽美麗的花紋，充滿原氣。" File="c.jpg" Top="0" DisplayOrder="6"></Photo>
+            <Photo Caption="✽台灣布料生產，台灣製造。" File="d.jpg" Top="0" DisplayOrder="5"></Photo>
+        </Photoes>
+        <Description>
+            <Title>牛郎後背包</Title>
+            <Content>
+                <![CDATA[
+                   使用獨有花蓮生產製造傳統花紋花布製成，棉布柔軟材質，保護包內物品。大容量設計前口袋，方便多種小東西收納，手工縫製一體成形背帶，可負重5kg~8kg，加大加寬可攜帶更多物品夾。
+                <br>
+                【樹皮】
+                 <br>
+                  構樹由於樹皮纖維細長，不僅保暖又防水，相當適合製作成帽子、衣褲，或是用來造紙，在製作上則需經過「採、刮、扒、槌、泡、晒」六個步驟。先「採」集構樹枝，上山找尋成熟的構樹，視所需的面積大小，鋸取分枝或主幹上的樹皮;將表面「刮」除乾淨，「扒」分開樹皮及木質部，將枝幹泡入水中，使樹皮濕軟容易剝下，「槌」打樹皮讓纖維延展開。
+                   <br>
+                   槌」的步驟最為重要，一開始樹皮很厚，槌的力道要重，當樹皮越來越薄，力道也要減輕，否則纖維容易斷裂、破損，樹皮布的厚薄度視個人需求決定，捶打最需要手感與經驗，通常樹皮經過敲槌後，可以延展出原有的四倍，熟練的捶打技術可使樹皮厚度平均、表皮紋理像豹紋一般美麗。
+                    <br>
+                    捶打好的樹皮為了防止潮溼發霉，需在水中洗淨樹汁、陰乾或曬乾，之後樹皮布就可用在創作器具，如檯燈的燈罩、衣飾、皮包等等。
+
+     ]]>
+            </Content>
+        </Description>
+        <Specification>
+            <MadeBy>麻布、樹皮、棉布</MadeBy>
+            <Size>長:40 cm 寬:10cm 高:43cm</Size>
+            <MadeIn></MadeIn>
+            <PS></PS>
+        </Specification>
+        <Supplier>
+            <Name>嘎娃文化藝術工作室</Name>
+            <Address></Address>
+            <Contact>徐香蘭</Contact>
+            <Tel>03-8564-811</Tel>
+            <Phone>0939-154083</Phone>
+            <Email></Email>
+            <Description>
+                <Title></Title>
+                <Content>
+                </Content>
+            </Description>
+        </Supplier>
+        <WaitDays>7</WaitDays>
+        <Tags>
+            <Tag>包包</Tag>
+            <Tag>背包</Tag>
+        </Tags>
+    </Product>
+    <Product>
+        <OnlineId>604</OnlineId>
+        <Category>後背包</Category>
+        <Name>棉麻後背束口袋</Name>
+        <Price>190</Price>
+        <Summary>
+            <Item>手工縫織背包袋</Item>
+            <Item>完美呈現手工紋理</Item>
+            <Item>原民構圖、創意繡飾</Item>
+            <Item>手工創作，唯一無二</Item>
+            <Item>資深工藝師親自製作</Item>
+        </Summary>
+        <Features>
+        </Features>
+        <Photoes Path="各式包包_皮夾,後背包,棉麻後背束口袋">
+            <Photo Caption="以日常生活隨身物為題材做為創作的構思" File="top.jpg" Top="1" DisplayOrder="0"></Photo>
+         
+            <Photo Caption="實用的剪裁。" File="b.jpg" Top="0" DisplayOrder="7"></Photo>
+            <Photo Caption="穩重的原民風構圖、配色。" File="c.jpg" Top="0" DisplayOrder="6"></Photo>
+            <Photo Caption="原民工藝的實用物品組合。" File="d.jpg" Top="0" DisplayOrder="5"></Photo>
+        </Photoes>
+        <Description>
+            <Title></Title>
+            <Content></Content>
+        </Description>
+        <Specification>
+            <MadeBy>棉布</MadeBy>
+            <Size>L27.5*H32.5cm(帶長可調整)</Size>
+            <MadeIn>台灣</MadeIn>
+            <PS></PS>
+        </Specification>
+        <Supplier>
+            <Name>Amis工作室</Name>
+            <Address></Address>
+            <Contact>陳葵英</Contact>
+            <Tel>03-8564-811</Tel>
+            <Phone>0936-510935</Phone>
+            <Email>la00282248@gmail.com</Email>
+            <Description>
+                <Title>對阿美族原民手工藝創業抱持理念的實踐家  陳葵英 !</Title>
+                <Content>
+                    <![CDATA[
+           在花蓮從事原民手工藝相關產業，是在鄉的文創青年主要工作之一，為了營生也許會逐漸迷失了初始的創作理念與熱情，讓作品變成諸多相似的觀光客藝品，畢竟能持續且堅持的走在創作路上，這會是一條崎嶇難行的道路，天道酬勤，唯有辛勤的汗水，才會點亮作品的靈性，陳葵英小姐的作品，有著讓人為之一亮的驚豔，一樣是手工包，一樣是手工飾品，在原民風格中，加上精工的堅持，配合美學上協調的感覺，這是在她的作品中可以觀察到的特點。
+           <br>
+           在原民編織手環的設計上，結合施華洛世奇水晶鑽的元件，讓作品增添晶亮華麗的光芒，原民手工包的設計，運用大膽的冷色系(深紫、綻藍)做為主色，讓原民提包擁有時尚的貴族品味。
+           <br>
+            在原民風格中導入時尚的設計概念，這是年輕原民工藝師的活力與創新的能量，在眾多的傳統原民工藝品裡，綻放出新時代的品味，陳葵英小姐作品的獨特韻味，唯有親身接觸才能有所領會，歡迎瀏覽『原住民藝術村』的臉書專頁，網頁上會有陳葵英小姐最新創作的作品發表與展示。
+            <br>
+                    ]]>
+
+                </Content>
+            </Description>
+        </Supplier>
+        <WaitDays>7</WaitDays>
+        <Tags>
+            <Tag>包包</Tag>
+            <Tag>背包</Tag>
+        </Tags>
+    </Product>
+    <Product>
+        <OnlineId>418</OnlineId>
+        <Category>率性配件</Category>
+        <Name>山豬牙項鍊-大</Name>
+        <Price>2880</Price>
+        <Summary>
+            <Item>野生山豬牙</Item>
+            <Item>勇士的象徵</Item>
+            <Item>純手工製作而成 </Item>
+            <Item>帥氣的項鍊，吸引眾人目光</Item>
+            <Item>別出心裁的設計，外型獨一無二</Item>
+        </Summary>
+        <Features>
+        </Features>
+        <Photoes Path="個性飾品,率性配件,山豬牙項鍊-大">
+            <Photo Caption="帥氣的野生山豬牙，製成獨一無二的項鍊" File="top.jpg" Top="1" DisplayOrder="10"></Photo>
+            <Photo Caption="絕不重複的飾品，每個山豬牙皆有不同" File="a.jpg" Top="0" DisplayOrder="8"></Photo>
+            <Photo Caption="戴上山豬牙項鍊，展現你的個人風格與特色" File="b.jpg" Top="0" DisplayOrder="7"></Photo>
+            <Photo Caption="粗曠的黑繩子，搭配上琉璃飾物，讓山豬牙看起來更加率性 " File="c.jpg" Top="0" DisplayOrder="6"></Photo>
+          
+        </Photoes>
+        <Description>
+            <Title></Title>
+            <Content></Content>
+        </Description>
+        <Specification>
+            <MadeBy>山豬牙</MadeBy>
+            <Size></Size>
+            <MadeIn>台灣</MadeIn>
+            <PS></PS>
+        </Specification>
+        <Supplier>
+            <Name>高路工作室</Name>
+            <Address></Address>
+            <Contact>柯玉霞</Contact>
+            <Tel>03-8528-219</Tel>
+            <Phone>0988-380061</Phone>
+            <Email>la00282248@gmail.com</Email>
+            <Description>
+                <Title>以精細的金工加上彩豔的燒製琉璃打造新式阿美族飾品 柯玉霞 !</Title>
+                <Content>
+                    <![CDATA[
+是以手做原創純銀飾品與燒製琉璃珠二種元素的結合做為原民文創商品，作品創作來源多為與文化生活相關或大自然之植物，尤其種子系列是個人最為喜愛與推荐，主打高路(kawlo)做為品牌，並提升工作室產品的形象，開創工作室文創商品的新未來。
+<br>
+銀飾金工與燒製琉璃是較精細的工藝技術，相對於原民的手工藝創作，是屬於新式的技法與震撼，原民手工藝品向來採用亮麗的顏色與粗獷的線條，在高路工作室內，揉合了新式銀飾琉璃與傳統彩麗線條，淬鍊出令人驚豔的原民風工藝飾品。
+
+<br>
+高路工作室獲得100年度行政院原住民委員會推展原住民創業育成補助計劃，以KAWLO為臺灣阿美族手工琉璃飾品工作室，LOGO融合女性、阿美族、以及飾品的特色。參與「2011年洄瀾卓越文創設計」比賽獲得佳作獎及網路票選最佳人氣王殊榮。她曾在花蓮縣金屬工藝協會裡擔任金工師，持續累積工藝技術的實力。主要是以手做原創銀飾品與燒製琉璃珠二種元素的結合做為文創商品。
+<br>
+                    ]]>
+
+                </Content>
+            </Description>
+        </Supplier>
+        <WaitDays>7</WaitDays>
+        <Tags>
+            <Tag>項鍊</Tag>
+            <Tag>山豬牙</Tag>
+        </Tags>
+    </Product>
+    <Product>
+        <OnlineId>954</OnlineId>
+        <Category>率性配件</Category>
+        <Name>阿美族傳統羽絨頭冠</Name>
+        <Price>3800</Price>
+        <Summary>
+            <Item>在阿美族原民工藝的精華代表</Item>
+            <Item>手工打造、原民頭冠</Item>
+            <Item>傳統工法、時尚配件 </Item>
+            <Item>新款樣式、高雅配色</Item>
+            <Item>原民工藝，經典呈現</Item>
+        </Summary>
+        <Features>
+        </Features>
+        <Photoes Path="個性飾品,率性配件,阿美族傳統羽絨頭冠">
+            <Photo Caption="精緻內裡，縫工仔細。" File="top.jpg" Top="1" DisplayOrder="10"></Photo>
+            <Photo Caption="細緻編珠、阿美族造型。" File="a.jpg" Top="0" DisplayOrder="8"></Photo>
+            <Photo Caption="精美亮片，晶亮有型。" File="b.jpg" Top="0" DisplayOrder="7"></Photo>
+            <Photo Caption="精美原民工藝品，純手工打造。" File="c.jpg" Top="0" DisplayOrder="6"></Photo>
+            <Photo Caption="特色彩珠，質輕豔麗。" File="d.jpg" Top="0" DisplayOrder="3"></Photo>
+
+        </Photoes>
+        <Description>
+            <Title></Title>
+            <Content></Content>
+        </Description>
+        <Specification>
+            <MadeBy>鵝絨、亮片、彩珠</MadeBy>
+            <Size></Size>
+            <MadeIn>台灣</MadeIn>
+            <PS></PS>
+        </Specification>
+        <Supplier>
+            <Name>里信工作坊</Name>
+            <Address></Address>
+            <Contact>徐夏妹</Contact>
+            <Tel>03-8568137</Tel>
+            <Phone>0937-164819</Phone>
+            <Email></Email>
+            <Description>
+                <Title>運用原民傳統元素造就現代時尚潮流的阿美族服飾設計師 徐夏妹 !</Title>
+                <Content>
+                    <![CDATA[
+ 里信工作坊的理念除了發揚原住民文化之外，其設計的最大動力來自於希望親手為母親製作美麗的衣裳。徐夏妹女士自小立志於原住民阿美族服裝創作與傳統服裝推廣，突破傳統思維創造出原民風的新式禮服，作品廣受好評，並獲得中外各國的原民服飾訂單，不斷開發新創的阿美族服飾，堅持往"賦與原住民傳統服飾新趨勢"的理想邁進， 和阿美族瑞穗奇美家鄉的服裝設計師精心製作，設計具時尚感而不失傳統風格的阿美族服飾。
+ <br>「我告訴我自己，透過雙手，我可以創造另一種美學。記憶中的紅色是創作的源頭，而引領傳統活出現代時尚正是我最想做的事情。」創新設計的原民服飾逐漸獲得各界的關注，里信工作坊持續在原住民傳統服飾新趨勢的領域中努力打拼，並提供客製化的設計服務，推展原民風的設計風格。
+ 
+<br>
+                    ]]>
+
+                </Content>
+            </Description>
+        </Supplier>
+        <WaitDays>7</WaitDays>
+        <Tags>
+            <Tag>羽絨</Tag>
+            <Tag>頭冠</Tag>
+        </Tags>
+    </Product>
+    <Product>
+        <OnlineId>719</OnlineId>
+        <Category>率性配件</Category>
+        <Name>大六串薏苡黑白珠項鍊</Name>
+        <Price>990</Price>
+        <Summary>
+            <Item>在飾品中導入原民美學圖飾</Item>
+            <Item>串編彩珠、原民圖紋</Item>
+            <Item>素色薏苡珠，簡約配色</Item>
+            <Item>原民工藝、時尚配色</Item>
+        </Summary>
+        <Features>
+        </Features>
+        <Photoes Path="個性飾品,率性配件,大六串薏苡黑白珠項鍊">
+            <Photo Caption="手工串編圖紋、薏苡珠特色運用" File="top.jpg" Top="1" DisplayOrder="10"></Photo>
+            <Photo Caption="編串薏苡珠、原民代表性工藝技法。" File="a.jpg" Top="0" DisplayOrder="8"></Photo>
+            <Photo Caption="薏苡珠晶亮有型。" File="b.jpg" Top="0" DisplayOrder="7"></Photo>
+            <Photo Caption="薏苡珠編織串珠、原民風格醒目。" File="c.jpg" Top="0" DisplayOrder="6"></Photo>
+
+        </Photoes>
+        <Description>
+            <Title></Title>
+            <Content></Content>
+        </Description>
+        <Specification>
+            <MadeBy>尼龍絲線、串珠、金屬扣環</MadeBy>
+            <Size>總長87cm</Size>
+            <MadeIn>台灣</MadeIn>
+            <PS></PS>
+        </Specification>
+        <Supplier>
+            <Name>木別子工坊</Name>
+            <Address></Address>
+            <Contact>溫老師</Contact>
+            <Tel></Tel>
+            <Phone>0911-896428</Phone>
+            <Email>mayawfuyu@gmail.com</Email>
+            <Description>
+                <Title>結合串珠編織工藝與部落野菜美食農特產的阿美族技藝師 溫老師 !</Title>
+                <Content>
+                    <![CDATA[
+ 串珠的色彩亮麗多變，加上現代感的巧思，配合阿美族的傳統編織技法，豔麗的色彩系列，會讓人感受到熱烈的情緒，猶如聽到森巴音樂，就會聯想到嘉年華會，阿美族的傳統服飾習慣配戴大量的彩珠，配合精美的串珠工藝，在傳統服飾中，更可以發揮畫龍點睛的作用。
+ <br>
+溫老師女士把串珠工藝導進生活用品中，如鑰匙圈、手機吊飾、耳環、手鍊、手環、項鍊等之類的工藝飾品，配合薏苡珠的應用，以薏苡珠做為串珠的主角，創作出不同造型的手工藝品，是木別子工坊所擅長的創作項目，讓串珠工藝呈現更多樣變化的原民特色，加上時尚的配色與造形，引進原民風格，讓原民色彩融入現代生活中，這也是現代原民工藝的發展趨勢。
+
+<br>
+  除了串珠與編織的手工藝外，阿美族的野菜食譜與地方農產品也是木別子工坊的特色商品，如小米酒、紅糯米、紅藜、小苦瓜(野茄)，都是工坊的特色農產品，以健康養生、有機無毒為農產品的特色，採用樸實的包裝設計，是為原民風的伴手禮。不過農產品往往有產季的限制，會針對不同的月份開發新的代表商品，將持續推展當令的農特產品，歡迎選購。
+  <br>
+
+
+                    ]]>
+
+                </Content>
+            </Description>
+        </Supplier>
+        <WaitDays>7</WaitDays>
+        <Tags>
+            <Tag>串珠</Tag>
+            <Tag>項鍊</Tag>
+        </Tags>
+    </Product>
+</Products>

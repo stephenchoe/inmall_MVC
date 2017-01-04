@@ -1,0 +1,15 @@
+﻿.input-validation-error {
+    border: 1px solid #ff0000 !important;
+}
+
+.travel-img img:last-child {
+    display: none;
+}
+
+.travel-img:hover img:first-child {
+    display: none;
+}
+
+.travel-img:hover img:last-child {
+    display: inline-block;
+}

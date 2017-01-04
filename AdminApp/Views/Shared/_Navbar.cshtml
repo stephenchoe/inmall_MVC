@@ -1,0 +1,47 @@
+﻿
+
+<div class="navbar navbar-inverse  navbar-fixed-top">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        @Html.ActionLink("原住民商城後台管理系統", "Index", "Home", null, new { @class = "navbar-brand" })
+      
+    </div>
+    <div class="navbar-collapse collapse navbar-inverse-collapse">
+        @*功能列表 登入後才顯示*@
+        @if (!Request.IsAuthenticated)
+        {
+            @Html.MvcSiteMap().Menu(false)
+
+            using (Html.BeginForm("Logout", "Account", new { area = "" }, FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+            {
+                @Html.AntiForgeryToken()
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="個人設定">Hello ! 金水 <b class='caret'></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                @Html.ActionLink("變更密碼", "ChangePassword", "Account", new { area = "" }, null)
+                            </li>
+
+
+                        </ul>
+
+                    </li>
+
+                    <li><a href="javascript:document.getElementById('logoutForm').submit()">登出</a></li>
+
+
+                </ul>
+            }
+
+
+        }
+
+    </div>
+</div>
+

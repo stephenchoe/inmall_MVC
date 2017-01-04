@@ -1,0 +1,89 @@
+﻿@using Web.Core.Recaptcha
+@using System.Configuration
+
+@{
+    string siteKey = ConfigurationManager.AppSettings["Recaptcha2SiteKey"];
+    string inputName = ConfigurationManager.AppSettings["Recaptcha2VarName"];
+    string recaptchaErrMsgId = "recaptchaErrMsg";
+}
+
+
+@Html.Recaptcha2(siteKey)
+@Html.ValidationMessage(inputName, "", new { @id = recaptchaErrMsgId, @class = "err" })
+
+<button id="btnTest">送出</button>
+
+@section scripts{
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            function recaptchaValidate() {
+                var valid = false;
+                var recaptchaResponse = $('#@inputName').val();
+                alert(recaptchaResponse);
+                $.ajax({
+                    type: "POST",
+                    async: false,
+                    cache: false,
+                    url: '/Captcha/CaptchaValidAsync',
+                    data: { '@inputName': recaptchaResponse },
+                    success: function (result) {
+                        if (result.toLowerCase() == 'true') {
+                            valid = true;
+                        } else {
+                            valid = false;
+                        }
+                    },
+                    error: function () {
+                        valid = false;
+                    }
+                });
+
+                var spanErrMsg = $('#@recaptchaErrMsgId')
+                if (!valid) {
+                    spanErrMsg.text('您尚未通過圖形驗證');
+                } else {
+                    spanErrMsg.text('');
+                }
+            }
+
+            $('#btnTest').click(function (e) {
+                e.preventDefault();
+
+                checkEmail();
+                
+            });
+
+            function checkEmail() {
+                var validEmail = false;
+                var email ='xxxopmart2008@yahoo.com.tw';
+                $.ajax({
+                    type: "POST",
+                    async: false,
+                    cache: false,
+                    url: '/Member/CheckUserName',
+                    data: { 'email': email },
+                    success: function (result) {
+                        if (result.toLowerCase() == 'true') {
+                            validEmail = true;
+                        } else {
+                            validEmail = false;
+                        }
+                    },
+                    error: function () {
+                        validEmail = false;
+                    }
+                });
+
+                alert(validEmail);
+            }
+           
+        })//end ready
+
+    </script>
+}
+
+

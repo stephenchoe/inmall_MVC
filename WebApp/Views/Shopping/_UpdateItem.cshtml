@@ -1,0 +1,42 @@
+﻿@model WebApp.Models.UpdateCartModel
+
+    @{
+        string updateTargetId = Model.UpdateTargetId;
+
+        string beginCallback = "cartUpdateBegin";
+        string successCallback = "cartUpdateSuccess";
+        string failureCallback = "cartUpdateFailed";
+
+
+        AjaxOptions ajaxOptions = new AjaxOptions
+        {
+            UpdateTargetId = updateTargetId,
+            InsertionMode = InsertionMode.ReplaceWith,
+            HttpMethod = "POST",
+            OnBegin = beginCallback,
+            OnSuccess = successCallback,
+            OnFailure = failureCallback
+
+        };
+
+        string formId = "formUpdateItem";
+    }
+
+    @using (Ajax.BeginForm("UpdateCart", "Shopping", null, ajaxOptions, new { id = formId }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(m => m.ProductId)
+        @Html.HiddenFor(m => m.Quantity)
+    }
+
+
+    <script type="text/javascript">
+
+        function updateCart(pid, qty) {
+           
+            $('#@Html.IdFor(m=>m.ProductId)').val(pid);
+            $('#@Html.IdFor(m => m.Quantity)').val(qty);
+            $('#@formId').submit();
+        }
+       
+    </script>

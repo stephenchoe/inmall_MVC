@@ -1,0 +1,129 @@
+﻿@model WebApp.Models.ProductViewModel
+
+@using Core.Extensions
+
+<div class="product-intro-section">
+    <div class="product-intro-blk">
+        <h3 class="title js-btn-accordion act">產品說明</h3>
+        <div class="desc js-content-accordion">
+            @if (!Model.Features.IsNullOrEmpty())
+            {
+                <strong>【產品特色】</strong><br>
+                foreach (var item in Model.Features)
+                {
+                    <text>★</text>@item   <<br>
+                }
+            }
+            else
+            {
+                foreach (var item in Model.Summary)
+                {
+                    <text>★</text>@item   <br>
+                }
+            }
+
+            <br>
+
+            <div id="description">
+                @if (!String.IsNullOrEmpty(Model.Description.Title))
+                {
+                    <strong>【@Model.Description.Title】</strong><br>
+                }
+
+                @Html.Raw(Model.Description.Content)
+
+            </div>
+            <div id="photoes">
+                @foreach (var photoView in Model.PhotoViewList)
+                {
+                    string id = photoView.Id.ToString();
+
+                    <img alt="@Model.Name" src="@Url.Action("ProductPhoto", new { id = id })" style="width:758px;">
+                    <br>
+                    @photoView.Caption
+                    <br>
+                }
+
+            </div>
+
+            @if (Model.WaitDays > 0)
+            {
+                <br>
+            <strong style="box-sizing: border-box; font-style: normal; font-variant: normal; line-height: 24px; font-family: Meiryo, &quot;Microsoft JhengHei&quot;; font-size: 16px; color: rgb(26, 26, 26); background-color: rgb(255, 255, 255);"><span style="box-sizing: border-box; font-size: 16px; color: rgb(139, 69, 19);">此商品為「接單訂製」，付款後才開始製作，平均等候 @Model.WaitDays 個製作天(不包含假日)</span></strong>
+            
+            }
+                <br><br>
+
+            <div id="supplier">
+
+                @if (!String.IsNullOrEmpty(Model.SupplierView.Description.Content))
+                {
+                    <strong>【工坊介紹】</strong>@Model.SupplierView.Description.Title
+
+                   
+                    <br>
+                    @Html.Raw(Model.SupplierView.Description.Content)
+                    <br><br>
+                }
+
+                @{
+                    string contact = "";
+                    if (!String.IsNullOrEmpty(Model.SupplierView.Contact))
+                    {
+                        contact = "聯絡人 : " + Model.SupplierView.Contact;
+                    }
+                }
+
+                @Model.SupplierView.Name&nbsp; &nbsp;@Model.SupplierView.Address
+                <br>
+                @contact &nbsp; @Model.SupplierView.Tel&nbsp; @Model.SupplierView.Phone
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="product-intro-blk">
+        <h3 class="title js-btn-accordion act">商品規格</h3>
+        <div class="desc js-content-accordion">
+            <h4 class="sub-title">
+                商品規格及注意事項
+            </h4>
+
+            <dl class="product-spec-list">
+                @if (!String.IsNullOrEmpty(Model.Specification.MadeIn))
+                {
+                    <dd>產地 : @Model.Specification.MadeIn </dd>
+                }
+
+                @if (!String.IsNullOrEmpty(Model.Specification.MadeBy))
+                {
+                    <dd>材質 : @Model.Specification.MadeBy </dd>
+                }
+
+                @if (!String.IsNullOrEmpty(Model.Specification.Size))
+                {
+                    <dd>尺寸 : @Model.Specification.Size </dd>
+                }
+
+                @if (!String.IsNullOrEmpty(Model.Specification.PS))
+                {
+                    <dd>注意事項 : @Model.Specification.PS </dd>
+                }
+            </dl>
+            <h4 class="sub-title">
+                供應來源
+            </h4>
+            <dl class="product-spec-list short">
+                @Model.SupplierView.Name
+            </dl>
+        </div>
+    </div>
+    <div class="product-intro-blk">
+        <h3 class="title js-btn-accordion">付款方式</h3>
+        <div class="desc js-content-accordion">
+            貨到付款、ATM轉帳
+        </div>
+    </div>
+</div>
